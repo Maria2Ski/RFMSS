@@ -1,0 +1,121 @@
+﻿Test Case ID - Module - Title - Description/User Story - Preconditions - Test Steps - Expected Results - Test Data - Defects/Remarks - ReqID - Status - Automation - Test Type - Priority - State
+
+RFMSS-SMK-401 - Airspace - Verify Airspace Management
+Verify that Functional Administrators can create -  update -  and delete airspace entries in the system.
+Functional Administrator logged in.
+1. Log into the RFMSS application as an FA 
+2. Navigate to Administration > Airspace.
+3. Create/update/delete airspace entries.
+    *Expected Results:* Airspace entries are correctly created -  updated -  or deleted. - 
+    Test Data: Airspace details
+    RQ_050
+
+RFMSS-SMK-403 - Ammunition - Verify Ammunition Management
+Verify that Functional Administrators can manage ammunition details including creation and updates. - Functional Administrator logged in. - 
+1. Log into the RFMSS application as an FA. 
+2. Navigate to Administration > Ammunition.
+3. Create/update ammunition details.
+    *Expected Results:* Ammunition details are correctly created or updated.
+    Test Data: Ammunition details
+    RQ_051
+
+RFMSS-SMK-408 - Announcements - Verify Announcements Posting
+Verify that announcements can be posted and viewed by users. - Functional Administrator logged in.
+1. Log into the RFMSS application as an FA. 
+2. Navigate to Administration > Announcements.
+3. Create a new announcement.
+4. Verify announcement display for regular users.
+    *Expected Results:* Announcements are correctly posted and visible to users.
+    Test Data: Announcement details
+    RQ_052
+
+RFMSS-SMK-412 - Conflict - Verify Conflict Configuration
+Verify that Functional Administrators can configure conflict detection parameters. - Functional Administrator logged in.
+1. Log into the RFMSS application as an FA. 
+2. Navigate to Administration > Conflict.
+3. Configure conflict detection parameters.
+    *Expected Results:* Conflict detection parameters are correctly configured.
+    Test Data: Conflict detection parameters
+    RQ_053
+
+RFMSS-SMK-415 - Equipment - Verify Equipment Management
+Verify that Functional Administrators can manage equipment details including creation -  updates -  and deletions. - Functional Administrator logged in.
+1. Log into the RFMSS application as an FA. 
+2. Navigate to Administration > Equipment.
+3. Create/update/delete equipment details.
+    *Expected Results:* Equipment details are correctly created -  updated -  or deleted.
+    Test Data: Equipment details
+    RQ_054
+
+RFMSS-SMK-418 - Event - Verify Event Management
+Verify that Functional Administrators can manage event details including creation -  updates -  and deletions. - Functional Administrator logged in.
+1. Log into the RFMSS application as an FA. 
+2. Navigate to Administration > Event.
+3. Create/update/delete event details.
+    *Expected Results:* Event details are correctly created -  updated -  or deleted.
+    Test Data: Event details
+    RQ_055
+
+RFMSS-SMK-421 - Facility - Verify Facility Management
+Verify that Functional Administrators can manage facility details including creation -  updates -  and deletions. - Functional Administrator logged in.
+1. Log into the RFMSS application as an FA. 
+2. Navigate to Administration > Facility.
+3. Create/update/delete facility details.
+    *Expected Results:* Facility details are correctly created -  updated -  or deleted.
+    Test Data: Facility details
+    RQ_056
+
+RFMSS-SMK-424 - Fire Desk - Verify Fire Desk Configuration
+Verify that Functional Administrators can configure fire desk settings and logs. - Functional Administrator logged in. - 
+1. Log into the RFMSS application as an FA. 
+2. Navigate to Administration > Fire Desk.
+3. Configure fire desk settings and logs.
+    *Expected Results:* Fire desk settings and logs are correctly configured.
+    Test Data: Fire Desk settings
+    RQ_057
+
+RFMSS-SMK-427 - Installation - Verify Installation Configuration
+Verify that Functional Administrators can set up and configure installation-level settings. - Functional Administrator logged in.
+1. Log into the RFMSS application as an FA.
+2. Navigate to Administration > Installation.
+3. Configure installation settings.
+    *Expected Results:* Installation settings are correctly configured.
+    Test Data: Installation settings
+    RQ_058
+
+RFMSS-SMK-430 - Unavailable Days - Verify Unavailable Days Configuration
+Verify that Functional Administrators can set up unavailable days for the facilities or ranges. - Functional Administrator logged in.
+1. Log into the RFMSS application as an FA.
+2. Navigate to Administration > Unavailable Days.
+3. Configure unavailable days settings.
+    *Expected Results:* Unavailable days are correctly set up and displayed.
+    Test Data: Unavailable days settings
+    RQ_059
+
+RFMSS-SMK-433 - Unit - Verify Unit Management
+Verify that Functional Administrators can manage unit details including creation -  updates -  and deletions. - Functional Administrator logged in.
+1. Log into the RFMSS application as an FA.
+2. Navigate to Administration > Unit.
+3. Create/update/delete unit details.
+    *Expected Results:* Unit details are correctly created -  updated -  or deleted.
+    Test Data: Unit details
+    RQ_060
+
+RFMSS-SMK-436 - User - Verify User Management
+Verify that Functional Administrators can manage user details and roles including creation -  updates -  and deletions. - Functional Administrator logged in.
+1. Log into the RFMSS application as an FA.
+2. Navigate to Administration > User.
+3. Create/update/delete user details and assign roles.
+    *Expected Results:* User details and roles are correctly created -  updated -  or deleted.
+    Test Data: User details and roles
+    RQ_061
+
+RFMSS-SMK-440 - Background Jobs - Verify Background Jobs Configuration
+Verify that Functional Administrators can configure and monitor background jobs. - Functional Administrator logged in.
+1. Log in as FA.
+2. Navigate to Administration > Background Jobs.
+3. Configure background jobs settings.
+4. Monitor job executions.
+    *Expected Results:* Background jobs are correctly configured and executed as scheduled.
+    Test Data: Background jobs settings
+    RQ_062

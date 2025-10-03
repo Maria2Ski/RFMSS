@@ -1,0 +1,919 @@
+﻿Test Case ID,Module Name,Title,Description/User Story,Preconditions,#,Steps,Expected Results,Test Data,Defect/Remarks,ReqID,Status,Automation,Test Type,Type of Test Case,Priority,State
+RFMSS-212,,Verify Functional Administrator Can Create an Announcement,,FA is logged into RFMSS,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.4 Announcements,,,,,,
+,,,,,,2. Navigate to Administration : Announcements.,2. The Administration : Announcements table grid page is displayed.,,,,,,,,,
+,,,,,,3. Select the 'new' link under the Action column.,"3. The Administration : Announcements : Announcement page is displayed with the following fields:
+* Send an email with the announcement [checkbox]
+*Send a mass email only. (No announcement will be posted on RFMSS front page). [checkbox]
+* Title/Subject
+* Start Date (required)
+* Expiration Date
+* Dashboard Message Text (required)
+* Roles to Recieve Message (required)
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"4. Enter announcement details for the following fields:
+* Title/Subject = NEW ANNOUNCEMENT
+* Start Date (required) = TODAY's DATE
+* Expiration Date: 2 days from today
+* Dashboard Message Text (required) = NEW ANNOUCEMENT FOR TODAY
+* Roles to Recieve Message (required) = SELECT ALL CHECKBOXES",4. The system allows changes to all editable fields.,"* Title/Subject = NEW ANNOUNCEMENT
+* Start Date (required) = TODAY's DATE
+* Expiration Date: 7 days from today
+* Dashboard Message Text (required) = NEW ANNOUCEMENT FOR TODAY
+* Roles to Recieve Message (required) = SELECT ALL CHECKBOXES",,,,,,,,
+,,,,,,5. Select the [SAVE] button.,5. The Administration : Announcements table grid page is displayed.,,,,,,,,,
+,,,,,,6. Select the [Home] navigation button.,6. Verify that 'NEW ANNOUCEMENT' is displayed at the top of the Home page.,,,,,,,,,
+,,,,,,"7. Select the Logout link.
+
+","7. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-219,,Verify Functional Administrator Can Send a Mass Email with Announcement,,FA is logged into RFMSS and Announcement record is available for edit.,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.4 Announcements,,,,,,
+,,,,,,2. Navigate to Administration : Announcements.,2. The Administration : Announcements table grid page is displayed.,,,,,,,,,
+,,,,,,". Select the 'edit' link under the Action column next to the ""NEW ANNOUCEMENT"" title.",". The Administration : Announcements : Announcement page is displayed with the following fields:
+* Send an email with the announcement [checkbox]
+*Send a mass email only. (No announcement will be posted on RFMSS front page). [checkbox]
+* Title/Subject
+* Start Date (required)
+* Expiration Date
+* Dashboard Message Text (required)
+* Roles to Recieve Message (required)
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,3. Select the [checkbox] 'Send a mass email only. (No announcement will be posted on RFMSS front page)'.,3. Email Message Text box displays after the Dashboard Message Text box.,"* Dashboard Message Text (required) = NEW ANNOUCEMENT FOR TODAY
+* Email Message Text = NEW ANNOUNCEMENT FOR TODAY",,,,,,,,
+,,,,,,4. ,4. ,,,,,,,,,
+,,,,,,". Enter ""Email message text"" in the the Email Message Text box.",. The system allows changes to all editable fields.,,,,,,,,,
+,,,,,,"5. Modify the 'Roles to Recieve Message' and only select the following roles: RC-SCHED, FDO, FA, and FDFA.",5. The system allows changes to all editable fields.,,,,,,,,,
+,,,,,,6. Select the [SAVE] button.,6. The Administration : Announcements table grid page is displayed.,FAIL - The updated ROLES were not updated. NEED TO RETEST.,,,,,,,,
+,,,,,,"7. Select the Logout link.
+
+","7. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-2118,,Verify Functional Administrator Can Format Announcement Text,,FA is logged into RFMSS and Announcement record is available for edit.,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.4 Announcements,,,,,,
+,,,,,,2. Navigate to Administration : Announcements.,2. The Administration : Announcements table grid page is displayed.,,,,,,,,,
+,,,,,,". Select the 'edit' link under the Action column next to the ""BASIC COMBAT TRAINING"" title.",". The Administration : Announcements : Announcement page is displayed with the following fields:
+* Send an email with the announcement [checkbox]
+*Send a mass email only. (No announcement will be posted on RFMSS front page). [checkbox]
+* Title/Subject
+* Start Date (required)
+* Expiration Date
+* Dashboard Message Text (required)
+* Roles to Recieve Message (required)
+* [SAVE]
+* [CANCEL]","Title: ""BASIC COMBAT TRAINING""",,,,,,,,
+,,,,,,"3. Select the text ""PUBLIC SERVICE ANNOUNCEMENT FOR IMMEDIATE RELEASE"" to format to Bold; ""CONTACT: TESTING RANGE CONTROL UNIT"" format to Bold Itallic text.",3. Formatting is options is applied to the selected text.,,,,,,,,,
+,,,,,,4. Select the [SAVE] button.,4. The Administration : Announcements table grid page is displayed.,"Formatted Text: Bold Text, Italic Text",,,,,,,,
+,,,,,,5. Select the [Home] navigation button.,"5. Verify that ""BASIC COMBAT TRAINING"" is displayed with the updated formatted text.",,,,,,,,,
+,,,,,,"6. Select the Logout link.
+
+","6. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-2125,,Verify Functional Administrator Can Copy Dashboard Message Text to Email,,FA is logged into RFMSS and Dashboard Message Text is available.,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.4 Announcements,,,,,,
+,,,,,,2. Navigate to Administration : Announcements.,2. The Administration : Announcements table grid page is displayed.,"Title: ""Copied Announcement""",,,,,,,,
+,,,,,,"3. Select the 'edit' link under the Action column next to the ""NEW ANNOUCEMENT"" title.","3. The Administration : Announcements : Announcement page is displayed with the following fields:
+* Send an email with the announcement [checkbox]
+*Send a mass email only. (No announcement will be posted on RFMSS front page). [checkbox]
+* Title/Subject
+* Start Date (required)
+* Expiration Date
+* Dashboard Message Text (required)
+* Roles to Recieve Message (required)
+* [SAVE]
+* [CANCEL]","Dashboard Message Text: ""This is a test message.""",,,,,,,,
+,,,,,,4. Select the [checkbox] 'Send an email with the announcement'.,4. Email Message Text box displays after the Dashboard Message Text box.,,,,,,,,,
+,,,,,,5. Select the 'Copy from Dashboard Message Text' link.,5. The text from the Dashboard Message Text box is copied to the the Email Message Text box.,,,,,,,,,
+,,,,,,"6. Modify the Email Message Text box and add ""EMAIL"" before ""ANNOUNCEMENT"".",6. The system allows changes to all editable fields.,Email is associated with the FA user.,,,,,,,,
+,,,,,,7. Select the [SAVE] button.,"7. The Administration : Announcements table grid page is displayed with the updated Annoucement text.
+Validate that the Annoucement message is sent to the appropriate email recipents.",Email is associated with the FA user.,,,,,,,,
+,,,,,,8. Select the [Home] navigation button.,"8. Verify that ""NEW EMAILANNOUCEMENT"" is displayed with the updated formatted text.",,,,,,,,,
+,,,,,,"9. Select the Logout link.
+
+","9. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-2134,,Verify Functional Administrator Can Select Roles to Receive Announcement,,FA is logged into RFMSS and Announcement exists.,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.4 Announcements,,,,,,
+,,,,,,2. Navigate to Administration : Announcements.,2. The Administration : Announcements table grid page is displayed.,"Title: ""Role-Specific Announcement""",,,,,,,,
+,,,,,,"3. Select the 'edit' link under the Action column next to the ""RANGE/TRAINING AREA CANCELATIONS"" title.","3. The Administration : Announcements : Announcement page is displayed with the following fields:
+* Send an email with the announcement [checkbox]
+*Send a mass email only. (No announcement will be posted on RFMSS front page). [checkbox]
+* Title/Subject
+* Start Date (required)
+* Expiration Date
+* Dashboard Message Text (required)
+* Roles to Recieve Message (required)
+* [SAVE]
+* [CANCEL]","Roles: ""Scheduler"", ""Admin""",,,,,,,,
+,,,,,,"4. Modify the 'Roles to Recieve Message' and only select the following roles: RC-SCHED, FDO, FA, and FDFA.",4. The system allows changes to all editable fields.,,,,,,,,,
+,,,,,,5. Select the [SAVE] button.,5. The Administration : Announcements table grid page is displayed.,,,,,,,,,
+,,,,,,"6. Select the Logout link.
+
+","6. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-2140,,Verify Functional Administrator Can Edit an Existing Announcement,,FA is logged into RFMSS and Announcement exists,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.4 Announcements,,,,,,
+,,,,,,2. Navigate to Administration : Announcements.,2. The Administration : Announcements table grid page is displayed.,,,,,,,,,
+,,,,,,"3. Select the 'edit' link under the Action column next to the ""RANGE/TRAINING AREA CANCELATIONS"" title.","3. The Administration : Announcements : Announcement page is displayed with the following fields:
+* Send an email with the announcement [checkbox]
+*Send a mass email only. (No announcement will be posted on RFMSS front page). [checkbox]
+* Title/Subject
+* Start Date (required)
+* Expiration Date
+* Dashboard Message Text (required)
+* Roles to Recieve Message (required)
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"4. Update announcement details for the following fields:
+*Expiration Date = 150 days from TODAY's date.",4. The system allows changes to all editable fields.,Changes: Update Expiration Date,,,,,,,,
+,,,,,,5. Select the [SAVE] button.,5. The Administration : Announcements table grid page is displayed.,,,,,,,,,
+,,,,,,"6. Select the Logout link.
+
+","6. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-2146,,Verify Functional Administrator Can Delete an Announcement,,FA is logged into RFMSS and Announcement record is available for delete.,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.4 Announcements,,,,,,
+,,,,,,2. Navigate to Administration : Announcements.,2. The Administration : Announcements table grid page is displayed.,,,,,,,,,
+,,,,,,3. Select the 'new' link under the Action column.,"3. The Administration : Announcements : Announcement page is displayed with the following fields:
+* Send an email with the announcement [checkbox]
+*Send a mass email only. (No announcement will be posted on RFMSS front page). [checkbox]
+* Title/Subject
+* Start Date (required)
+* Expiration Date
+* Dashboard Message Text (required)
+* Roles to Recieve Message (required)
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"4. Enter announcement details for the following fields:
+* Title/Subject = TESTING DELETE FUNCTION
+* Roles to Recieve Message (required) = SELECT ALL CHECKBOXES",4. The system allows changes to all editable fields.,"Title: ""TESTING DELETE FUNCTION""",,,,,,,,
+,,,,,,5. Select the [SAVE] button.,5. The Administration : Announcements table grid page is displayed.,,,,,,,,,
+,,,,,,"6. Select the 'delete' link under the Action column next to the ""TESTING DELETE FUNCTION"" title.","6. The Administration : Announcements Announcement page is displayed with a system message: ""Are you sure you want to delete TESTING DELETE FUNCTION? [CONTINUE] [CANCEL]",,,,,,,,,
+,,,,,,7. Select the [CONTINUE] button.,7. The TESTING DELETE FUNCTION record is no longer displayed in the Announcements table grid.,,,,,,,,,
+,,,,,,"8. Select the Logout link.
+
+","8. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-2154,,Verify Functional Administrator Can View Expired Announcements,,FA is logged into RFMSS and expired Announcements exists.,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.4 Announcements,,,,,,
+,,,,,,2. Navigate to Administration : Announcements.,2. The Administration : Announcements table grid page is displayed.,,,,,,,,,
+,,,,,,"3. Select ""show expired announcements"".",3. Verify that the Announcement record from TC-UA_001 is a record that is visible in the table grid.,,,,,,,,,
+,,,,,,"4. Select ""hide expired announcements"".",4. The Administration : Announcements table grid page is displayed.,,,,,,,,,
+RFMSS-2158,,Verify Functional Administrator Can Set Expiration Date for Announcements,,FA is logged into RFMSS,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.4 Announcements,,,,,,
+,,,,,,2. Navigate to Administration : Announcements.,2. The Administration : Announcements table grid page is displayed.,,,,,,,,,
+,,,,,,3. Select the 'new' link under the Action column.,"3. The Administration : Announcements : Announcement page is displayed with the following fields:
+* Send an email with the announcement [checkbox]
+*Send a mass email only. (No announcement will be posted on RFMSS front page). [checkbox]
+* Title/Subject
+* Start Date (required)
+* Expiration Date
+* Dashboard Message Text (required)
+* Roles to Recieve Message (required)
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"4. Enter announcement details for the following fields:
+* Title/Subject = TESTING EXIRED DATE FUNCTION
+* Set Expiration Date = TODAY's DATE
+* Roles to Recieve Message (required) = SELECT ALL CHECKBOXES",4. The system allows changes to all editable fields.,,,,,,,,,
+,,,,,,5. Select the [SAVE] button.,5. The Administration : Announcements table grid page is displayed.,,,,,,,,,
+,,,,,,"6. Select the Logout link.
+
+","6. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+,,,,,,"7. Open the RFMSS website and login with an FA credentials after the Expiration Date for Annoucement ""TESTING EXPIRED DATE FUNCTION"".","7. Observe the Annoucement ""TESTING EXPIRED DATE FUNCTION"" is no longer displayed in the Annoucements table grid.",,,,,,,,,
+,,,,,,"8. Select ""show expired announcements"".","8. Verify the Annoucement ""TESTING EXPIRED DATE FUNCTION"" is displayed in the table grid.",,,,,,,,,
+,,,,,,"9. Select ""hide expired announcements"".",9. The Administration : Announcements table grid page is displayed.,,,,,,,,,
+,,,,,,"10. Select the Logout link.
+
+","10. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-2168,,Verify Functional Administrator Can Schedule Announcement for Future Date,,FA is logged into RFMSS,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.4 Announcements,,,,,,
+,,,,,,2. Navigate to Administration : Announcements.,2. The Administration : Announcements table grid page is displayed.,,,,,,,,,
+,,,,,,3. Select the 'new' link under the Action column.,"3. The Administration : Announcements : Announcement page is displayed with the following fields:
+* Send an email with the announcement [checkbox]
+*Send a mass email only. (No announcement will be posted on RFMSS front page). [checkbox]
+* Title/Subject
+* Start Date (required)
+* Expiration Date
+* Dashboard Message Text (required)
+* Roles to Recieve Message (required)
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"4. Enter announcement details for the following fields:
+* Title/Subject = SCHEDULE ANNOUNCEMENT FOR FUTURE DATE
+* Set Expiration Date = TOMORROW's DATE
+* Roles to Recieve Message (required) = SELECT ALL CHECKBOXES",4. The system allows changes to all editable fields.,,,,,,,,,
+,,,,,,5. Select the [SAVE] button.,5. The Administration : Announcements table grid page is displayed. Validate the new record.,,,,,,,,,
+,,,,,,"6. Select the Logout link.
+
+","6. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+,,,,,,"7. Open the RFMSS website and login with an FA credentials for the scheduled Date for the Annoucement ""SCHEDULE ANNOUNCEMENT FOR FUTURE DATE"".","7. Observe the Annoucement ""SCHEDULE ANNOUNCEMENT FOR FUTURE DATE"" is displayed in the Annoucements table grid.","Title: ""SCHEDULE ANNOUNCEMENT FOR FUTURE DATE""",,,,,,,,
+,,,,,,"8. Select the Logout link.
+
+","8. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",Start Date: Tomorrow's Date from the current day.,,,,,,,,
+RFMSS-2176,,Verify Functional Administrator Cannot Edit or Delete Expired Announcements,,FA is logged into RFMSS and Annoucement record is expired.,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,H1112 (req id),6.4 Announcements,,,,,,
+,,,,,,2. Navigate to Administration : Announcements.,2. The Administration : Announcements table grid page is displayed.,,,,,,,,,
+,,,,,,"3. Select ""show expired announcements"".","3. Verify the Annoucement ""TESTING EXPIRED DATE FUNCTION"" is displayed in the table grid.
+Verify that it is VIEW-ONLY and FA is not allowed to edit or delete expired announcement.",,,,,,,,,
+,,,,,,"7. Select the Logout link.
+
+","7. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-2180,,Verify Functional Administrator Can Edit User,,FA is logged into RFMSS and User exists,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.12.6 Manage User Account,,,,,,
+,,,,,,2. Navigate to Administration : User : Users.,2. The Administration : User : Users table grid is displayed.,,,,,,,,,
+,,,,,,"3. Enter ""MS"" in the Username filter field.","3. Records that contains ""MS"" displays as the result.",Username: MS-ALL,,,,,,,,
+,,,,,,4. Select the 'edit' under the Action column for Username = MS-ALL,"4. The Administration : User : Users : User page is displayed with the following fields:
+* Last Name [required]
+* First Name [required]
+* Official Email [required]
+* Middle Name
+* Phone Number [required]
+* Rank
+* Purpose for Account [required]
+* Freeze Column Headers on Wide Grids [CHECKBOX]
+* Automatic Scheduler Approval [CHECKBOX]
+* Username [required]
+* Account Status [required]
+* Challenge Question
+* Answer
+* Confirm Answer
+* Allow User To Reset Password Within 24 Hours One Time [CHECKBOX]
+* Fire Desk Selection for FDO or RC-SCHED roles [CHECKBOXES]
+* Email Notification Type Selection [CHECKBOXES]
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"5. Update details for the following fields:
+* Last Name [required] = Doe
+* First Name [required] = Jane",5. The system allows changes to all editable fields.,"Last Name: Doe
+First Name: Jane",,,,,,,,
+,,,,,,6. Select the [SAVE] button.,"6. The Administration : User : Users : User page is displayed.
+Validate the Last Name and First Name were updated to Doe, Jane",,,,,,,,,
+,,,,,,"7. Select the Logout link.
+
+","7. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-2187,,Verify Functional Administrator Can Reactivate User,,FA is logged into RFMSS and User exists and is locked out.,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.12.6 Manage User Account,,,,,,
+,,,,,,2. Navigate to Administration : User : Users.,2. The Administration : User : Users table grid is displayed.,,,,,,,,,
+,,,,,,"3. Enter ""MS"" in the Username filter field.","3. Records that contains ""MS"" displays as the result. Make note that MS-ENV Account Status is SYSTEM DEACTIVATED.",Username: MS-ENV,,,,,,,,
+,,,,,,4. Select the 'set to active' under the Action column for Username = MS-ENV,"4. The Administration : User : Users : Unlock Account Confirmation with the following system message: ""M SKI account is currently SYSTEM DEACTIVATED. Please confirm to have their account ACTIVE. The user will have 24 hours to log in or the account will remain deactivated.""
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,5. Select the [SAVE] button.,"5. The Administration : User : Users table grid is displayed.
+Validate that MS-ENV is in ACTIVE status.",,,,,,,,,
+,,,,,,"6. Select the Logout link.
+
+","6. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-2193,,Verify Functional Administrator Can Delete User,,FA is logged into RFMSS and User exists,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.12.6 Manage User Account,,,,,,
+,,,,,,2. Navigate to Administration : User : Users.,2. The Administration : User : Users table grid is displayed.,,,,,,,,,
+,,,,,,"3. Enter ""SMITH"" in the Last Name filter field.","3. Records that contains ""SMITH"" displays as the result. ",USERNAME = SMITHMATT,,,,,,,,
+,,,,,,4. Select 'delete' under the Action column for Username = SMITHMATT,"4. The Administration : User : UsersUser  table grid is displayed with a system message: ""Are you sure you want to delete SMITHMATT? [CONTINUE] [CANCEL]",USERNAME = SMITHMATT,,,,,,,,
+,,,,,,5. Select the [CONTINUE] button.,"5. The Administration : User : Users table grid is displayed.
+Validate that SMITHMATTrecord no longer displays in the table grid.",,,,,,,,,
+,,,,,,6. Select the 'show deleted' link.,"6. The Administration : User : Users table grid is displayed.
+Validate that SMITHMATTrecord is displayed in the table grid.
+Make note that the 'SMITH' filter for the Last Name remains.",,,,,,,,,
+,,,,,,7. Select the 'hide deleted' link.,7. The Administration : User : Users table grid is displayed.,,,,,,,,,
+,,,,,,8. Clear the filter for the Last Name field by seleting the [X] icon.,8. The Administration : User : Users table grid is displays all records.,,,,,,,,,
+,,,,,,"9. Select the Logout link.
+
+","9. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-21102,,Verify Functional Administrator Can Update User's Email Notification Type Selection.,,FA is logged into RFMSS and User exists,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.12.6 Manage User Account,,,,,,
+,,,,,,2. Navigate to Administration : User : Users.,2. The Administration : User : Users table grid is displayed.,,,,,,,,,
+,,,,,,"3. Enter ""MS"" in the Username filter field.","3. Records that contains ""MS"" displays as the result.",Username: MS-ALL,,,,,,,,
+,,,,,,4. Select the 'edit' under the Action column for Username = MS-ALL,"4. The Administration : User : Users : User page is displayed with the following fields:
+* Last Name [required]
+* First Name [required]
+* Official Email [required]
+* Middle Name
+* Phone Number [required]
+* Rank
+* Purpose for Account [required]
+* Freeze Column Headers on Wide Grids [CHECKBOX]
+* Automatic Scheduler Approval [CHECKBOX]
+* Username [required]
+* Account Status [required]
+* Challenge Question
+* Answer
+* Confirm Answer
+* Allow User To Reset Password Within 24 Hours One Time [CHECKBOX]
+* Fire Desk Selection for FDO or RC-SCHED roles [CHECKBOXES]
+* Email Notification Type Selection [CHECKBOXES]
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"5. Update the Email Notification Type Selection:
+* USER ASSOCIATED WITH ACCOUNT [UNCHECK]",5. The system allows changes to all editable fields.,"Last Name: Doe
+First Name: Jane",,,,,,,,
+,,,,,,6. Select the [SAVE] button.,6. The Administration : User : Users table grid is displayed and the User account is updated.,,,,,,,,,
+,,,,,,"7. Select the Logout link.
+
+","7. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-21109,,Verify Functional Administrator Can Edit User's Role and User Account Information.,,FA is logged into RFMSS and User exists,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.12.6 Manage User Account,,,,,,
+,,,,,,2. Navigate to Administration : User : Users.,2. The Administration : User : Users table grid is displayed.,,,,,,,,,
+,,,,,,"3. Enter ""MS"" in the Username filter field.","3. Records that contains ""MS"" displays as the result.",,,,,,,,,
+,,,,,,4. Select the 'edit' under the Action column for Username = MS-ALL,"4. The Administration : User : Users : User page is displayed with the following fields:
+* Last Name [required]
+* First Name [required]
+* Official Email [required]
+* Middle Name
+* Phone Number [required]
+* Rank
+* Purpose for Account [required]
+* Freeze Column Headers on Wide Grids [CHECKBOX]
+* Automatic Scheduler Approval [CHECKBOX]
+* Username [required]
+* Account Status [required]
+* Challenge Question
+* Answer
+* Confirm Answer
+* Allow User To Reset Password Within 24 Hours One Time [CHECKBOX]
+* Fire Desk Selection for FDO or RC-SCHED roles [CHECKBOXES]
+* Email Notification Type Selection [CHECKBOXES]
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"5. Update the following fields:
+* Middle Name = MICHELE
+* Purpose for Account = TESTING RFMSS FUNCTIONALITY
+* New Challenge Question = WHAT IS YOUR MOTHER'S MAIDEN NAME?
+* New Answer = ANSWER
+* Confirm New Answer = ANSWER",5. The system allows changes to all editable fields.,"* Middle Name = MICHELE
+* Purpose for Account = TESTING RFMSS FUNCTIONALITY
+* New Challenge Question = WHAT IS YOUR MOTHER'S MAIDEN NAME?
+* New Answer = ANSWER
+* Confirm New Answer = ANSWER",The Challenge question seems to reset everytime an update to a user is initiated.,,,,,,,
+,,,,,,6. Select the [SAVE] button.,6. The Administration : User : Users table grid is displayed and the User account is updated.,,,,,,,,,
+,,,,,,"7. Select the Logout link.
+
+","7. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-21116,,Verify Functional Administrator Can View Pending User Accounts and Modify User Role,,FA is logged into RFMSS and Pending user accounts exist.,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.12.6 Manage User Account,,,,,,
+,,,,,,2. Navigate to Administration : User : Pending User Accounts.,2. The Administration : User : Pending User Accounts table grid is displayed.,,,,,,,,,
+,,,,,,3. Select the 'edit' under the Action column for Username = SMITHDELETE,"3. The Administration : User : Pending User Accounts : User page is displayed with the following fields:
+* Last Name [required]
+* First Name [required]
+* Official Email [required]
+* Middle Name
+* Phone Number [required]
+* Rank
+* Purpose for Account [required]
+* Freeze Column Headers on Wide Grids [CHECKBOX]
+* Automatic Scheduler Approval [CHECKBOX]
+* Username [required]
+* Account Status [required]
+* Challenge Question
+* Answer
+* Confirm Answer
+* Allow User To Reset Password Within 24 Hours One Time [CHECKBOX]
+* Fire Desk Selection for FDO or RC-SCHED roles [CHECKBOXES]
+* Email Notification Type Selection [CHECKBOXES]
+* [SAVE]
+* [CANCEL]",Username = SMITHDELETE,,,,,,,,
+,,,,,,4. Select [EDIT ROLES] button.,4. The Administration : User : Pending User Accounts table grid is displayed.,,,,,,,,,
+,,,,,,5. Select the FDO [CHECKBOX].,5. The system allows changes to all editable fields.,,,,,,,,,
+,,,,,,6. Select the [CONTINUE] button.,6. The Administration : User : Pending User Accounts : User page is displayed with the added role.,ROLE update = FDO,,,,,,,,
+,,,,,,7. Select the [SAVE] button.,7. The Administration : User : Users table grid is displayed and the User account is updated.,,,,,,,,,
+,,,,,,"8. Select the Logout link.
+
+","8. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-21124,,Verify Functional Administrator Can Disapproved Pending User Accounts,,FA is logged into RFMSS and Pending user accounts exist,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.12.6 Manage User Account,,,,,,
+,,,,,,2. Scroll to the bottom of the Home page and select the 'pending user account requests' link.,2. The Administration : User : Pending User Accounts table grid is displayed.,,,,,,,,,
+,,,,,,3. Select the 'edit' under the Action column for Username = SMITHREJECT,"3. The Administration : User : Pending User Accounts : User page is displayed with the following fields:
+* Last Name [required]
+* First Name [required]
+* Official Email [required]
+* Middle Name
+* Phone Number [required]
+* Rank
+* Purpose for Account [required]
+* Freeze Column Headers on Wide Grids [CHECKBOX]
+* Automatic Scheduler Approval [CHECKBOX]
+* Username [required]
+* Account Status [required]
+* Challenge Question
+* Answer
+* Confirm Answer
+* Allow User To Reset Password Within 24 Hours One Time [CHECKBOX]
+* Fire Desk Selection for FDO or RC-SCHED roles [CHECKBOXES]
+* Email Notification Type Selection [CHECKBOXES]
+* [SAVE]
+* [CANCEL]",Username = SMITHREJECT,,,,,,,,
+,,,,,,4. Select the Account Status dropdown from PENDING to DISAPPROVED,4. The system allows changes to all editable fields.,,,,,,,,,
+,,,,,,5. Select the [SAVE] button.,5. The Administration : User : Pending User Accounts table grid is displayed.,,,,,,,,,
+,,,,,,6. Select the 'show disapproved' link above the table grid.,6. The Administration : User : Pending User Accounts table grid is displayed.,,,,,,,,,
+,,,,,,7. Enter 'SMITH' in the Username filter field.,"7. The results displays any records that contains 'SMITH.
+Validate that SMITHDELETE is one of the record.",,,,,,,,,
+,,,,,,8. Select the 'hide disapproved' link above the table grid.,8. The Administration : User : Pending User Accounts table grid is displayed and make note the filter for the Username remains.,,,,,,,,,
+,,,,,,9. Clear the filter for the Last Name field by seleting the [X] icon.,9. The Administration : User : Pending User Accounts table grid displays all records.,,,,,,,,,
+,,,,,,"10. Select the Logout link.
+
+","10. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-21134,,Verify Functional Administrator Can Modify User Account Details,,FA is logged into RFMSS and User account exists.,,1. Open the RFMSS website and login with an FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.12.6 Manage User Account,,,,,,
+,,,,,,2. Navigate to Administration : User : Users.,2. The Administration : User : Users table grid is displayed.,,,,,,,,,
+,,,,,,. Enter 'SMITH' in the Username filter field.,. The filter results displays records that contains 'SMITH'.,,,,,,,,,
+,,,,,,3. Select the 'edit' under the Action column for Username = SMITHDELETE,"3. The Administration : User : Users page is displayed with the following fields:
+* Last Name [required]
+* First Name [required]
+* Official Email [required]
+* Middle Name
+* Phone Number [required]
+* Rank
+* Purpose for Account [required]
+* Freeze Column Headers on Wide Grids [CHECKBOX]
+* Automatic Scheduler Approval [CHECKBOX]
+* Username [required]
+* Account Status [required]
+* Challenge Question
+* Answer
+* Confirm Answer
+* Allow User To Reset Password Within 24 Hours One Time [CHECKBOX]
+* Fire Desk Selection for FDO or RC-SCHED roles [CHECKBOXES]
+* Email Notification Type Selection [CHECKBOXES]
+* [SAVE]
+* [CANCEL]",Username = SMITHDELETE,,,,,,,,
+,,,,,,"4. Update the following fields:
+* New Challenge Question = WHAT IS YOUR FATHER'S MIDDLE  NAME?
+* New Answer = ANSWER
+* Confirm New Answer = ANSWER",4. The system allows changes to all editable fields.,"* New Challenge Question = WHAT IS YOUR FATHER'S MIDDLE  NAME?
+* New Answer = ANSWER
+* Confirm New Answer = ANSWER",The Challenge question seems to reset everytime an update to a user is initiated.,,,,,,,
+,,,,,,"5. Add the following Fire Desk checkboxes:
+* TESTER-FIRE-DESK-100
+* TESTER-FIRE-DESK-11",5. The system allows changes to all editable fields.,"TESTER-FIRE-DESK-100, TESTER-FIRE-DESK-11",,,,,,,,
+,,,,,,6. Select the [SAVE] button.,"6. The Administration : User : Users table grid is displayed.
+Validate the Fire Deskscolumn updated the following values [TESTER-FIRE-DESK-100, TESTER-FIRE-DESK-11].","TESTER-FIRE-DESK-100, TESTER-FIRE-DESK-11",,,,,,,,
+,,,,,,"7. Select the Logout link.
+
+","7. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-21142,,Verify Functional Administrator Can Reset User Password,,FA is logged into RFMSS and User account exists.,,1. Open the RFMSS website and login with FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.12.6 Manage User Account,,,,,,
+,,,,,,2. Navigate to Administration : User : Users.,2. The Administration : User : Users table grid is displayed.,,,,,,,,,
+,,,,,,. Enter 'SMITH' in the Username filter field.,. The filter results displays records that contains 'SMITH'.,,,,,,,,,
+,,,,,,3. Select the 'edit' under the Action column for Username = SMITHDELETE,"3. The Administration : User : Users page is displayed with the following fields:
+* Last Name [required]
+* First Name [required]
+* Official Email [required]
+* Middle Name
+* Phone Number [required]
+* Rank
+* Purpose for Account [required]
+* Freeze Column Headers on Wide Grids [CHECKBOX]
+* Automatic Scheduler Approval [CHECKBOX]
+* Username [required]
+* Account Status [required]
+* Challenge Question
+* Answer
+* Confirm Answer
+* Allow User To Reset Password Within 24 Hours One Time [CHECKBOX]
+* Fire Desk Selection for FDO or RC-SCHED roles [CHECKBOXES]
+* Email Notification Type Selection [CHECKBOXES]
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,4. Select the [CHECKBOX] next to the 'Allow User To Reset Password Within 24 Hours One Time'.,4. The system allows changes to all editable fields and make note of the time from when the checkbox was selected.,,,,,,,,,
+,,,,,,5. Select the [SAVE] button.,5. The Administration : User : Users table grid is displayed.,,,,,,,,,
+,,,,,,"6. Select the Logout link.
+
+","6. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+,,,,,,7. Attempt to login to the RFMSS website with the User Account credentials from Step #3.,"7. An system message displays ""Invalid Username/Password"" displays.",,Not sure if this is the correct workflow for this.,,,,,,,
+RFMSS-21142,,Verify Functional Administrator Can FA Lock a User Account,,FA is logged into RFMSS and User account exists.,,1. Login to the RFMSS website with  FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.12.6 Manage User Account,,,,,,
+,,,,,,2. Navigate to Administration : User : Users.,2. The Administration : User : Users table grid is displayed.,Username: SMITHREJECT,,,,,,,,
+,,,,,,3. Enter 'SMITH' in the Username filter field.,3. The filter results displays records that contains 'SMITH'.,,,,,,,,,
+,,,,,,4. Select the 'edit' under the Action column for Username = SMITHREJECT,"4. The Administration : User : Users page is displayed with the following fields:
+* Last Name [required]
+* First Name [required]
+* Official Email [required]
+* Middle Name
+* Phone Number [required]
+* Rank
+* Purpose for Account [required]
+* Freeze Column Headers on Wide Grids [CHECKBOX]
+* Automatic Scheduler Approval [CHECKBOX]
+* Username [required]
+* Account Status [required]
+* Challenge Question
+* Answer
+* Confirm Answer
+* Allow User To Reset Password Within 24 Hours One Time [CHECKBOX]
+* Fire Desk Selection for FDO or RC-SCHED roles [CHECKBOXES]
+* Email Notification Type Selection [CHECKBOXES]
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,5. Select the Account Status dropdown from ACTIVE to FA LOCKED.,5. The system allows changes to all editable fields.,,,,,,,,,
+,,,,,,6. Select the [SAVE] button.,"6. The Administration : User : Users table grid is displayed.
+Validate that SMITHREJECT Account Status is FA LOCKED and the Action columns has the added 'set to active' link.",,,,,,,,,
+,,,,,,"7. Select the Logout link.
+
+","7. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-21157,,Verify FA can unlock user account not verify within 30 days after user account creation..,,FA is logged into RFMSS and User account exists.,,1. Login to the RFMSS website with  FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.12.6 Manage User Account,,,,,,
+,,,,,,2. Navigate to Administration : User : Users.,2. The Administration : User : Users table grid is displayed.,,,,,,,,,
+,,,,,,3. Enter 'SMITH' in the Username filter field.,3. The filter results displays records that contains 'SMITH'.,,,,,,,,,
+,,,,,,4. Select the 'set to active' under the Action column for Username = SMITHREJECT,"4. The Administration : User : Users page is displayed with the following fields:
+* Last Name [required]
+* First Name [required]
+* Official Email [required]
+* Middle Name
+* Phone Number [required]
+* Rank
+* Purpose for Account [required]
+* Freeze Column Headers on Wide Grids [CHECKBOX]
+* Automatic Scheduler Approval [CHECKBOX]
+* Username [required]
+* Account Status [required]
+* Challenge Question
+* Answer
+* Confirm Answer
+* Allow User To Reset Password Within 24 Hours One Time [CHECKBOX]
+* Fire Desk Selection for FDO or RC-SCHED roles [CHECKBOXES]
+* Email Notification Type Selection [CHECKBOXES]
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,5. Select the Account Status dropdown from SYTEM LOCK to ACTIVE.,5. The system allows changes to all editable fields.,,,,,,,,,
+,,,,,,6. Select the [SAVE] button.,"6. The Administration : User : Users table grid is displayed.
+Validate that SMITHREJECT Account Status is ACTIVE.",,,,,,,,,
+,,,,,,"7. Select the Logout link.
+
+","7. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-21164,,Verify Functional Administrator Can Reactivate a Disapproved User Account,,FA is logged into RFMSS a Disapproved User account exists.,,1. Attempt to login to the RFMSS website with a Disapproved User Account credentials.,1. A system message returns: You may not log in. This user account is DISAPPROVED.,Username: SMITHREJECT,,6.12.6 Manage Pending User Account,,,,,,
+,,,,,,2. Login to the RFMSS website with  FA credentials.,"2. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,,,,,,,
+,,,,,,3. Navigate to Administration : User : Pending User Accounts.,3. The Administration : User : Pending User Accounts table grid is displayed.,,,,,,,,,
+,,,,,,4. Select the 'show disapproved' link above the table grid.,4. The Administration : User : Pending User Accounts table grid with DISAPPROVED Account Status records.,,,,,,,,,
+,,,,,,5. Enter 'SMITH' in the Username filter field.,5. The returned results displays recrods that contains 'SMITH'.,Username: SMITHREJECT,,,,,,,,
+,,,,,,6. Under the Action column select the 'reactivate' link next to SMITHREJECT Username.,6. The Administration : User : Pending User Accounts : User page is displayed.,,"Next to the Account status field ""To approve account, set Account Status to Active.  However, when I go in Users this account doesn't display tor the FA to reactive the account. NEED MORE INFORMATION and the HELP FILE doesn't provide details.
+
+Also, requested for a new user with the same Username/Person ID already exists.",,,,,,,
+,,,,,,7. Select the [SAVE] button.,"7. The User account has been set to ""ACTIVE"". ",,THIS IS VERY MISLEADING AS IT DOESN'T FOLLOW THE USER MODULE WORKFLOW WHERE THE FA SELECTS THE ACCOUNT STATUS DROP-DOWN TO SELECT THE APPROPRIATE STATUS AND THERE'S NO SYSTEM MESSAGE THAT NOTIFIES THE USER.,,,,,,,
+,,,,,,8. Navigate to Administration : User : Users.,8. The Administration : User : Users table grid is displayed.,,,,,,,,,
+,,,,,,9. Enter 'SMITH' in the Username filter field.,"9. The filter results displays records that contains ""SMITH'.
+Validate that the Account Status for SMITHREJECT is set to ACTIVE.",,,,,,,,,
+,,,,,,"10. Select the Logout link.
+
+","10. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-21174,,Verify Functional Administrator Can Delete a User Account,,FA is logged into RFMSS and User account exists.,,1. Open the RFMSS website and login with FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,6.12.6 Manage User Account,,,,,,
+,,,,,,2. Navigate to Administration : User : Users .,2. The Administration : User : Users table grid is displayed.,,,,,,,,,
+,,,,,,3. Enter 'SMITH' in the Username filter field.,3. The filter results displays records that contains 'SMITH'.,,,,,,,,,
+,,,,,,4. Select the 'delete' under the Action column for Username = SMITHDELETE,"4. The Administration : User : Users : User page is displayed with the following system message: 
+Are you sure you want to delete SMITHDELETE? [CONTINUE] [CANCEL].",Username = SMITHDELETE,,,,,,,,
+,,,,,,5. Select the [CONTINUE] button.,5. The Administration : User : Users  page is displayed and SMITHDELETE is no longer displayed in the table grid.,,,,,,,,,
+,,,,,,6. Select the 'show deleted' link.,6. The Administration : User : Users  page is displayed and SMITHDELETE is displayed in the deleted table grid.,,,,,,,,,
+,,,,,,"7. Select the Logout link.
+
+","7. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-21181,,Verify Functional Administrator Can View Background Jobs,,FA is logged into RFMSS,,1. Open the RFMSS website and login with FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",Unit: 11th Battalion,,1.1.1 Background Jobs,,,,,,
+,,,,,,2. Navigate to Administration : Background Jobs,"2. The Administration : Background Jobs table grid is displayed.
+Validate the FA user has the capability to view the Background Jobs and 'retry' any jobs.",,,,,,,,,
+,,,,,,"3. Observe that FA can view the following fields:
+* Job Name
+* Job Title
+* Schedule Date Time
+* User Scheduled
+* Job Status
+* Service Machine
+* Actual Start Date Time
+* Actual End Data Time
+* Error Message","3. The FA user can view the following fields:
+* Job Name
+* Job Title
+* Schedule Date Time
+* User Scheduled
+* Job Status
+* Service Machine
+* Actual Start Date Time
+* Actual End Data Time
+* Error Message",,,,,,,,,
+,,,,,,"4. Next to the Filter field for Job Name, select 'CONTAINS' with the filter options icon and enter 'NOTIFICATION' in the Job Name field.",4.  The results list records that contains 'NOTIFICATION' in the Job Name column.,,,,,,,,,
+,,,,,,"5. Select the Logout link.
+
+","5. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-21186,,Verify Functional Administrator Can Retry a Failed Job,,FA is logged into RFMSS and Job status is in error status.,,1. Open the RFMSS website and login with FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,1.1.1 Background Jobs,,,,,,
+,,,,,,2. Navigate to Administration : Background Jobs,2. The Administration : Background Jobs table grid is displayed.,,,,,,,,,
+,,,,,,3. Next to the Filter field for Job Status enter 'ERROR' in the Job Title field.,3.  The results list records that contains 'ERROR' in the Job Status column.,,,,,,,,,
+,,,,,,4. Select 'retry' under the Action column for the first record from the results list.,"4. The Administration : Background Jobs Background job page is displayed with a system message 'Are you sure you want to retry the job ""Retrieving updates on all FAA records fro the next 30 days?"" [RETRY] [CANCEL]",,,,,,,,,
+,,,,,,5. Select the [RETRY] button.,5. The Administration : Background Jobs table grid is displayed.,,Not sure what happened once it went back to the backgrounds table grid.,,,,,,,
+,,,,,,"6. Select the Logout link.
+
+","6. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-21192,,Verify Functional Administrator Cannot Rerun a Job with Past Date Range,,FA is logged into RFMSS and a Job date range has passed.,,1. Open the RFMSS website and login with FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,1.1.1 Background Jobs,,,,,,
+,,,,,,2. Navigate to Administration : Background Jobs,2. The Administration : Background Jobs table grid is displayed.,,,,,,,,,
+,,,,,,3. Next to the Filter field for Schedule Date Time select 'Is Less Than' for the filter option and  enter '05/08' in the Schedule Date Time field.,3.  The results list records that is less than '05/08/2025'.,,,,,,,,,
+,,,,,,4. Select 'retry' under the Action column for the first record from the results list.,"4. The Administration : Background Jobs Background job page is displayed with a system message 'Are you sure you want to retry the job ""Retrieving updates on all FAA records fro the next 30 days?"" [RETRY] [CANCEL]",,,,,,,,,
+,,,,,,5. Select the [RETRY] button.,"5. The Administration : Background Jobs table grid is displayed and the first record is now ""YELLOW"" ",,,,,,,,,
+,,,,,,"6. Select the Logout link.
+
+","6. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-21198,,Verify Functional Administrator Can View Job Error Messages,,FA is logged into RFMSS and Job is in error status.,,1. Open the RFMSS website and login with FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,1.1.1 Background Jobs,,,,,,
+,,,,,,2. Navigate to Administration : Background Jobs,2. The Administration : Background Jobs table grid is displayed.,,,,,,,,,
+,,,,,,3. Next to the Filter field for Job Status enter 'ERROR' in the Job Title field.,"3.  The results list records that contains 'ERROR' in the Job Status column.
+Validate that the FA can view the Error Message from the Error Message column.",,,,,,,,,
+,,,,,,"4. Select the Logout link.
+
+","4. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-21202,,Verify Functional Administrator Can View Job Status,,FA is logged into RFMSS and Job status exists.,,1. Open the RFMSS website and login with FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,1.1.1 Background Jobs,,,,,,
+,,,,,,2. Navigate to Administration : Background Jobs,2. The Administration : Background Jobs table grid is displayed.,,,,,,,,,
+,,,,,,3. Next to the Filter field for Job Status enter 'SCH' in the Job Title field.,3.  The results list records that contains 'SCHEDULED' in the Job Status column.,,,,,,,,,
+,,,,,,4. Next to the Filter field for Job Status enter 'COM' in the Job Title field.,4.  The results list records that contains 'COMPLETE' in the Job Status column.,,,,,,,,,
+,,,,,,5. Next to the Filter field for Job Status enter 'ERR' in the Job Title field.,5.  The results list records that contains 'ERROR' in the Job Status column.,,,,,,,,,
+,,,,,,6. Next to the Filter field for Job Status enter 'FET' in the Job Title field.,6.  The results list records that contains 'FETCHED' in the Job Status column.,,,,,,,,,
+,,,,,,"7. Select the Logout link.
+
+","7. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-21209,,Verify Functional Administrator Can Sort Jobs by Any Column,,FA is logged into RFMSS and Background Job exists.,,1. Open the RFMSS website and login with FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,1.1.1 Background Jobs,,,,,,
+,,,,,,2. Navigate to Administration : Background Jobs,2. The Administration : Background Jobs table grid is displayed.,,,,,,,,,
+,,,,,,3. Select the Job Name Column Header by the left-mouse button.,3. Verify the sort order is ascending order.,,,,,,,,,
+,,,,,,4. Select the Job Name Column Header by the left-mouse button.,4. Verify the sort order is decending order.,,,,,,,,,
+,,,,,,5. Select the Schedule Date Time Column Header by the left-mouse button.,5. Verify the sort order is ascending order.,,,,,,,,,
+,,,,,,6. Select the Schedule Date Time Column Header by the left-mouse button.,6. Verify the sort order is decending order.,,,,,,,,,
+,,,,,,"7. Select the Logout link.
+
+","7. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-21216,,Verify Functional Administrator Can Search for a Job by Title,,FA is logged into RFMSS and Background Job exists.,,1. Open the RFMSS website and login with FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,1.1.1 Background Jobs,,,,,,
+,,,,,,2. Navigate to Administration : Background Jobs,2. The Administration : Background Jobs table grid is displayed.,,,,,,,,,
+,,,,,,3. Select the drop-down link next to the Job Title header.,3. A sub-window displays with all the values.,,,,,,,,,
+,,,,,,4. Expand the sub-window by they bottom corner of the sub-window.,4. The window is expanded.,,,,,,,,,
+,,,,,,"5. Select ""User Account System Deactivation Process"".","5. The results displays all jobs with the ""User Account System Deactivation Process"".",,,,,,,,,
+,,,,,,"6. Select the Logout link.
+
+","6. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-21222,,Verify Functional Administrator Can Export to various format.,,FA is logged into RFMSS and Background Job exists.,,1. Open the RFMSS website and login with FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,1.1.1 Background Jobs,,,,,,
+,,,,,,2. Navigate to Administration : Background Jobs,2. The Administration : Background Jobs table grid is displayed.,,,,,,,,,
+,,,,,,"3. At the bottom of the table grid, select the ""show all pages.""
+","3. The pagination is no longer displayed and all Event recrods is displayed.
+
+",,,,,,,,,
+,,,,,,"4. Select the PDF icon to export the Background Jobs data.
+
+","4. The system downloads a PDF file. Verify that the exported results are
+accurate.
+
+",,,,,,,,,
+,,,,,,"5. Select the EXCEL icon to export the Background Jobs data.
+
+","5. The system downloads a XLSX file. Verify that the exported results are
+accurate.
+
+",,,,,,,,,
+,,,,,,"6. Select the WORD icon to export the Background Jobs data.
+
+","6. The system downloads a DOC file. Verify that the exported results are
+accurate.
+
+",,,,,,,,,
+,,,,,,"7. Select the PRINT icon to export the Background Jobs data.
+
+","7. The system downloads a PDF file. Verify that the exported results are
+accurate.
+
+",,,,,,,,,
+,,,,,,"8. Select the Logout link.
+
+","8. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,
+RFMSS-21230,,Verify Functional Administrator Can Update FAA Airspace Schedules,,FA is logged into RFMSS and Background Job exists.,,1. Open the RFMSS website and login with FA credentials.,"1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,1.1.1 Background Jobs,,,,,,
+,,,,,,2. Navigate to Administration : Background Jobs,2. The Administration : Background Jobs table grid is displayed.,,,,,,,,,
+,,,,,,3. Select the [UPDATE FAA AIRSPACE SCHEDULES] button.,3. A system message returns: Pending FAA airspace update already exists.,,,,,,,,,
+,,,,,,"4. Select the Logout link.
+
+","4. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,,,,,,,,

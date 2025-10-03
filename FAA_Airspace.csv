@@ -1,0 +1,1045 @@
+﻿Test Case ID,Module Name,Title,Description/User Story,Preconditions,#,Steps,Expected Result,Test Data,Defects/Remarks,ReqID,Status,Automation,Test Type,Type of Test Case,Priority,State
+TC-692,Airspace Subdivision To Airspace Subdivisions/Facilities,Airspace Subdivision To Airspace Subdivisions/Facilities - Modify all editable fields.,"Verify that a Functional Administrator can successfully edit all
+modifiable fields of an existing Airspace Subdivision. This test case
+ensures the core editing functionality is working as expected for all
+editable attributes.
+
+","1. The Functional Administrator is logged into the Airspace Subdivision
+to Airspace Subdivisions/Facilities module.2. An existing Airspace
+Subdivision record(s) are available.3. The Functional Administrator has
+the necessary permissions to edit.
+
+",,"1. Navigate to the Administration/Airspace/Airspace Subdivision.
+
+","1. The Administration : Airspace : Airspace Subdivision To Airspace
+Subdivisions/Facilities Below page is displayed.
+
+",,,,,Not Automated,,Functional,Critical,Active
+,,,,,,2. Select the existing Airspace Subdivision record and click on the 'Edit' link under the Action column.,"2. The Administration : Airspace : Airspace Subdivision To Airspace
+Subdivisions/Facilities Below page is displayed.
+
+",,,,,,,,,
+,,,,,,"3. Modify the following fields:
+* AIrspace Subdivision Above - required
+* Airspace Subdivision/Facility Below- required
+
+","3. The system allows changes to all editable fields.
+
+",,,,,,,,,
+,,,,,,"4. Save the modified data. Click the SAVE button.
+
+","4. The system returns a successful message: The Airspace Subdivision was
+saved successfully.
+
+",,,,,,,,,
+,,,,,,"5. Select the PRINT icon located on the top of the grid.
+
+","5. Validate the ""AirSubFacGridViewGridView.pdf"" file is downloaded.
+
+",,,,,,,,,
+,,,,,,"6. Open the ""AirSubFacGridViewGridView.pdf"" to view the details.
+
+","6. The file opens. Validate that the information and format are correct.
+
+
+
+",AirSubFacGridViewGridView.pdf,,,,,,,,
+,,,,,,"7. Select the X on the ""AirSubFacGridViewGridView.pdf"" file.
+
+","7. The ""AirSubFacGridViewGridView.pdf"" is closed.
+
+",AirSubFacGridViewGridView.pdf,,,,,,,,
+,,,,,,"8. Repeat steps 6 to 7 for the PDF, Excel and Word exports.
+
+","8. Validate the downloaded file and close the downloaded file.
+
+",,,,,,,,,
+TC-693,Airspace Subdivision To Airspace Subdivisions/Facilities,Airspace Subdivision To Airspace Subdivisions/Facilities - Create new Airspace Subdivision with valid data.,"Verify that a Functional Administrator can successfully create an
+Airpace Subdivision to Airspace Subdivisions/Facilities by providing all
+required valid data. This test case ensures the core functionality of
+maintaining Airspace is working as expected.
+
+","1. The Functional Administrator is logged into the FAA Airspace
+system.2. The system is operational and accessible.3. The Functional
+Administrator has the necessary permissions to create and schedule air
+facility requests.4. The database for storing air facility requests is
+available and functioning.5. All required fields for creating an air
+facility request are known and ready to be filled.
+
+",,"1. Navigate to the Administration/Airspace/Airspace Subdivisions/Facilities
+Below.
+
+","1. The Airpace Subdivision to Airspace Subdivisions/Facilities Below page
+is displayed.
+
+",,,,,Not Automated,,Functional,Critical,Active
+,,,,,,2. Click on the 'New' link under the Action column.,"2. The Administration : Airspace : Airspace Subdivision To Airspace
+Subdivisions/Facilities Below : Airspace Subdivision To Airspace
+Subdivisions/Facilities Below
+
+page is displayed.
+
+",,,,,,,,,
+,,,,,,"3. a. Select a valid data from the AIrspace Subdivision Above via the
+    magnifying icon. b. Select R-3803A
+
+","3. Airspace Subdivisions/Facilities Below displays the available Airspace
+Subdivision/Facility.
+
+",,,,,,,,,
+,,,,,,"4. Select the checkboxes for:
+AFGHAN VILLAGE
+BIG CREEK 1
+
+","4. The checkboxes are selected for:
+* AFGHAN VILLAGE
+* BIG CREEK 1
+
+","AFGHAN VILLAGE
+BIG CREEK 1",,,,,,,,
+,,,,,,"5. Click the SAVE button.
+
+","5.  The Administration : Airspace : Airspace Subdivision To Airspace
+    Subdivisions/Facilities Below : Airspace Subdivision To Airspace
+    Subdivisions/Facilities Below page is displayed. Validate R-3803A is associated with BIG CREEK 1 and AFGHAN VILLAGE.
+
+","R-3803A 
+AFGHAN VILLAGE
+BIG CREEK 1",,,,,,,,
+,,,,,,"6. Select the PRINT icon located on the top of the grid. Open the AirSubFacGridViewGridView.pdf to view its details.
+
+","6. Validate that the ""AirSubFacGridViewGridView.pdf"" file is
+    downloaded. The file opens. Validate that the information and format are
+    correct.
+
+",AirSubFacGridViewGridView.pdf,,,,,,,,
+,,,,,,"7. a. Select the EXCEL icon located at the top of the grid. b.  Select the ""Export.xlsx"" file to view its details. c. Close the ""Export.xlsx"" file.
+
+","7. a.  Validate that an ""Export.xlsx"" file has been downloaded. b.  The Excel file opens. Validate that the information and format are
+    correct. c.  The EXCEL file is closed.
+
+",Export.xlsx,,,,,,,,
+,,,,,,"8. a.  Select the WORD icon located at the top of the grid. b.  Select the ""AirSubFacGridViewGridView.docx"" file to view details. c.  Close the ""AirSubFacGridViewGridView.docx"" file.
+
+","8. a.  Validate that the ""AirSubFacGridViewGridView.docx"" file has been downloaded. b.  The WORD file opens. Validate that the information and format are correct. c.  The WORD file is closed.
+
+",AirSubFacGridViewGridView.docx,,,,,,,,
+,,,,,,"9. Select the Logout link.
+
+","9. The system displays the Logout page with a the following message: ""You
+have been logged out of RFMSS. Close this browser window to ensure your
+browser completely clears your login information."" [Login Again] link.
+
+",,,,,,,,,
+TC-689,Airspace Subdivision,Airspace Subdivision - Modify all editable fields.,"Verify that a Functional Administrator can successfully edit all
+modifiable fields of an existing Airspace Subdivision. This test case
+ensures the core editing functionality is working as expected for all
+editable attributes.
+
+","1. The Functional Administrator is logged into the FAA Airspace
+module.2. An existing FAA Airspace record(s) are available.3. The
+Functional Administrator has the necessary permissions to edit FAA
+Airspace.4. The FAA Airspace request is not locked or in progress.
+
+",,"1. Navigate to the Administration/Airspace/Airspace Subdivision.
+
+","1. The Administration : Airspace : Airspaces Subdivision : Airspace
+Subdivisions page is displayed.
+
+",,,,,Not Automated,,Functional,Critical,Active
+,,,,,,"2. Select the existing Airspace record, click on the \'Edit\' link under
+the Action column.
+
+","2. The Administration : Airspace : Airspaces Subdivision : Airspace
+Subdivisions : Airspace Subdivision page is displayed.
+
+",,,,,,,,,
+,,,,,,"3. Modify the fields in the Airspace Subdivision Info tab:
+
+* FAA AIrspace ID - required
+* Subdivision ID - required
+* Subdivision Name - required
+* Subdivision Lower Altitude (MSL ft.) - required
+* Subdivision Uppser altitude (MSL ft.) - required
+* Airspace Remarks (up to 240 characters)
+* Description (up to 500 characters)
+
+","3. The system allows changes to all editable fields.
+
+",,,,,,,,,
+,,,,,,"4. Save the modified data. Click the SAVE button.
+
+","4. The system returns a successful message: The Airspace Subdivision was saved successfully.
+
+",,,,,,,,,
+,,,,,,"5. Select the Log link of the updated record.
+
+","5. a.  The Administration : Airspace : FAA Airspaces : Airspace Log page is  displayed. b.  Review the following information: Status, User Last Updated, and Last Updated Date information.
+
+",,,,,,,,,
+,,,,,,"6. Select the CLOSE button.
+
+","6. The Administration : Airspace : FAA Airspaces : is displayed.
+
+",,,,,,,,,
+TC-690,Airspace Subdivision,Airspace Subdivision - Create new Airspace Subdivision with valid data.,"Verify that a Functional Administrator can successfully create a new air
+facility request by providing all required valid data. This test case
+ensures the core functionality of maintaining Airspace is working as
+expected.
+
+","1. The Functional Administrator is logged into the FAA Airspace
+system.2. The system is operational and accessible.3. The Functional
+Administrator has the necessary permissions to create and schedule air
+facility requests.4. The database for storing air facility requests is
+available and functioning.5. All required fields for creating an air
+facility request are known and ready to be filled.
+
+",,"1. Navigate to the Administration/Airspace/FAA Airspace.
+
+","1. The Administration : Airspace : FAA Airspaces page is displayed.
+
+",,,,,Not Automated,,Functional,Critical,Active
+,,,,,,"2. Click on the \'New\' link under the Action column.
+
+","2. The Administration : Airspace : FAA Airspaces : Airspace page is displayed.
+
+",,,,,,,,,
+,,,,,,"3. Populate all required fields with valid data:
+
+* Fire Desk Name (dropdown)
+* AIrspace ID
+* AIrspace Name
+* AIrspace Lower Altitude (MSL ft.)
+* Airspace Upper Altitude (MSL ft.)
+
+","3. All fields are populated with valid information.
+
+",,,,,,,,,
+,,,,,,"4. Click the SAVE button.
+
+","4. The Administration : Airspace : FAA Airspaces page is displayed and the
+new record is displayed in the table grid. All entered information is
+correct and complete.
+
+",,,,,,,,,
+,,,,,,"5. Select the Log link of the new record.
+
+
+
+","5. Review the following information: Status, User Last Updated, and Last Updated Date information.",,,,,,,,,
+,,,,,,"6. Select the CLOSE button.
+
+",6. The Administration : Airspace : FAA Airspaces page is displayed.,,,,,,,,,
+,,,,,,"7. Select the PRINT icon located on the top of the grid.
+
+","7. Validate a ""FGGridView.pdf"" file is downloaded.",,,,,,,,,
+,,,,,,"8. Open the FGGridView.pdf to view its details.
+
+",8. The request details page opens. Validate that the information and format are correct.,,,,,,,,,
+,,,,,,"9. 1.  Close the FGGridView.pdf file.
+2.  Click the CLOSE button.
+
+","9. 1.  The FGGridView.pdf file is closed.
+2.  The Administration : Airspace : FAA Airspaces page is displayed
+
+",,,,,,,,,
+,,,,,,"10. Select the EXCEL icon located at the top of the grid.
+
+","10. Validate that an ""Export.xlsx"" file has been downloaded.",,,,,,,,,
+,,,,,,"11. 1.  Select the \""Export.xlsx\"" file to view its details.
+2.  Close the \""Export.xlsx\"" file.
+
+",11. a.  The Excel file opens. Validate that the information and format are correct.  b.  The Excel file is closed.,,,,,,,,,
+,,,,,,"12. Select the \""AirspaceGridControlGridView.docx\"" on the top of the grid.
+
+","12. Validate that the ""AirspaceGridControlGridView.docx"" file has been downloaded.",,,,,,,,,
+,,,,,,"13. 1.  Select the \""AirspaceGridControlGridView.docx\"" file to view its
+    details.
+2.  Close the \""AirspaceGridControlGridView.docx\"" file
+
+",13. a.  The Word file opens. Validate that the information and format are correct. 2.  The Word file is closed.,,,,,,,,,
+TC-691,Airspace Subdivision,Airspace Subdivision - maximum allowed data length.,"Test the system\'s ability to handle an air facility request with
+maximum allowed character length for all text fields. This edge case
+ensures the system can process requests with extensive information.
+
+","1. The FAA Airspace module is operational and accessible.2. The user has
+a valid Functional Administrator account with permissions to edit the
+FAA Airspace module.3. Test data with maximum length for each field is
+prepared.
+
+",,"1. Navigate to the Administration/Airspace/FAA Airspace.
+
+
+
+",1. Navigate to the Administration/Airspace/FAA Airspace.,,,,,Not Automated,,"Functional, Negative",Medium,Active
+,,,,,,"2. Click on the \'Edit\' link under the Action column.
+
+
+
+",2. The Administration : Airspace : FAA Airspaces : Airspace page is displayed.,,,,,,,,,
+,,,,,,"3. a.  Select the Airspace Remarks field.  b.  Enter the following data: 'FAA Remarks length of around 377 alphanumeric characters. The system might allow for multiple parts, each with this limit. However, this character limit applies to the condition text and does not include other parts such as the location, date/time, or graphical elements. It's also not definitively clear if there's a limit on the complete character limit until you hit 2500 character limit.' c.  Attempt to SAVE the text.
+
+",3. The system displays the following error: Airspace Remark must be between 1 and 240 characters.,"FAA Remarks length of around 377 alphanumeric characters. The system might allow for multiple parts, each with this limit. However, this character limit applies to the condition text and does not include other parts such as the location, date/time, or graphical elements. It's also not definitively clear if there's a limit on the complete character limit until you hit 2500 character limit.",,,,,,,,
+,,,,,,"4. Modify the Airspace Remarks field to meet the maximum characters of 240.
+
+","4. The system processes the submission without errors related to field
+lengths.
+
+",,,,,,,,,
+,,,,,,"5. a.  Select the Description field.
+b.  Enter the following data: 'FAA Remarks length of around 377 alphanumeric characters. The system might allow for multiple parts, each with this limit. However, this character limit applies to the condition text and does not include other parts such as the location, date/time, or graphical elements. It's also not definitively clear if there's a limit on the complete character limit, until you hit 1500 character limit.'
+c.  Attempt to SAVE the text.
+
+
+
+","5. The system displays the following error: Description must be between 1
+and 500 characters.
+
+
+
+","FAA Remarks length of around 377 alphanumeric characters. The system might allow for multiple parts, each with this limit. However, this character limit applies to the condition text and does not include other parts such as the location, date/time, or graphical elements. It's also not definitively clear if there's a limit on the complete character limit, until you hit 1500 character limit.",,,,,,,,
+,,,,,,"6. Modify the Airspace Remarks field to meet the maximum characters of 500.
+
+
+
+","6. The system processes the submission without errors related to field
+lengths.
+
+",,,,,,,,,
+TC-612,FAA Airspace,FAA Airspace - Modify all editable fields of an existing FAA Airspace record.,"Verify that a Functional Administrator can successfully edit all
+modifiable fields of an existing FAA Airspace. This test case ensures
+the core editing functionality is working as expected for all editable
+attributes.
+
+","1. The Functional Administrator is logged into the FAA Airspace
+module.2. An existing FAA Airspace record(s) are available.3. The
+Functional Administrator has the necessary permissions to edit FAA
+Airspace.4. The FAA Airspace request is not locked or in progress.
+
+",,"1. Navigate to the Administration/Airspace/FAA Airspace.
+
+","1. The Administration : Airspace : FAA Airspaces page is displayed.
+
+",,,,,Not Automated,,Functional,Critical,Active
+,,,,,,"2. Select the existing Airspace record and click on the 'Edit' link under
+the Action column.
+
+",2. The Administration : Airspace : FAA Airspaces : Airspace page is displayed.,,,,,,,,,
+,,,,,,"3. Modify all editable fields:
+
+* Fire Desk Name (dropdown) - required
+* AIrspace ID - required
+* AIrspace Name - required
+* FAA Approval Required checkbox
+* AIrspace Lower Altitude (MSL ft.) - required
+* Airspace Upper Altitude (MSL ft.) - required
+* Street Address
+* Address Line 2
+* City, State
+* Zip Code
+* Supersonic Capability (dropdown)
+* Point of Contact
+* Phone Number
+* Airspace Remarks
+* Description
+
+","3. The system allows changes to all editable fields.
+
+",,,,,,,,,
+,,,,,,"4. Save the modified data. Click the SAVE button.
+
+","4. The system successfully saves the changes and displays the updated
+record in the table grid.
+
+",,,,,,,,,
+,,,,,,"5. Select the Log link of the updated record.
+
+","5. a.  The Administration : Airspace : FAA Airspaces : Airspace Log page is displayed. b.  Review the following information: Status, User Last Updated, and Last Updated Date information.",,,,,,,,,
+,,,,,,"6. Select the CLOSE button.
+
+","6. The Administration : Airspace : FAA Airspaces : is displayed.
+
+",,,,,,,,,
+TC-606,FAA Airspace,FAA Airspace - Create new FAA Airspace with valid data.,"Verify that a Functional Administrator can successfully create a new air
+facility request by providing all required valid data. This test case
+ensures the core functionality of maintaining Airspace is working as
+expected.
+
+","1. The Functional Administrator is logged into the FAA Airspace
+system.2. The system is operational and accessible.3. The Functional
+Administrator has the necessary permissions to create and schedule air
+facility requests.4. The database for storing air facility requests is
+available and functioning.5. All required fields for creating an air
+facility request are known and ready to be filled.
+
+",,"1. Navigate to the Administration/Airspace/FAA Airspace.
+
+","1. The Administration : Airspace : FAA Airspaces page is displayed.
+
+",,,,,Not Automated,,Functional,Critical,Active
+,,,,,,"2. Click on the \'New\' link under the Action column.
+
+","2. The Administration : Airspace : FAA Airspaces : Airspace page is
+displayed.
+
+",,,,,,,,,
+,,,,,,"3. Populate all required fields with valid data:
+* Fire Desk Name (dropdown)
+* AIrspace ID
+* AIrspace Name
+* AIrspace Lower Altitude (MSL ft.)
+* Airspace Upper Altitude (MSL ft.)
+
+","3. All fields are populated with valid information.
+
+",,,,,,,,,
+,,,,,,"4. Click the SAVE button.
+
+","4. The Administration : Airspace : FAA Airspaces page is displayed and the
+new record is displayed in the table grid. All entered information is
+correct and complete.
+
+",,,,,,,,,
+,,,,,,"5. Select the Log link of the new record.
+
+
+
+","5. Review the following information: Status, User Last Updated, and Last
+Updated Date information.
+
+
+
+",,,,,,,,,
+,,,,,,"6. Select the CLOSE button.
+
+","6. The Administration : Airspace : FAA Airspaces : is displayed.
+
+",,,,,,,,,
+,,,,,,"7. Select the PRINT icon located on the top of the grid.
+
+","7. Validate a \""FGGridView.pdf\"" file is downloaded.
+
+",,,,,,,,,
+,,,,,,"8. Open the FGGridView.pdf to view its details.
+
+","8. The request details page opens. Validate that the information and format
+are correct.
+
+",,,,,,,,,
+,,,,,,9. a.  Close the FGGridView.pdf file. b.  Click the CLOSE button.,9. a.  The FGGridView.pdf file is closed. b.  The Administration : Airspace : FAA Airspaces page is displayed,,,,,,,,,
+,,,,,,"10. Select the EXCEL icon located at the top of the grid.
+
+","10. Validate that an ""Export.xlsx"" file has been downloaded.",Export.xls,,,,,,,,
+,,,,,,"11. a.  Select the \""Export.xlsx\"" file to view its details.  b.  Close the \""Export.xlsx\"" file.",11. a.  The Excel file opens. Validate that the information and format are correct. 2.  The Excel file is closed.,,,,,,,,,
+,,,,,,"12. Select the ""AirspaceGridControlGridView.docx"" on the top of the grid.","12. Validate that the ""AirspaceGridControlGridView.docx"" file has been
+downloaded.",AirspaceGridControlGridView.docx,,,,,,,,
+,,,,,,"13. a.  Select the ""AirspaceGridControlGridView.docx"" file to view its details. b.  Close the \""AirspaceGridControlGridView.docx\"" file.",13. a.  The Word file opens. Validate that the information and format are correct. b.  The Word file is closed.,,,,,,,,,
+TC-610,FAA Airspace,FAA Airspace - maximum allowed data length.,"Test the system\'s ability to handle an FAA Airspace with maximum
+allowed character length for all text fields. This edge case ensures the
+system can process requests with extensive information.
+
+","1. The FAA Airspace module is operational and accessible.2. The user has
+a valid Functional Administrator account with permissions to edit the
+FAA Airspace module.3. Test data with maximum length for each field is
+prepared.
+
+",,"1. Navigate to the Administration/Airspace/FAA Airspace.
+
+
+
+","1. Navigate to the Administration/Airspace/FAA Airspace.
+
+
+
+",,,,,Not Automated,,"Functional, Negative",Medium,Active
+,,,,,,"2. Click on the 'Edit' link under the Action column.
+
+",2. The Administration : Airspace : FAA Airspaces : Airspace page is displayed.,,,,,,,,,
+,,,,,,"3. a.  Select the Airspace Remarks field.
+b.  Enter the following data: 'FAA Remarks length of around 377 alphanumeric characters. The system might allow for multiple parts, each with this limit. However, this character limit applies to the condition text and does not include other parts such as the location, date/time, or graphical elements. It's also not definitively clear if there's a limit on the complete character limit, until you hit 2500 character limit.'
+c.  Attempt to SAVE the text.
+
+","3. The system displays the following error: Airspace Remark must be between 1 and 240 characters.
+
+","FAA Remarks length of around 377 alphanumeric characters. The system might allow for multiple parts, each with this limit. However, this character limit applies to the condition text and does not include other parts such as the location, date/time, or graphical elements. It's also not definitively clear if there's a limit on the complete character limit, until you hit 2500 character limit.",,,,,,,,
+,,,,,,"4.  Modify the Airspace Remarks field to meet the maximum characters of 240.
+
+","4. The system processes the submission without errors related to field
+lengths.
+
+",,,,,,,,,
+,,,,,,"5. a.  Select the Description field.
+2.  Enter the following data: ''FAA Remarks length of around 377 alphanumeric characters. The system might allow for multiple parts, each with this limit. However, this character limit applies to the condition text and does not include other parts such as the location, date/time, or graphical elements. It's also not definitively clear if there's a limit on the complete character limit, until you hit 2500 character limit.'
+3.  Attempt to SAVE the text.
+
+
+
+","5. The system displays the following error: Description must be between 1
+and 500 characters.
+
+
+
+","FAA Remarks length of around 377 alphanumeric characters. The system might allow for multiple parts, each with this limit. However, this character limit applies to the condition text and does not include other parts such as the location, date/time, or graphical elements. It's also not definitively clear if there's a limit on the complete character limit, until you hit 2500 character limit.",,,,,,,,
+,,,,,,6. Modify the Airspace Remarks field to meet the maximum characters of 500.,6. The system processes the submission without errors related to field lengths.,,,,,,,,,
+TC-605,FAA Airspace,FAA Airspace - validate the common features available for the module.,"This test ensures that a Functional Administrator can manage and verify
+all features related to Airspace, covering common
+functionalities/navigation.
+
+","1.  The user must have a Functional Administrator role.
+2.  The Functional Administrator must have appropriate permissions to
+    access and manipulate the FAA Airspace module.
+3.  The test environment must include data that encompasses request
+    submissions for Airspace functionalities.
+
+",,"Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library","Validate the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,,,Not Automated,,Usability,High,Active
+,,,,,,"2. Navigate to the Administration/Airspace/FAA Airspace.
+
+","2. The Administration : Airspace : FAA Airspaces page is displayed.
+
+",,,,,,,,,
+,,,,,,"3. a.  Select the Accessibility/Section 508 link above the Menu bar.
+b.  The Chief Information Officer, U.S. Department of Defense Section 508 page is displayed in a new tab.","3. a.  The Chief Information Officer, U.S. Department of Defense Section 508 page is displayed in a new tab.
+b.  The tab is successfully closed.",,,,,,,,,
+,,,,,,"4. a.  Select the Help link.
+b.  Close the Help tab.","4. a.  The FAA Airspaces page is displayed in a new tab. Validate that a
+    print icon is available for users to print the page.
+b.  The tab is successfully closed.",,,,,,,,,
+,,,,,,"5. a.  From The Administration : Airspace : FAA Airspaces page is displayed, select the Show Deleted link.
+b.  Scroll to the right.
+c.  Togle the radio button to ZULU.","5. a.  The Administration : Airspace : FAA Airspaces page is displayed with
+    the Hide Deleted link on the top of the table grid.
+b.  Validate the record displays as ""INACTV""
+c.  Verify that the Last Updated Date column is displayed in ZULU format.",,,,,,,,,
+TC-631,FAA Airspace,FAA Airspace - Measure response time for creating new FAA Airspace.,"Evaluate the system\'s performance when creating new FAA Airspace,
+ensuring that the process completes within acceptable time limits under
+normal load conditions. This test case assesses the efficiency of the
+request creation process.
+
+","1. The FAA Airspace system is up and running. 2. A Functional
+Administrator account with necessary permissions is available. 3. The
+system is under normal load conditions. 4. A stopwatch or performance
+monitoring tool is available to measure response times. 5. Predefined
+test data for creating new air facility requests is available.
+
+",,"1. Navigate to the Administration/Airspace/FAA Airspace.
+
+","1. The system successfully logs in the Functional Administrator and
+displays the dashboard.
+
+",,,,,Not Automated,,Performance,High,Unverified
+,,,,,,"2. Select an existing Airspace record, and click on the \'Edit\' link under
+the Action column.
+
+","2. The system displays the form for creating a new air facility request.
+
+",,,,,,,,,
+,,,,,,"3. Start the stopwatch or performance monitoring tool.
+
+","3. The timing measurement begins.
+
+",,,,,,,,,
+,,,,,,"4. Modify all editable fields:
+
+* Fire Desk Name (dropdown) - required
+* AIrspace ID - required
+* AIrspace Name - required
+* FAA Approval Required checkbox
+* AIrspace Lower Altitude (MSL ft.) - required
+* Airspace Upper Altitude (MSL ft.) - required
+* Street Address
+* Address Line 2
+* City, State
+* Zip Code
+* Supersonic Capability (dropdown)
+* Point of Contact
+* Phone Number
+* Airspace Remarks
+* Description
+
+
+
+","4. The system allows changes to all editable fields.
+
+",,,,,,,,,
+,,,,,,"5. Save the modified data. Click the SAVE button.
+
+","5. The system successfully saves the changes and displays the updated
+record in the table grid.
+
+",,,,,,,,,
+,,,,,,"6. Stop the stopwatch or performance monitoring tool.
+
+","6. The timing measurement ends.
+
+",,,,,,,,,
+,,,,,,"7. Record the time taken to create the new air facility request.
+
+","7. The response time is logged for analysis.
+
+",,,,,,,,,
+,,,,,,"8. Repeat steps 3-7 for a total of 10 iterations to get an average response
+time.
+
+","8. 10 response time measurements are recorded.
+
+",,,,,,,,,
+,,,,,,"9. Calculate the average response time for creating a new air facility
+request.
+
+","9. The average response time is computed and documented.
+
+",,,,,,,,,
+,,,,,,"10. Compare the average response time with the predefined acceptable time
+limit.
+
+","10. The average response time is within the acceptable range (e.g., less
+than 3 seconds).
+
+",,,,,,,,,
+TC-632,FAA Airspace,FAA Airspace - Assess system performance under high concurrent user load.,"Test the system\'s ability to handle multiple concurrent users
+performing various operations on air facility requests simultaneously.
+This performance test ensures the system remains responsive and stable
+under high user load.
+
+","1. The FAA Airspace system is up and running. 2. Multiple test user
+accounts with appropriate permissions are available. 3. A load testing
+tool capable of simulating concurrent users is set up. 4. Predefined
+test scenarios for various air facility request operations are prepared.
+5. System performance monitoring tools are in place to measure response
+times, CPU usage, and memory utilization. 6. A baseline for normal
+system performance is established.
+
+",,"1. Configure the load testing tool to simulate 100 concurrent users.
+
+","1. The load testing tool is ready with 100 virtual users.
+
+",,,,,Not Automated,,Performance,High,Unverified
+,,,,,,"2. Start the system performance monitoring tools.
+
+","2. Performance monitoring begins, tracking response times, CPU usage, and
+memory utilization.
+
+",,,,,,,,,
+,,,,,,"3. Begin the load test, simulating 100 users performing a mix of operations
+including creating, editing, deleting, and viewing air facility
+requests.
+
+","3. The load test starts, and virtual users begin executing their assigned
+tasks.
+
+",,,,,,,,,
+,,,,,,"4. Run the load test for 30 minutes.
+
+","4. The system continues to process requests under high load for the full
+duration.
+
+",,,,,,,,,
+,,,,,,"5. Monitor the system\'s response times, error rates, and resource
+utilization throughout the test.
+
+","5. Real-time performance metrics are observed and recorded.
+
+",,,,,,,,,
+,,,,,,"6. Gradually increase the number of concurrent users to 200, 300, and then 
+500 over the next 30 minutes.","6. The system load increases incrementally, simulating peak usage
+scenarios.
+
+",,,,,,,,,
+,,,,,,"7. Continue monitoring system performance as the user load increases.
+
+","7. Performance metrics under various load conditions are captured.
+
+",,,,,,,,,
+,,,,,,"8. After reaching 500 concurrent users, maintain this load for an
+additional 15 minutes.
+
+","8. The system sustains peak load for the specified duration.
+
+",,,,,,,,,
+,,,,,,"9. Gradually decrease the number of concurrent users back to 100 over 15
+minutes.
+
+","9. The system load returns to the initial test level.
+
+",,,,,,,,,
+,,,,,,"10. Stop the load test and performance monitoring tools.
+
+","10. All testing and monitoring activities cease.
+
+",,,,,,,,,
+,,,,,,"11. Generate a comprehensive performance report including response times,
+error rates, and resource utilization across different user loads.
+
+","11. A detailed performance report is created, showing system behavior under
+various load conditions.
+
+",,,,,,,,,
+,,,,,,"12. Compare the results with the predefined performance benchmarks and
+baseline performance.
+
+","12. The system's performance under high load is evaluated against acceptable criteria (e.g., response times remain under 5 seconds, error
+rate below 1%, CPU utilization below 80%).",,,,,,,,,
+TC-633,FAA Airspace,FAA Airspace - Evaluate search and retrieval speed for FAA Airspace.,"Measure the response time for searching and retrieving air facility
+requests, particularly when dealing with a large volume of historical
+data. This test case ensures efficient data access and display for user
+queries.
+
+","1. The FAA Airspace system is up and running.2. A Functional
+Administrator account with necessary permissions is available.3. A large
+volume of historical air facility request data is present in the system
+(at least 100,000 records).4. A performance monitoring tool is set up to
+measure search and retrieval times.5. Predefined search queries of
+varying complexity are prepared.6. The system\'s database is in a
+typical operational state (not recently optimized or defragmented).
+
+",,"1. Navigate to the Administration/Airspace/FAA Airspace.
+
+","1. The Administration : Airspace : FAA Airspaces page is displayed.
+
+",,,,,Not Automated,,Performance,High,Unverified
+,,,,,,"2. Navigate to the air facility request search functionality.
+
+","2. The search interface for air facility requests is displayed.
+
+",,,,,,,,,
+,,,,,,"3. Start the performance monitoring tool.
+
+","3. The tool begins measuring response times for search operations.
+
+",,,,,,,,,
+,,,,,,"4. Perform a simple search query (e.g., search by a specific date range).
+
+","4. The system displays the search results.
+
+",,,,,,,,,
+,,,,,,"5. Record the time taken for the search operation and result display.
+
+","5. The response time for the simple search is logged.
+
+",,,,,,,,,
+,,,,,,"6. Perform a moderate complexity search query (e.g., search by multiple
+criteria such as date range, facility type, and status).
+
+","6. The system displays the search results for the more complex query.
+
+",,,,,,,,,
+,,,,,,"7. Record the time taken for the moderate complexity search operation and
+result display.
+
+","7. The response time for the moderate complexity search is logged.
+
+",,,,,,,,,
+,,,,,,"8. Perform a high complexity search query (e.g., search with multiple
+criteria, sorting, and filtering options).
+
+","8. The system displays the search results for the high complexity query.
+
+",,,,,,,,,
+,,,,,,"9. Record the time taken for the high complexity search operation and
+result display.
+
+","9. The response time for the high complexity search is logged.
+
+",,,,,,,,,
+,,,,,,"10. Repeat steps 4-9 for a total of 10 iterations for each complexity level
+to get average response times.",10. 30 response time measurements (10 for each complexity level) are recorded.,,,,,,,,,
+,,,,,,"11. Perform a search that retrieves the maximum allowed number of results.
+
+","11. The system successfully retrieves and displays the maximum allowed
+number of results.
+
+",,,,,,,,,
+,,,,,,"12. Record the time taken for the maximum result search operation and
+display.
+
+","12. The response time for the maximum result search is logged.
+
+",,,,,,,,,
+,,,,,,"13. Calculate the average response times for each complexity level and the
+maximum result search.
+
+","13. Average response times are computed and documented for each search type.
+
+",,,,,,,,,
+,,,,,,"14. Compare the average response times with predefined acceptable time
+limits for each complexity level.
+
+","14. The average response times are within acceptable ranges (e.g., simple
+search &amp;lt; 2 seconds, moderate &amp;lt; 5 seconds, complex &amp;lt;
+10 seconds, maximum results &amp;lt; 20 seconds).
+
+",,,,,,,,,
+TC-627,FAA Airspace,FAA Airspace - Verify Functional Administrator permissions for all CRUD operations,"Ensure that a user with Functional Administrator role has the necessary
+permissions to perform all Create, Read, Update, and Delete operations
+on FAA Airspace. This test case validates the core access control for
+the primary user role.
+
+","1. The FAA Airspace system is up and running.2. A user account with
+Functional Administrator role.3. The system has a mix of existing FAA
+Airspace records.4. The Functional Administrator is logged into the
+system.
+
+",,"1. Attempt to create a new air facility request
+
+","1. The system allows the Functional Administrator to create a new request.
+All necessary fields are available and can be filled.
+
+",,,,,Not Automated,,Security,Critical,Active
+,,,,,,"2. Save the newly created request
+
+","2. The request is successfully saved and appears in the list of requests.
+
+",,,,,,,,,
+,,,,,,"3. View the list of all air facility requests
+
+","3. The Functional Administrator can see a comprehensive list of all
+requests, regardless of their status.
+
+",,,,,,,,,
+,,,,,,"4. Open an existing request for editing
+
+","4. The system allows the Functional Administrator to open and edit the
+request. All fields are editable.
+
+",,,,,,,,,
+,,,,,,"5. Make changes to the request and save
+
+","5. The changes are successfully saved and reflected in the request details.
+
+",,,,,,,,,
+,,,,,,"6. Attempt to delete an existing request
+
+","6. The system provides an option to delete the request and asks for
+confirmation.
+
+",,,,,,,,,
+,,,,,,"7. Confirm the deletion
+
+","7. The request is successfully deleted and no longer appears in the list of
+requests.
+
+",,,,,,,,,
+,,,,,,"8. Attempt to schedule a new submission
+
+","8. The system allows the Functional Administrator to schedule a new
+submission with date and time options.
+
+",,,,,,,,,
+,,,,,,"9. Edit an existing scheduled submission
+
+","9. The system allows the Functional Administrator to modify the scheduled
+date and time of an existing submission.
+
+",,,,,,,,,
+,,,,,,"10. Delete a scheduled submission
+
+","10. The system allows the Functional Administrator to delete a scheduled
+submission after confirmation.
+
+",,,,,,,,,
+TC-628,FAA Airspace,FAA Airspace - Attempt unauthorized access to FAA Airspace.,"Verify that users without proper permissions (e.g., Read-Only and
+Read-Only Limited) are prevented from accessing air facility request
+management functions. This security test ensures that only authorized
+personnel can interact with the system.
+
+","1.  Multiple user accounts with different roles (Read-only and Read-Only
+    Limited).
+2.  The system has existing FAA Airspace records.
+
+",,"1. Log in with a non-administrator account, such as a ""Read-Only Limited""
+role.","1. The system should allow login but with limited access to 
+functionalities.",,,,,Not Automated,,Security,Critical,Active
+,,,,,,"2. Validate the following menu displays:
+
+* Home
+* Scheduling
+* Operations
+* Library
+
+","2. Validate that the FAA Airspace is not visible to the Read-Only Limited 
+user.",,,,,,,,,
+,,,,,,"3. Select the Logout link.
+
+","3. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information. [Login Again] link.""",,,,,,,,,
+,,,,,,"4. Log in with a non-administrator account, such as a ""Read-Only"" role.","4. The system should allow login but with limited access to 
+functionalities.",,,,,,,,,
+,,,,,,"5. Validate the following menu displays:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+Navigate to the FAA Airspace module.","5. Validate that the FAA Airspace is visible, however, the data is ""read-only"".
+
+",,,,,,,,,
+,,,,,,"6. Select the Logout link.
+
+","6. The Logout page displays with a system message: \""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information.\"" \[Login Again\] link.
+
+",,,,,,,,,
+,,,,,,"7. Log in with a non-administrator account, such as a ""Range Control Logistics"" role.","7. The system should allow login, but with limited access to 
+functionalities.
+
+",,,,,,,,,
+,,,,,,"8. Validate the following menu displays:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+Navigate to the FAA Airspace module.","8. Validate that the FAA Airspace is visible, however, the data is ""read-only"".",,,,,,,,,
+,,,,,,"9. Select the Logout link.
+
+","9. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information. [Login Again] link.""",,,,,,,,,
+,,,,,,"10. Log in with a non-administrator account, such as a ""Range Control
+Safety"" role.","10. The system should allow login, but with limited access to 
+functionalities.",,,,,,,,,
+,,,,,,"11. Validate the following menu displays:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+Navigate to the FAA Airspace module.","11. Validate that the FAA Airspace is visible, however, the data is ""read-only"".",,,,,,,,,
+,,,,,,"12. Select the Logout link.
+
+","12. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information. [Login Again] link.""",,,,,,,,,
+,,,,,,"13. Log in with a non-administrator account, such as a ""Range Control
+Environment"" role.","13. The system should allow login, but with limited access to 
+functionalities.",,,,,,,,,
+,,,,,,"14. Validate the following menu displays:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+Navigate to the FAA Airspace module.","14. Validate that the FAA Airspace is visible, however, the data is ""read-only"".",,,,,,,,,
+,,,,,,"15. Select the Logout link.
+
+","15. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information. [Login Again] link.""",,,,,,,,,
+,,,,,,"16. Log in with a non-administrator account, such as a ""Range Control
+Scheduler"" role.","16. The system should allow login, but with limited access to 
+functionalities.",,,,,,,,,
+,,,,,,"17. Validate the following menu displays:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+Navigate to the FAA Airspace module.","17. Validate that the FAA Airspace is visible, however, the data is ""read-only"".",,,,,,,,,
+,,,,,,"18. Select the Logout link.
+
+","18. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information. [Login Again] link.",,,,,,,,,
+TC-622,FAA Airspace,FAA Airspace - View complete details of an existing FAA Airspace.,"Verify that a Functional Administrator can access and view all details
+of an existing air facility request. This test case ensures that all
+relevant information is displayed correctly and completely.
+
+","1. The Functional Administrator is logged into the FAA Airspace
+system.2. Test data should be 50+ records.3. The Functional
+Administrator has the necessary permissions to view air facility
+requests.
+
+",,"1. Navigate to the Administration/Airspace/FAA Airspace.
+
+","1. The Administration : Airspace : FAA Airspaces page is displayed.
+
+",,,,,Not Automated,,Smoke & Sanity,Critical,Active
+,,,,,,2. Select the existing Airspace record and click on the 'Edit' link under the Action column.,2. The Administration : Airspace : FAA Airspaces : Airspace page is displayed.,,,,,,,,,
+,,,,,,"3. Verify that all relevant information is displayed.
+
+","3. All details of the air facility request are visible (if applicable):
+* Fire Desk Name (dropdown) - required
+* AIrspace ID - required
+* AIrspace Name - required
+* FAA Approval Required checkbox
+* AIrspace Lower Altitude (MSL ft.) - required
+* Airspace Upper Altitude (MSL ft.) - required
+* Street Address
+* Address Line 2
+* City, State
+* Zip Code
+* Supersonic Capability (dropdown)
+* Point of Contact
+* Phone Number
+* Airspace Remarks
+* Description",,,,,,,,,
+,,,,,,"4. Check the completeness of the information displayed.
+
+","4. All fields contain the correct and complete information.
+
+",,,,,,,,,
+,,,,,,"5. Attempt to scroll through the entire request details.
+
+","5. All information is accessible, and there are no display issues or
+cut-off details.
+
+",,,,,,,,,
+,,,,,,"6. Select the Logout link.
+","6. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information. [Login Again] link.""",,,,,,,,,
+TC-624,FAA Airspace,FAA Airspace - Attempt to view details of a deleted FAA Airspace.,"Verify that the system handles attempts to view details of deleted air
+facility requests appropriately, either by showing a \'not found\'
+message or redirecting to a relevant page. This negative test case
+ensures proper handling of non-existent requests.
+
+","1. The Functional Administrator is logged into the FAA Airspace
+module.2. An existing FAA Airspace record(s) are available.3. The
+Functional Administrator has the necessary permissions to edit FAA
+Airspace.
+
+",,"1. Navigate to the Administration/Airspace/FAA Airspace.
+
+
+
+","1. The Administration : Airspace : FAA Airspaces page is displayed.
+
+",,,,,Not Automated,,Functional,High,Active
+,,,,,,"2. Select the SHOW DELETED link at the top of the table grid.
+
+","2. The records for the deleted Airspace displays and the SHOW DELETED link
+are now HIDE DELETED.
+
+",,,,,,,,,
+,,,,,,"3. Select the ""reactive' link under the Action column.","3. The Administration : Airspace : FAA Airspaces details page is displayed.
+
+",,,,,,,,,
+,,,,,,"4. Select the SAVE button.
+
+","4. The Administration : Airspace : FAA Airspaces details page with the
+record no longer displaying in the ""deleted"" page.",,,,,,,,,
+,,,,,,"5. Select the HIDE DELETED link.
+
+","5. The Administration : Airspace : FAA Airspaces page displays and verify
+the data exists in the table grid.
+
+",,,,,,,,,

@@ -1,0 +1,935 @@
+﻿Test Case ID,Module Name,Title,Description/User Story,Preconditions,#,Steps,Expected Result,Test Data,Defect/Remarks,ReqID,Status,Automation,Test Type,Type of Test Case,Priority,State
+
+RFMSS-101,Ammunition,FA Ammunition - create NEW Ammunition record.,Ensure that new ammunition DODIC entries can be successfully created in the ammunition module.
+1.  User must have the necessary permissions to create new ammunition.
+2.  Database is accessible.
+Open the RFMSS website and login with an FA credentials.,Observe the following Menu options are available>
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+
+
+Navigate to Administration > Ammunition > Ammunition
+
+The Administration > Ammunition > Ammunition table grid page is displayed.
+
+
+Select the 'new' link under the Action column.
+The Administration > Ammunition > Ammunition > Ammunition page is displayed with the following fields>
+* DODIC (required)
+* Nomenclature (required)
+* Loud Noise radio buttons (Always, Limited, N/A)
+* Service Branch [SITE-SPECIFIC]
+* Do Not Deprecate [checkbox]
+* Deprecation Date
+* [SAVE]
+* [CANCEL]
+Enter data for an AIR event in the following fields> Why is it an air event?
+* DODIC (required) = #105
+* Nomenclature (required) = #00 BUCKSHOT M19
+* Loud Noise radio buttons (Always, Limited, N/A) = LIMITED
+* Service Branch [SITE-SPECIFIC]
+* Do Not Deprecate [checkbox]
+* Deprecation DateThe system allows changes to all editable fields.
+
+
+Select the [SAVE] button.
+
+The Administration > Ammunition > Ammunition table grid page is displayed, and the '#105' DODIC row is displayed.
+
+
+Select the Logout link.
+
+The Logout page displays with a system message> You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.
+[Login Again] link.
+
+RFMSS-108,Ammunition,FA Ammunition - EDIT confirmation of Ammunition record.,Ensure that DODIC ammunition entries can be successfully edited in the ammunition module.
+
+1.  User must have the necessary permissions to edit ammunition records.
+2.  Validate DODIC entry exists.
+3. Database is accessible.
+
+Open the RFMSS website and login with an FA credentials.,Observe the following Menu options are available>
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+
+
+Navigate to Administration > Ammunition > Ammunition
+
+The Administration > Ammunition > Ammunition table grid page is displayed.
+
+
+Select the 'edit' link under the Action column.
+The Administration > Ammunition > Ammunition > Ammunition page is displayed with the following fields>
+* DODIC (required)
+* Nomenclature (required)
+* Loud Noise radio buttons (Always, Limited, N/A)
+* Service Branch [SITE-SPECIFIC]
+* Do Not Deprecate [checkbox]
+* Deprecation Date
+* [SAVE]
+* [CANCEL]
+Select 'edit' under the Action column for DODIC = #105.
+
+The Administration > Ammunition > Ammunition > Ammunition page is displayed with the following fields>
+* DODIC (required)
+* Nomenclature (required)
+* Loud Noise radio buttons (Always, Limited, N/A)
+* Service Branch [SITE-SPECIFIC]
+* Do Not Deprecate [checkbox]
+* Deprecation Date
+* [SAVE]
+* [CANCEL]
+Update data the following fields>
+* Do Not Deprecate [checkbox] = UN-CHECK
+* Deprecation Date = select the deprecate tomorrow link
+
+The system allows changes to all editable fields.
+
+
+Select the [SAVE] button.
+
+,The Administration > Ammunition > Ammunition > Ammunition page is displayed. Scroll to the right and verify the Deprecation Date value is tomorrow's date.
+Select the Logout link.
+
+The Logout page displays with a system message> You have been logged out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
+
+RFMSS-115,Ammunition,FA Ammunition - Associate Weapons to an Ammunition record.,Ensure that DODIC ammunition record can be associated to Weapons in the ammunition module.
+
+1.  User must have the necessary permissions to associate ammunition records to weapons.
+2.  Validate DODIC entry exists.
+3. Database is accessible.
+
+Open the RFMSS website and login with an FA credentials.,Observe the following Menu options are available>
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+Navigate to Administration > Ammunition > Weapons to Ammunition
+
+The Administration > Ammunition > Weapons to Ammunition table grid page is displayed.
+
+
+Under the DODIC filter field enter '#'.
+,The filter results displays records that contains '#' in the DODIC column.
+Select the 'new' link under the Action column.
+,The Administration > Ammunition > Weapons to Ammunition > Weapon to Ammunication page is displayed.
+Select the [SEARCH ICON] next to the Weapon field.,A Weapon pop-up displays.
+Search/select 'M19-4KE'.,An Ammunition  sub-window displays.
+Select [CHECKBOX] for DODIC #102.,The records are highlighted.
+Select the [SAVE] button.
+
+,The Administration > Ammunition > Weapons to Ammunition page is displayed and validate DODIC #102 and #103 is associated to M19 Model Name.
+Select the Logout link.
+
+The Logout page displays with a system message> You have been logged out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
+
+RFMSS-124,Ammunition,FA Ammunition - Associate Weapons to mutiple Ammunition records.,Ensure that multiple DODIC ammunition records can be associated to Weapons in the ammunition module.
+
+1.  User must have the necessary permissions to associate ammunition records to weapons.
+2.  Validate DODIC entry exists.
+3. Database is accessible.
+
+Open the RFMSS website and login with an FA credentials.,Observe the following Menu options are available>
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+Navigate to Administration > Ammunition > Weapons to Ammunition
+
+The Administration > Ammunition > Weapons to Ammunition table grid page is displayed.
+
+
+Under the DODIC filter field enter '#'.
+,The filter results displays records that contains '#' in the DODIC column.
+Select the 'new' link under the Action column.
+,The Administration > Ammunition > Weapons to Ammunition > Weapon to Ammunication page is displayed.
+Select the [SEARCH ICON] next to the Weapon field.,A Weapon pop-up displays.
+Search/select 'M19-4KE'.,An Ammunition  sub-window displays.
+Select [CHECKBOXES] for DODIC #103 and #104.,The records are highlighted.
+Select the [SAVE] button.
+
+,The Administration > Ammunition > Weapons to Ammunition page is displayed and validate DODIC #102 and #103 is associated to M19 Model Name.
+Select the Logout link.
+
+The Logout page displays with a system message> You have been logged out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
+
+RFMSS-133,Ammunition,FA Ammunition  - Confirm DELETION of obsolete ammunition record.,Ensure that DODIC ammunition entries can be successfully deleted in the ammunition module.
+
+1.  User must have the necessary permissions to delete ammunition records.
+2.  Validate DODIC entry exists.
+3. Database is accessible.
+Open the RFMSS website and login with an FA credentials.,Observe the following Menu options are available>
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+
+Navigate to Administration > Ammunition > Ammunition
+
+The Administration > Ammunition > Ammunition table grid page is displayed.
+
+
+Select 'delete' under the Action column for DODIC = #105.
+
+The Administration > Ammunition > Ammunition > Ammunition page is displayed with the following system message> 
+Are you sure you want to delete #105?
+* [CONTINUE]
+* [CANCEL]
+Select the [CONTINUE] button.
+
+A system message displays>
+Please be aware of the following. To proceed, select all checkboxes to acknowledge and try again.
+[CHECKBOX] There are Ammunition to Weapon relationships that will be automatically deleted. 'More Information' link.
+
+Select the [CHECKBOX] and the [CONTINUE] button.
+
+The Administration > Ammunition > Ammunition table grid page is displayed and validate DODIC #105 is no longer displaying.
+
+
+Select the 'show deleted' link.
+
+The Administration > Ammunition > Ammunition table grid page is displayed and validate DODIC #105 is displayed.
+
+
+Select the Logout link.
+
+The Logout page displays with a system message> You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information. [Login Again] link.
+
+RFMSS-140,Ammunition,FA Ammunition - Reactive DELETED ammunition record.,Ensure that DODIC ammunition deleted entries can be reactived in the ammunition module.
+
+1.  User must have the necessary permissions to reactivate deleted ammunition records.
+2.  Validate DODIC entry exists.
+3. Database is accessible.
+Open the RFMSS website and login with an FA credentials.,Observe the following Menu options are available>
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+
+Navigate to Administration > Ammunition > Ammunition
+
+The Administration > Ammunition > Ammunition table grid page is displayed.
+
+
+Select the 'show deleted' link.
+
+The Administration > Ammunition > Ammunition table grid page is displayed and validate DODIC #105 is displayed.
+
+
+Select the 'reactivate' link under the Action column for DODIC = #105.
+The Administration > Ammunition > Ammunition > Ammunition page is displayed with the following fields>
+* DODIC (required)
+* Nomenclature (required)
+* Loud Noise radio buttons (Always, Limited, N/A)
+* Service Branch [SITE-SPECIFIC]
+* Do Not Deprecate [checkbox]
+* Deprecation Date
+* [SAVE]
+* [CANCEL]
+Select the [SAVE] button.
+
+The Administration > Ammunition > Ammunition > Ammunition 'show deleted page is displayed and validate DODIC #105 is no longer displayed.
+Select the 'hide deleted' link.
+
+The Administration > Ammunition > Ammunition table grid page is displayed and validate DODIC #105 is displayed.
+
+
+Select the Logout link.
+
+The Logout page displays with a system message> You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information. [Login Again] link.
+
+RFMSS-147,Ammunition,FA Ammunition - Associate Ground Facilities to Ammunition record.,Ensure that DODIC ammunition entries can be associated to Facilities in the ammunition module.
+
+1.  User must have the necessary permissions to associate ammunition record to a facility.
+2.  Validate DODIC entry exists.
+3. Database is accessible.
+
+Open the RFMSS website and login with an FA credentials.,Observe the following Menu options are available>
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+Navigate to Administration > Ammunition > Facilities to Ammunition
+
+The Administration > Ammunition > Facilities to Ammunition table grid page is displayed.
+
+
+Select the 'new' link under the Action column.
+,The Administration > Ammunition > Facility to Ammunition > Facilities to Ammunition page is displayed.
+Select the [SEARCH ICON] next to the Facility/Airspace Subdivision field.,The Facility/Airspace Subdivision pop-up displays.
+Under the Type column enter GROUND in the filter field.
+,Results displays all records with Facility Type = GROUND.
+Select 'BIG CREEK 1' via the 'select' link.,The DODIC sub-window displays.
+Select [CHECKBOX] for DODIC #101.,The records are highlighted.
+Select the [SAVE] button.
+
+,The Administration > Ammunition > Facility to Ammunition > Facilities to Ammunition page is displayed.
+Filter for 'BIG' under the Facility/Airspace Subdivision.,Results displays all records with Facility /Airspace Subdivision contianing 'BIG'.
+Validate the Facility/Airspace Subdivision for 'BIG CREEK 1' is associated to DODIC = #101.,The Facility/Airspace Subdivision for 'BIG CREEK 1' is associated to DODIC = #101.
+Select the Logout link.
+
+The Logout page displays with a system message> You have been logged out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
+
+RFMSS-158,Ammunition,FA Ammunition - Associate Ground Facilities to multiple Ammunition records.,Ensure that DODIC ammunition entries can be associated to Facilities in the ammunition module.
+
+1.  User must have the necessary permissions to associate mutiple ammunition records to facilities.
+2.  Validate DODIC entry exists.
+3. Database is accessible.
+
+Open the RFMSS website and login with an FA credentials.,Observe the following Menu options are available>
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+Navigate to Administration > Ammunition > Facilities to Ammunition
+
+The Administration > Ammunition > Facilities to Ammunition table grid page is displayed.
+
+
+Select the 'new' link under the Action column.
+,The Administration > Ammunition > Facility to Ammunition > Facilities to Ammunition page is displayed.
+Select the [SEARCH ICON] next to the Facility/Airspace Subdivision field.,The Facility/Airspace Subdivision pop-up displays.
+Under the Type column enter GROUND in the filter field.
+,Results displays all records with Facility Type = GROUND.
+Select 'BIG CREEK 1' via the 'select' link.,The DODIC sub-window displays.
+Select [CHECKBOX] for the following DODIC> #102, 103, 104, and 105.,The records are highlighted.
+Select the [SAVE] button.
+
+,The Administration > Ammunition > Facility to Ammunition > Facilities to Ammunition page is displayed.
+Filter for 'BIG' under the Facility/Airspace Subdivision.,Results displays all records with Facility /Airspace Subdivision contianing 'BIG'.
+Validate the Facility/Airspace Subdivision for 'BIG CREEK 1' is associated to DODIC = #102, 103, 104, and 105..The Facility/Airspace Subdivision for 'BIG CREEK 1' is associated to DODIC = #102, 103, 104, and 105..
+Select the Logout link.
+
+The Logout page displays with a system message> You have been logged out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
+
+RFMSS-169,Ammunition,FA Ammunition - Associate Air Facilities to Ammunition record.,Ensure that DODIC ammunition entries can be associated to Facilities in the ammunition module.
+
+1.  User must have the necessary permissions to associate ammunition record to a facility.
+2.  Validate DODIC entry exists.
+3. Database is accessible.
+Open the RFMSS website and login with an FA credentials.,Observe the following Menu options are available>
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+Navigate to Administration > Ammunition > Facilities to Ammunition
+
+The Administration > Ammunition > Facilities to Ammunition table grid page is displayed.
+
+
+Select the 'new' link under the Action column.
+,The Administration > Ammunition > Facility to Ammunition > Facilities to Ammunition page is displayed.
+Select the [SEARCH ICON] next to the Facility/Airspace Subdivision field.,The Facility/Airspace Subdivision pop-up displays.
+Under the Type column enter AIR in the filter field.
+,Results displays all records with Facility Type = AIR.
+Select 'AIR2117' via the 'select' link.,The DODIC sub-window displays.
+Under the Nomenclature column enter MIS in the filter field.
+,Results displays all records with Nomenclature containing 'MIS'.
+Select [CHECKBOX] for DODIC PV01.,The record is highlighted.
+Select the [SAVE] button.
+
+,The Administration > Ammunition > Facility to Ammunition > Facilities to Ammunition page is displayed.
+Filter for 'PV' under the DODIC column.,Results displays all records with DODIC contianing 'PV'.
+Validate that the DODIC PV01 is associated Facility/Airspace Subdivision = AIR2117.,The DODIC PV01 is associated Facility/Airspace Subdivision = AIR2117.
+Select the Logout link.
+
+The Logout page displays with a system message> You have been logged out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
+
+RFMSS-181,Ammunition,FA Ammunition - Associate Air Facilities to multip Ammunition record.,Ensure that DODIC ammunition entries can be associated to Facilities in the ammunition module.
+
+1.  User must have the necessary permissions to associate ammunition record to a facility.
+2.  Validate DODIC entry exists.
+3. Database is accessible.
+
+Open the RFMSS website and login with an FA credentials.,Observe the following Menu options are available>
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+Navigate to Administration > Ammunition > Facilities to Ammunition ,The Administration > Ammunition > Facilities to Ammunition table grid page is displayed.
+Select the 'new' link under the Action column.
+,The Administration > Ammunition > Facility to Ammunition > Facilities to Ammunition page is displayed.
+Select the [SEARCH ICON] next to the Facility/Airspace Subdivision field.,The Facility/Airspace Subdivision pop-up displays.
+Under the Type column enter AIR in the filter field.,Results displays all records with Facility Type = AIR.
+Select 'AIR2117' via the 'select' link. This wont work because you already did it in the previous script,The DODIC sub-window displays.
+Under the Nomenclature column enter MIS in the filter field.,Results displays all records with Nomenclature containing 'MIS'.
+Select [CHECKBOX] for DODIC PV01.,The record is highlighted.
+Select the [SAVE] button.,The Administration > Ammunition > Facility to Ammunition > Weapon to Ammunition page is displayed.
+Filter for 'PV' under the DODIC column.,Results displays all records with DODIC contianing 'PV'.
+Validate that the DODIC PV01 is associated Facility/Airspace Subdivision = AIR2117.,The DODIC PV01 is associated Facility/Airspace Subdivision = AIR2117.
+Select the Logout link.,The Logout page displays with a system message> You have been logged out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
+
+RFMSS-193,Ammunition,FA Ammunition - Attempt to save records that are null.,Verify that the system display a system message when required fields have 'null' values.
+1. The user is logged in as a Functional Administrator (FA).
+2. The ammunition module is accessible.
+
+Open the RFMSS website and login with an FA credentials. ,Observe the following Menu options are available>
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+Navigate to Administration > Ammunition > Ammunition ,The Administration > Ammunition > Ammunition table grid page is displayed.
+
+Select the 'new' link under the Action column. ,The Administration > Ammunition >  Ammunition > Ammunition page is displayed.
+Attempt to [SAVE] the form without filling in any fields., The submission is prevented, and error messages are displayed as
+follows>
+* DODIC is required.
+* Nomenclature is required.
+
+Select the [CANCEL] button.,The Administration > Ammunition > Ammunition table grid page is displayed.
+
+Navigate to Administration > Ammunition > Facilities to Ammunition, 
+The Administration > Ammunition > Facilities to Ammunition table grid page is displayed.
+
+Select the 'new' link under the Action column.
+,The Administration > Ammunition >  Facilities to Ammunition > Facility to Ammunition page is displayed.
+
+Attempt to [SAVE] the form without filling in any fields. , The submission is prevented, and error messages are displayed as
+follows>
+* Facility/Airspace Subdivision is required.
+Select the [CANCEL] button.,The Administration > Ammunition > Facilities to Ammunition table grid page is displayed.
+
+Navigate to Administration > Ammunition > Weapons to Ammunition, 
+The Administration > Ammunition > Weapons to Ammunition table grid page is displayed.
+
+Select the 'new' link under the Action column.
+,The Administration > Ammunition >  Weapons to Ammunition > Weapon to Ammunition page is displayed.
+
+Attempt to [SAVE] the form without filling in any fields. ,The submission is prevented, and error messages are displayed as
+follows>
+* Weapon is required.
+
+Navigate to Administration > Ammunition > Facilities to Weapons
+The Administration > Ammunition > Facilities to Weapons table grid page is displayed.
+
+
+Select the 'new' link under the Action column.
+,The Administration > Ammunition >  Facilities to Weapons  > Facility to Weapon page is displayed.
+Attempt to [SAVE] the form without filling in any fields.
+
+The submission is prevented, and error messages are displayed as
+follows>
+* Facility/Airspace Subdivision is required.
+Select the [CANCEL] button.,The Administration > Ammunition > Facilities to Ammunition table grid page is displayed.
+
+Select the Logout link.
+The Logout page displays with a system message> You have been logged out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
+
+RFMSS-1110,Ammunition,FA Ammunition - Test input field data type validation for Ammunition and Weapons modules.,Validate that each input field in the Ammunition and Weapons module correctly enforces its specified data type (e.g., date fields only accept valid dates).
+
+1. The user is logged in as a Functional Administrator (FA).
+2. The ammunition module is accessible.
+
+Open the RFMSS website and login with an FA credentials.
+*Expected Results:* Observe the following Menu options are available>
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* LibraryNot AutomatedFunctional,High,Active
+
+Navigate to Administration > Ammunition > Ammunition
+*Expected Results:* The Administration > Ammunition > Ammunition table grid page is displayed.
+
+Select the 'new' link under the Action column.
+*Expected Results:* The Administration > Ammunition >  Ammunition > Ammunition page is displayed.
+
+For text fields enter characters such as> %$^&^%$^&^*^**(&Y*()*_)(_)*_)KJLK for the DODIC and Nomenclature fields.
+For the date field enter invalid formats '28/89/8989'.*Expected Results:*The system allows data to be enterd.
+
+Attempt to [SAVE] button.
+*Expected Results:* The system should display an error message 
+Invalid Deprecation Date. (date)
+Make note that the DODIC and Nomenclature fields was accepted as valid characters since they are text fields.
+
+Select the [CANCEL] button. *Expected Results:* The Administration > Ammunition > Ammunition table grid page is displayed.
+
+Navigate to Administration > Ammunition > Weapons to Ammunition
+*Expected Results:* The Administration > Ammunition > Weapons to Ammunition table grid page is displayed.
+
+Select the 'new' link under the Action column.
+*Expected Results:* The Administration > Ammunition >  Weapons to Ammunition > Weapon to Ammunition page is displayed.
+Enter characters such as> %$^&^%$^&^*^**(&Y*()*_)(_)*_)KJLK for the Weapon field.The system allows data to be enterd.
+
+Attempt to [SAVE] button.
+*Expected Results:* The system should display an error message: You have not enterd a valid value for Weapon.  Please try again.
+
+Select the [CANCEL] button. *Expected Results:* The Administration > Ammunition > Weapons to Ammunition table grid page is displayed.
+
+Navigate to Administration > Ammunition > Facilities to Ammunition
+*Expected Results:* The Administration > Ammunition > Facilities to Ammunition table grid page is displayed.
+
+Select the 'new' link under the Action column.
+*Expected Results:* The Administration > Ammunition >  Facilities to Ammunition  > Facility to Ammunition page is displayed.
+
+Enter characters such as> %$^&^%$^&^*^**(&Y*()*_)(_)*_)KJLK for the Weapon field. 
+*Expected Results:* The system allows data to be enterd.
+
+Attempt to [SAVE] button.
+*Expected Results:* The system should displays an error message: You have not enterd a valid value for Facility/Airspace Subdivision.  Please try again.
+
+Select the [CANCEL] button.
+*Expected Results:* The Administration > Ammunition > Facilities to Ammunition table grid page is displayed.
+
+Navigate to Administration > Ammunition > Facilities to Weapons
+*Expected Results:* The Administration > Ammunition > Facilities to Weapons table grid page is displayed.
+
+Select the 'new' link under the Action column.
+*Expected Results:* The Administration > Ammunition >  Facilities to Weapons > Facility to Weapons page is displayed.
+
+Enter characters such as> %$^&^%$^&^*^**(&Y*()*_)(_)*_)KJLK for the Weapon field.
+*Expected Results:* The system allows data to be enterd.
+
+Attempt to [SAVE] button.
+*Expected Results:* The system should display an error message 
+You have not enterd a valid value for Facility/Airspace Subdivision.  Please try again.
+
+Select the [CANCEL] button. *Expected Results:* The Administration > Ammunition > Facilities to Weapons table grid page is displayed.
+
+Select the Logout link.
+*Expected Results:* The Logout page displays with a system message> You have been logged out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
+
+
+RFMSS-1132,Ammunition,FA Ammunition - Verify Functional Administrator full access rights.,Validate that a Functional Administrator has full access rights to create, edit, delete, and view all equipment requests for both ammunition and weapons module, ensuring they can perform all necessary operations.
+
+1. A Functional Administrator account is created and active in the
+system.
+2. The system has both ammunition and weapons records. 
+3. The Functional Administrator is logged into the system.
+
+1. Open the RFMSS website and login with an FA credentials.
+    *Expected Results:* Observe the following Menu options are available: 
+        * Home
+        * Scheduling
+        * Operations
+        * Administration
+        * Reports
+        * Library
+
+2. Navigate to Administration > Ammunition > Ammunition
+    *Expected Results:* The Administration > Ammunition > Ammunition table grid page is displayed.
+
+
+3. Select the 'new' link under the Action column.
+    *Expected Results:* The Administration > Ammunition > Ammunition > Ammunition page is displayed with the following fields:
+    * DODIC (required)
+    * Nomenclature (required)
+    * Loud Noise radio buttons (Always, Limited, N/A)
+    * Service Branch [SITE-SPECIFIC]
+    * Do Not Deprecate [checkbox]
+    * Deprecation Date
+    * [SAVE]
+    * [CANCEL]
+4. Enter data for an AIR event in the following fields:
+    * DODIC (required) = #10D Is it suppose to be 01D?
+    * Nomenclature (required) = ELGTR II LASER GUIDED BOMB (LGB) TACTICAL TRAINING
+    * Loud Noise radio buttons (Always, Limited, N/A) = ALWAYS
+    * Service Branch [SITE-SPECIFIC]
+    * Do Not Deprecate [checkbox]
+    * Deprecation Date
+    *Expected Results:* The system allows changes to all editable fields.
+
+
+5. Select the [SAVE] button.
+    *Expected Results:* The Administration > Ammunition > Ammunition table grid page is displayed, and the '##01D' DODIC row is displayed. Remove one of the #
+
+6. Select the newly created record #01D and attempt to edit it. 
+    Select Edit
+    *Expected Results:* The system allows the Functional Administrator to edit all fields of the selected request.
+
+7. Select the [SAVE] button.
+    *Expected Results:* The system displays the following message:
+        * Do Not Deprecate [checkbox] = UN-CHECK Our these fields suppose to be in the line above
+        * Deprecation Date = 30/08/2078The system allows changes to all editable fields.
+
+8. Select the [SAVE] button.
+    *Expected Results:* The Administration > Ammunition > Ammunition table grid page is displayed, and the '##01D' DODIC row displays the Deprecation Date '30/08/2078.
+
+9. Select record #01D and select the delete lind unter the Action column.
+    *Expected Results:* The Administration > Ammunition > Ammunition table grid page is displayed, and a system message displays: Are you sure you want to delete #01D? 
+    [CONTINUE] [CANCEL]
+
+10. Seelct the [CONTINUE] button.
+    *Expected Results:* The system allows the Ammunition to be deleted and is no longer displayed in the Administration > Ammunition > Ammunition table grid.
+11. From the Administration > Ammunition > Ammunition table grid, select the 'show deleted' link.
+    *Expected Results:* The Administration > Ammunition > Ammunition table grid displays with the 'hide deleted' link at the top of the table grid. Validate that the record that was deleted from the previous step is displayed with a \reactive\status under the Action column.
+12. Select the Logout link.
+    *Expected Results:* The Logout page displays with a system message> You have been logged
+    out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
+
+
+RFMSS-1144,Ammunition,FA Ammunition - Validate Fire Desk Operator (FDO) access limitations.,Verify that FDOs have limited access to the ammunition and weapons modules, such as viewing and approving, but not creating or deleting, ensuring their access aligns with their role responsibilities.
+
+1. An FDO account is created and active in the
+system.
+2. The system has both ammunition and weapons records. 
+
+1. Open the RFMSS website and login with an FDO credentials.
+    *Expected Results:* 
+        Observe the following Menu options are available>
+        * Home
+        * Scheduling
+        * Operations
+        * Administration
+        * Reports
+        * Library
+
+2. Navigate to Administration > Ammunition > Ammunition
+    *Expected Results:* The Administration > Ammunition > Ammunition table grid page is displayed with view only capabilities.
+
+3. Navigate to Administration > Ammunition > Weapons to Ammunition
+    *Expected Results:* The Administration > Ammunition > Weapons to Ammunition table grid page is displayed with view only capabilities.
+
+4. Navigate to Administration > Ammunition > Facilities to Ammunition
+    *Expected Results:* The Administration > Ammunition > Facilities to Ammunition table grid page is displayed with view only capabilities.
+
+5. Navigate to Administration > Ammunition > Facilities to Weapons
+    *Expected Results:* The Administration > Ammunition > Facilities to Weapons table grid page is displayed with view only capabilities.
+
+6. Navigate to Administration > Ammunition > Delivery Types
+    *Expected Results:* The Administration > Ammunition > Delilvery Types table grid page is displayed with view only capabilities.
+
+7. Select the Logout link.
+    *Expected Results:* The Logout page displays with a system message> You have been logged
+    out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
+
+
+RFMSS-1151,Ammunition,FA Ammunition - Validate Range Control Scheduler (RC-SCHED) access limitations.,Verify that RC-SCHED has limited access to the ammunition and weapons modules, such as viewing and approving, but not creating or deleting, ensuring their access aligns with their role responsibilities.
+
+1. An RC-SCHED account is created and active in the
+system.
+2. The system has both ammunition and weapons records. 
+
+1. Open the RFMSS website and login with an RC-SCHED credentials.
+    *Expected Results:* Observe the following Menu options are available>
+        * Home
+        * Scheduling
+        * Operations
+        * Administration
+        * Reports
+        * Library
+
+2. Navigate to Administration > Ammunition > Ammunition
+    *Expected Results:* The Administration > Ammunition > Ammunition table grid page is displayed with view only capabilities.
+
+3. Navigate to Administration > Ammunition > Weapons to Ammunition
+*Expected Results:* The Administration > Ammunition > Weapons to Ammunition table grid page is displayed with view only capabilities.
+
+4. Navigate to Administration > Ammunition > Facilities to Ammunition
+*Expected Results:* The Administration > Ammunition > Facilities to Ammunition table grid page is displayed with view only capabilities.
+
+5. Navigate to Administration > Ammunition > Facilities to Weapons
+*Expected Results:* The Administration > Ammunition > Facilities to Weapons table grid page is displayed with view only capabilities.
+
+6. Navigate to Administration > Ammunition > Delivery Types
+*Expected Results:* The Administration > Ammunition > Delilvery Types table grid page is displayed with view only capabilities.
+
+7. Select the Logout link.
+*Expected Results:* The Logout page displays with a system message> You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
+
+
+RFMSS-1158,Ammunition,FA Ammunition - Validate Range Control Safety (RC-SFTY) access limitations.,Verify that RC-SFTY has limited access to the ammunition and weapons modules, such as viewing and approving, but not creating or deleting, ensuring their access aligns with their role responsibilities.
+
+1. An RC-SFTY account is created and active in the system.
+2. The system has both ammunition and weapons records. 
+
+1. Open the RFMSS website and login with an RC-SFTY credentials.
+    *Expected Results:* Observe the following Menu options are available>
+        * Home
+        * Scheduling
+        * Operations
+        * Administration
+        * Reports
+        * Library
+
+2. Navigate to Administration > Ammunition > Ammunition
+    *Expected Results:* The Administration > Ammunition > Ammunition table grid page is displayed with view only capabilities.
+
+3. Navigate to Administration > Ammunition > Weapons to Ammunition
+    *Expected Results:* The Administration > Ammunition > Weapons to Ammunition table grid page is displayed with view only capabilities.
+
+4. Navigate to Administration > Ammunition > Facilities to Ammunition
+    *Expected Results:* The Administration > Ammunition > Facilities to Ammunition table grid page is displayed with view only capabilities.
+
+5. Navigate to Administration > Ammunition > Facilities to Weapons
+    *Expected Results:* The Administration > Ammunition > Facilities to Weapons table grid page is displayed with view only capabilities.
+
+6. Navigate to Administration > Ammunition > Delivery Types
+    *Expected Results:* The Administration > Ammunition > Delilvery Types table grid page is displayed with view only capabilities.
+
+7. Select the Logout link.
+    *Expected Results:* The Logout page displays with a system message> You have been logged out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
+
+RFMSS-1165,Ammunition,FA Ammunition - Validate Range Control Safety (RC-ENV) access limitations.,Verify that RC-ENV has limited access to the ammunition and weapons modules, such as viewing and approving, but not creating or deleting, ensuring their access aligns with their role responsibilities.
+
+1. An RC-ENV account is created and active in the system.
+2. The system has both ammunition and weapons records. 
+
+1. Open the RFMSS website and login with an RC-ENV credentials.
+    *Expected Results:* Observe the following Menu options are available>
+        * Home
+        * Scheduling
+        * Operations
+        * Administration
+        * Reports
+        * Library
+
+2. Navigate to Administration > Ammunition > Ammunition
+    *Expected Results:* The Administration > Ammunition > Ammunition table grid page is displayed with view only capabilities.
+
+3. Navigate to Administration > Ammunition > Weapons to Ammunition
+    *Expected Results:* The Administration > Ammunition > Weapons to Ammunition table grid page is displayed with view only capabilities.
+
+4. Navigate to Administration > Ammunition > Facilities to Ammunition
+    *Expected Results:* The Administration > Ammunition > Facilities to Ammunition table grid page is displayed with view only capabilities.
+
+5. Navigate to Administration > Ammunition > Facilities to Weapons
+    *Expected Results:* The Administration > Ammunition > Facilities to Weapons table grid page is displayed with view only capabilities.
+
+6. Navigate to Administration > Ammunition > Delivery Types
+    *Expected Results:* The Administration > Ammunition > Delilvery Types table grid page is displayed with view only capabilities.
+
+7. Select the Logout link.
+    *Expected Results:* The Logout page displays with a system message> You have been logged
+    out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
+
+
+RFMSS-1172,Ammunition,FA Ammunition - Validate Range Control Safety (RC-LOG) access limitations.,Verify that RC-LOG has limited access to the ammunition and weapons modules, such as viewing and approving, but not creating or deleting, ensuring their access aligns with their role responsibilities.
+
+1. An RC-LOG account is created and active in the system.
+2. The system has both ammunition and weapons records. 
+
+1. Open the RFMSS website and login with an RC-LOG credentials.
+    *Expected Results:* Observe the following Menu options are available>
+        * Home
+        * Scheduling
+        * Operations
+        * Administration
+        * Reports
+        * Library
+
+2. Navigate to Administration > Ammunition > Ammunition
+    *Expected Results:* The Administration > Ammunition > Ammunition table grid page is displayed with view only capabilities.
+
+3. Navigate to Administration > Ammunition > Weapons to Ammunition
+    *Expected Results:* The Administration > Ammunition > Weapons to Ammunition table grid page is displayed with view only capabilities.
+
+4. Navigate to Administration > Ammunition > Facilities to Ammunition
+    *Expected Results:* The Administration > Ammunition > Facilities to Ammunition table grid page is displayed with view only capabilities.
+
+5. Navigate to Administration > Ammunition > Facilities to Weapons
+    *Expected Results:* The Administration > Ammunition > Facilities to Weapons table grid page is displayed with view only capabilities.
+
+6. Navigate to Administration > Ammunition > Delivery Types
+    *Expected Results:* The Administration > Ammunition > Delilvery Types table grid page is displayed with view only capabilities.
+
+7. Select the Logout link.
+    *Expected Results:* The Logout page displays with a system message> You have been logged out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
+
+
+RFMSS-1179,Ammunition,FA Ammunition - Validate Read-Only access limitations.,Verify that READ-ONLY has limited access to the ammunition and weapons modules, such as viewing and approving, but not creating or deleting, ensuring their access aligns with their role responsibilities.
+
+1. An READ-ONLY account is created and active in the system.
+2. The system has both ammunition and weapons records. 
+
+1. Open the RFMSS website and login with an Read-Only credentials.
+    *Expected Results:* Observe the following Menu options are available>
+        * Home
+        * Scheduling
+        * Operations
+        * Administration
+        * Reports
+        * Library
+
+2.Navigate to Administration > Ammunition > Ammunition
+    *Expected Results:* The Administration > Ammunition > Ammunition table grid page is displayed with view only capabilities.
+
+3. Navigate to Administration > Ammunition > Weapons to Ammunition
+    *Expected Results:* The Administration > Ammunition > Weapons to Ammunition table grid page is displayed with view only capabilities.
+
+4. Navigate to Administration > Ammunition > Facilities to Ammunition
+    *Expected Results:* The Administration > Ammunition > Facilities to Ammunition table grid page is displayed with view only capabilities.
+
+5. Navigate to Administration > Ammunition > Facilities to Weapons
+    *Expected Results:* 
+The Administration > Ammunition > Facilities to Weapons table grid page is displayed with view only capabilities.
+
+6. Navigate to Administration > Ammunition > Delivery Types
+    *Expected Results:* The Administration > Ammunition > Delilvery Types table grid page is displayed with view only capabilities.
+
+7. Select the Logout link.
+    *Expected Results:* The Logout page displays with a system message> You have been logged out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
+
+RFMSS-1186,Ammunition,FA Ammunition - Filter and Sort Ammunition and Weapons records.,Test the ability to filter and sort Ammunition and Weapons records to ensure the filtering mechanism works correctly.
+
+1. The Functional Administrator (FA) is logged into the system. 
+2. The system has both ammunition and weapons records. 
+
+1. Open the RFMSS website and login as a Functional Administrator.
+    *Expected Results:* Observe the following Menu options are available>
+        * Home
+        * Scheduling
+        * Operations
+        * Administration
+        * Reports
+        * Library
+
+2. Navigate to Administration > Ammunition > Ammunition
+    *Expected Results:* The Administration > Ammunition > Ammunition table grid page is displayed. Observe that the following columns with filtering capability:
+        * DODIC 
+        * Nomenclature 
+        * Hero
+        * Vert Hazard Steel
+        * Vert Hazard Concrete
+        * Vert Hazard Earth
+        * Vert Hazard Water
+        * Service Branch [SITE-SPECIFIC]
+        * Do Not Deprecate [checkbox]
+        * Deprecation Date
+        * Loud Noise radio buttons (Always, Limited, N/A)
+
+
+3. Enter 'SUSC' in the Hero filter column
+*Expected Results:* The results list displays records that contains SUSC in the Hero column.
+
+4. Enter '9000' in the Vert Hazard Steel filter column
+*Expected Results:* The results list displays records that contains 9000 in the Vert Hazard Steel column.
+
+5. Clear the filters from the Hero and the Vert Hazard Steel columns by selecting the [X] next to the fields.
+*Expected Results:* The Ammunition page displays all records available.
+
+6. Select the [FILTER ICON] next to [DEPRECATION DATE].
+*Expected Results:* A pop-up window displays listing the filtering options available.
+
+7. Select the filter option 'Is greater than'.
+*Expected Results:* Validate a checkbox is next to the 'Is greater than'.
+
+8. Navigate to Administration > Ammunition > Weapons to Ammunition
+    *Expected Results:* The Administration > Ammunition > Weapons to Ammunition table grid page is displayed.      Observe that the following columns with filtering capability>
+    * Model Name 
+    * Weapon EIC 
+    * Weapon Nomenclature
+    * DODIC
+    * Ammunition Nomenclature
+    * Service Branch ,
+
+9. Enter '4' in the Weapon EIC filter column.
+    *Expected Results:* The results list displays records that contains 4 in the Weapon EIC column.
+
+10. Enter 'N' in the DODIC filter column
+    *Expected Results:* The results list displays records that contains N in the DODIC column.
+
+11. Clear the filters from the Weapon EIC and the DODIC columns by selecting the [X] next to the fields.
+    *Expected Results:* The Ammunition page displays all records available.
+
+12. Select the Logout link.
+    *Expected Results:* The Logout page displays with a system message> You have been logged out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
+
+RFMSS-1200,Ammunition,FA Ammunition - Export and View Ammunition and Weapons records.,Test the search, view, and export functionality.
+
+1. The Functional Administrator (FA) is logged into the system. 
+2. The FA has the necessary permissions to view and search,view and export ground and air event records. 
+
+1. Open the RFMSS website and login as a Functional Administrator.
+    *Expected Results:* Observe the following Menu options are available>
+        * Home
+        * Scheduling
+        * Operations
+        * Administration
+        * Reports
+        * Library
+
+2. Navigate to Administration > Ammunition > Ammunition
+    *Expected Results:* The Administration > Ammunition > Ammunition table grid page is displayed. At the bottom of the table grid, select the show all pages.The pagination is no longer displayed and all records are displayed.
+
+3. Select the PDF icon to export the Ammunition data.
+    *Expected Results:* The system downloads the PDF file. View and verify that the exported results is accurate.
+
+4. Select the EXCEL icon to export the Ammunition data.
+    *Expected Results:* The system downloads the XLSX file. View and verify that the exported results is accurate.
+
+5. Select the WORD icon to export the Ammunition data.
+    *Expected Results:* The system downloads the XLSX file. View and verify that the exported results is accurate.
+
+6. Navigate to Administration > Ammunition > Weapons to Ammunition
+    *Expected Results:* The Administration > Ammunition > Weapons to Ammunition table grid page is displayed.
+
+7. Select the PDF icon to export the Ammunition data.
+    *Expected Results:* The system downloads the PDF file. View and verify that the exported results is accurate.
+
+8. Select the EXCEL icon to export the Ammunition data.
+    *Expected Results:* The system downloads the XLSX file. View and verify that the exported results is accurate.
+
+9. Select the WORD icon to export the Ammunition data.
+    *Expected Results:* The system downloads the XLSX file. View and verify that the exported results is accurate.
+
+10. Select the Logout link.
+    *Expected Results:* The Logout page displays with a system message> You have been logged out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
+
+RFMSS-1211,Ammunition,FA Ammunition - Bulk deletion of multiple Weapons to Ammunition records.,Test the functionality to delete multiple Standard Event records simultaneously.
+
+1. The Functional Administrator (FA) is logged into the system. 
+2. The FA has the necessary permissions to view and search,view and export ground and air event records. 3.  The system supports a bulk deletion feature for Standard Events.
+
+1. Open the RFMSS website and login with an FA credentials.
+    *Expected Results:* Observe the following Menu options are available>
+        * Home
+        * Scheduling
+        * Operations
+        * Administration
+        * Reports
+        * Library
+
+2. Navigate to Administration > Ammunition > Weapons to Ammunition
+    *Expected Results:* The Administration > Ammunition > Weapons Ammunition table grid page is displayed.
+
+3. Enter '#' in the DODIC filter column
+    *Expected Results:* The results list displays records that contains # in the DODIC column.
+
+4. Select the first 3 rocords by selecting the checkboxes.
+    *Expected Results:* Multiple records are selected and highlighted.
+
+5. Under the action column select 'delete selected'.
+    *Expected Results:* The Administration > Ammunition > Weapons Ammunition > Weapon to Ammunition table grid page is dispalayed with a system message> WEAPON TO AMMUNITION RELATIONSHIPS TO BE DELTED. [CONTINUE] [CANCEL]
+
+6. Select the [CONTINUE] button.
+    *Expected Results:* The Administration > Ammunition > Weapons Ammunition table grid page is displayed.
+
+7. Validate the 3 records from the previous step are not longer displaying in the table grid.
+    *Expected Results:* The deleted records are no longer visible in the Weapons to Ammunition table grid.
+
+8. Select the Logout link.
+    *Expected Results:* The Logout page displays with a system message> You have been logged out of RFMSS. Close the browser window to ensure your browser completely clears your login information. [Login Again] link.
