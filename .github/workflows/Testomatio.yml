@@ -1,0 +1,26 @@
+# This workflow will be used solely by Testomat.io, so it should start only on workflow_dispatch event. 
+
+name: Testomatio Tests
+
+on:
+  workflow_dispatch:
+    inputs:
+      grep:
+        description: 'tests to grep '
+        required: false
+        default: ''
+      run:
+        required: false
+      testomatio:
+        required: false
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# The Job should include a step where the test runner is executed with --grep option and TESTOMATIO environment variables passed in.
+
+jobs:
+     - run: npx codeceptjs run --grep "${{ github.event.inputs.grep }}"
+      env:
+        TESTOMATIO: "${{ github.event.inputs.testomatio }}"
+        TESTOMATIO_RUN: "${{ github.event.inputs.run }}"
