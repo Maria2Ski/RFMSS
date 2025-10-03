@@ -1,0 +1,103 @@
+﻿Test Case ID - Module - Title - Description/User Story - Preconditions - Test Steps - Expected Results - Test Data - Defects/Remarks - ReqID - Status - Automation - Test Type - Priority - State
+
+RFMSS-SMK-601 - Library - Verify Document Access
+1. Log in to the RFMSS application.
+2. Navigate to Library from the Menu bar.
+3. Open and view Verify that users can access and view documents in the Library.
+documents (regulations -  circulars -  pamphlets -  manuals).
+    *Expected Results:* Documents are accessible -  viewable -  and properly displayed within the RFMSS application.
+List of library documents
+RQ_040
+
+RFMSS-SMK-605 - Library - Verify Document Download
+Verify that users can download documents from the Library.
+1. Log in to the RFMSS application.
+2. Navigate to Library.
+3. Select a document.
+4. Click the Download button.
+    *Expected Results:* Selected document is downloaded successfully.
+Document to download
+RQ_041
+
+RFMSS-SMK-609 - Library - Verify Document Search
+Verify that users can search for documents in the Library using keywords.
+1. Log in to the RFMSS application.
+2. Navigate to Library.
+3. Enter a keyword in the search bar.
+4. Click the Search button.
+    *Expected Results:* Search results are displayed with documents matching the keyword.
+Valid search keyword
+RQ_042
+
+RFMSS-SMK-613 - Library - Verify Document Filtering
+Verify that users can filter Library documents by category.
+1. Log in to the RFMSS application.
+2. Navigate to Library.
+3. Choose a category from the filtering options.
+4. Apply the filter.
+    *Expected Results:* Documents are filtered and displayed according to the selected category.
+Filtering categories
+RQ_043
+
+RFMSS-SMK-617 - Library - Verify Document Sorting
+Verify that users can sort Library documents by date -  title -  or other criteria.
+1. Log in to the RFMSS application.
+2. Navigate to Library.
+3. Select a sorting option (date -  title -  etc.).
+4. Apply the sorting option.
+    *Expected Results:* Documents are sorted according to the selected criteria.
+Sorting criteria availability
+RQ_044
+
+RFMSS-SMK-621 - Library - Verify Document Upload (Admin only)
+Verify that Functional Administrators can upload new documents to the Library.
+Functional Administrator logged in.
+1. Log in as Functional Administrator.
+2. Navigate to Library.
+3. Click the Upload button.
+4. Choose a document to upload.
+5. Complete the upload process.
+    *Expected Results:* New document is uploaded to the Library and is accessible to users.
+Document to upload
+RQ_045
+
+RFMSS-SMK-626 - Library - Verify Document Deletion (Admin only)
+Verify that Functional Administrators can delete documents from the Library.
+Functional Administrator logged in.
+1. Log in as Functional Administrator.
+2. Navigate to Library.
+3. Select a document.
+4. Click the Delete button.
+5. Confirm deletion.
+    *Expected Results:* Document is deleted from the Library.
+Document to delete
+RQ_046
+
+RFMSS-SMK-631 - Library - Verify Document Metadata Display
+Verify that document metadata (e.g. -  title -  author -  date) is displayed correctly in the Library. - 
+1. Log in to the RFMSS application.
+2. Navigate to Library.
+3. Open a document and view its metadata.
+    *Expected Results:* Document metadata is displayed correctly (title -  author -  date -  etc.)
+Example documents with metadata
+RQ_047
+
+
+RFMSS-SMK-634 - Library - Verify Access Permissions
+Verify that different user roles have appropriate access permissions to Library documents (read-only -  upload -  delete).
+1. Log in as different user roles (e.g. -  User -  Functional Administrator).
+2. Navigate to Library.
+3. Check access permissions (read-only -  upload -  delete).
+    *Expected Results:* Access permissions are enforced according to user roles.
+User roles and permissions
+RQ_048
+
+RFMSS-SMK-637 - Library - Verify Document Version Control
+Verify that document version control is handled correctly when uploading new versions of existing documents (Admin only).
+1. Log in as Functional Administrator.
+2. Navigate to Library.
+3. Select a document to upload a new version.
+4. Upload a new version.
+    *Expected Results:* New version of the document is uploaded -  and version history is maintained.
+Document with versions
+RQ_049

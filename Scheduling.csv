@@ -1,0 +1,105 @@
+﻿Test Case ID - Module - Title - Description/User Story - Preconditions - Test Steps - Expected Results - Test Data - Defects/Remarks - Req ID - Status - Automation - Test Type - Priority - State
+
+RFMSS-SMK-202 - Future Date Tool - Verify Future Date Tool Display
+Verify that the Future Date Tool displays correctly and allows interaction with scheduling data.
+1. Log in to the RFMSS application.
+2. Navigate to Scheduling > Future Date Tool.
+3. Verify that Furture Date Tool displays with no errors.
+    *Expected Results:* Future Date Tool displays correctly with all expected data and interactive functionalities. - 
+RQ_010 - PASS - 
+Functional (Smoke)
+
+RFMSS-SMK-205 - Two Week Calendar - Verify Calendar Display
+Verify that the Two Week Calendar displays correctly and allows interaction with scheduling data.
+1. Login to the RFMSS application.
+2. Navigate to Scheduling > Two Week Calendar.
+3. Verify that Two Week Calendar displays with no errors.
+    *Expected Results:* Two Week Calendar displays correctly with all expected data and interactive functionalities.
+RQ_010 - PASS - 
+Functional (Smoke)
+
+RFMSS-SMK-208 - RCNI Lookup - Verify RCNI Lookup
+Verify that users can perform RCNI Lookup accurately. - 
+User logged in. A valid RCNI - 
+1. Login to the RFMSS application.
+2. Navigate to Scheduling > RCNI Lookup.
+3. Enter RCNI and click ""Lookup""
+    *Expected Results:* Relevant request details are displayed based on the RCNI entered.
+Test Data: Valid RCNI (208928 -  208929)
+RQ_011
+Functional (Smoke)
+
+RFMSS-SMK-211 - Request - Verify Request Creation
+Verify that users can create a new request.
+1. Log into the RFMSS application.
+2. Navigate to Scheduling > Request.
+3. Fill in request details.
+4. Submit request.
+    *Expected Results:* Request is successfully created and listed in the system. - 
+Test Data: New request details.
+RQ_012 - PASS - 
+Functional (Smoke)
+
+RFMSS-SMK-215 - Range Bulletin - Verify Range Bulletin Display
+Verify that the Range Bulletin displays correctly and shows all expected data. - User logged in. - 
+1. Log into the RFMSS application.
+2. Navigate to Scheduling > Range Bulletin.
+3. Select Installation = FORT JOHNSON.
+4. Check Range Bulletin data is displayed.
+    *Expected Results:* Range Bulletin displays correctly with all expected data and functionalities. - 
+    Test Data: FORT JOHNSON
+    RQ_014 - PASS
+    Functional (Smoke)
+
+RFMSS-SMK-219 - Request Processing - Verify Request Processing
+Verify that users can process -  view -  modify -  approve -  disapprove -  cancel -  reinitiate existing requests." - User logged in. - 
+1. Log into the RFMSS application.
+2. Navigate to Scheduling > Request Processing.
+3. Process a request by taking various actions (approve -  modify -  etc.).
+    *Expected Results:* Requests are processed with the appropriate status changes and actions performed are reflected correctly. - 
+    Test Data: Existing request details (208928 -  208929)
+     - PASS
+    Functional (Smoke)
+
+RFMSS-SMK-222 - Request Templates - Verify Request Template Creation
+Verify that users can create and use request templates. - User logged in. - 
+1. Log into the RFMSS application.
+2. Navigate to Scheduling > Request Templates.
+3. Create a new request template.
+4. Use the template to create a new request.
+    *Expected Results:* Request template is created successfully and can be used to create new requests
+    Test Data: Request template details
+    RQ_016
+    Functional (Smoke)
+    
+RFMSS-SMK-226 - Communication Log Sheet - Verify Communication Log Sheet
+Verify that the Communication Log Sheet displays correctly and captures all relevant communication logs. - User logged in. - 
+1. Log into the RFMSS application.
+2. Navigate to Scheduling > Communication Log Sheet.
+3. Check the display and data logging functionalities.
+    *Expected Results:* Communication Log Sheet displays correctly and captures appropriate communication logs.
+    Test Data: Installation = FORT JOHNSON -  Fire Desk = RANGE CONTROL 1
+    RQ_017
+    Functional (Smoke)
+
+RFMSS-SMK-229 - Co-Use Agreement List - Verify Co-Use Agreement List
+Verify users can view and interact with the Co-Use Agreement List.
+Two Unit Scheduler accounts with conflict for the same reservation RCNI.
+1. Log into the RFMSS application.
+2. Navigate to Scheduling > Co-Use Agreement List.
+3. Check the display and interactions.
+    *Expected Results:* Co-Use Agreement List displays correctly and allows interactions (approve -  reject -  etc.).
+    Test Data: Existing agreement details
+    RQ_018
+    Functional (Smoke)
+
+RFMSS-SMK-232 - FAA Airspace Schedule - Verify FAA Airspace Schedule
+Verify that FAA Airspace Schedules display correctly and can be modified or approved as applicable. - User logged in with appropriate permissions.
+1. Log into the RFMSS application.
+2. Navigate to Scheduling > FAA Airspace Schedule.
+3. Check the display -  and modify/approve actions.
+    *Expected Results:* FAA Airspace Schedule displays correctly and allows appropriate modifications or approvals.
+    Test Data: Airspace schedule details
+    RQ_019
+    Functional (Smoke)
+

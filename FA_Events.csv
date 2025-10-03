@@ -1,0 +1,1128 @@
+﻿Test Case ID,Module Name,Title,Description/User Story,Preconditions,#,Steps,Expected Result,Test Data,Defect/Remarks,ReqID,Status,Automation,Test Type,Type of Test Case,Priority,State
+TC-710,Events,FA Event - create NEW AIR and GROUND Events.,"Ensure that new event entries can be successfully created in the equipment events module.
+
+","1.  User must have the necessary permissions to create new events.
+2.  Required fields needed for creating a new event must be clearly
+    defined and available in the system.
+
+",,"1. Open the RFMSS website and login with an FA credentials.
+
+","1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+
+",,,,,Not Automated,Manual,Functional,Critical,Active
+,,,,,,"2. Navigate to Administration : Event: Events
+
+","2. The Administration : Event : Events table grid page is displayed.
+
+",,,,,,,,,
+,,,,,,"3. Select the 'new' link under the Action column.
+
+","3. The Administration : Event : Events : Event page is displayed with the
+following fields:
+* Event Name (required)
+* Event Type (required)
+* Category [search icon] (required)
+* Airspace Activity Type (required for Air events only)
+* Do Not Deprecate [checkbox]
+* Deprecation Date
+* Description
+* Loud Noise radio buttons (Always, Limited, N/A)
+* [SAVE]
+*[CANCEL]
+
+",,,,,,,,,
+,,,,,,"4. Enter data for an AIR event in the following fields:
+* Event Name (required) = TST AIR EVENT
+* Event Type (required) = AIR
+* Category [search icon] = FIRE
+* Airspace Activity Type (required for Air events only) = AIR GUNNERY
+* Loud Noise radio buttons (Always, Limited, N/A) = ALWAYS
+* Do Not Deprecate [checkbox] = CHECKED
+* Deprecation Date
+* Description = TESTING EVENT FOR AIR
+","4. The system allows changes to all editable fields.
+
+",,,,,,,,,
+,,,,,,"5. Save the modified data. Click the [SAVE] button.
+
+","5. The Administration : Event : Events table grid page is displayed, and
+the TST AIR EVENT row is 'orange'.
+
+",,,,,,,,,
+,,,,,,"6. Select the 'new' link under the Action column.
+
+","6. The Administration : Event : Events : Event page is displayed with the
+following fields:
+* Event Name (required)
+* Event Type (required)
+* Category [search icon]
+* Airspace Activity Type (required for Air events only)
+* Loud Noise radio buttons (Always, Limited, N/A)
+* Do Not Deprecate [checkbox]
+* Deprecation Date
+* Description
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"7. Enter data to the following fields:
+* Event Name (required) = TST GROUND EVENT
+* Event Type (required) = GROUND
+* Category [search icon] = MAINT
+* Loud Noise radio buttons (Always, Limited, N/A) = LIMITED
+* Do Not Deprecate [checkbox] = CHECKED
+* Deprecation Date
+* Description = GROUND MAINTENANCE","7. The system allows changes to all editable fields.
+
+",,,,,,,,,
+,,,,,,"8. Save the modified data. Click the [SAVE] button.
+
+","8. The Administration : Event : Events table grid page is displayed, and
+the TST GROUND EVENT row is 'yellow'.
+
+",,,,,,,,,
+,,,,,,"9. Select the Logout link.
+
+","9. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information.""
+[Login Again] link.",,,,,,,,,
+TC-713,Events,FA Event - EDIT existing AIR and GROUND Events.,"Ensure that edited event entries can be successfully created in the
+equipment events module.
+
+","1.  User must have the necessary permissions to edit events in the FA
+    Event module.
+2.  The system must have an active, functioning interface for editing
+    existing events.
+3.  Required fields needed for creating a new vehicle must be clearly
+    defined and available in the system.
+
+",,"1. Open the RFMSS website and login with an FA credentials.
+
+","1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+
+",,,,,Not Automated,,Functional,Critical,Active
+,,,,,,"2. Navigate to Administration : Event: Events
+
+","2. The Administration : Event : Events table grid page is displayed.
+
+",,,,,,,,,
+,,,,,,"3. Under the Event Name column filter for ""TST"".
+
+","3. The results displays the Event Names that contains ""TST"".
+
+",,,,,,,,,
+,,,,,,"4. Select edit under the Action column for Event Name = TST AIR EVENT.
+
+","4. The Administration : Event : Events : Event page is displayed with the
+following fields:
+* Event Name (required)
+* Event Type (required)
+* Category [search icon\] (required)
+* Airspace Activity Type (required for Air events only)
+* Loud Noise radio buttons (Always, Limited, N/A)
+* Do Not Deprecate [checkbox]
+* Deprecation Date
+* Description
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"5. Update data the following fields:
+* Do Not Deprecate [checkbox] = UN-CHECK
+* Deprecation Date = select the ""deprecate tomorrow"" link
+
+","5. The system allows changes to all editable fields.
+
+",,,,,,,,,
+,,,,,,"6. Save the modified data. Click the [SAVE] button.
+
+","6. The Administration : Event : Events table grid page is displayed. Scroll
+to the right and verify the edited fields.
+
+",,,,,,,,,
+,,,,,,"7. Select edit under the Action column for Event Name = TST GROUND EVENT MAINT
+Make note of the row color is YELLOW.
+
+","7. The Administration : Event : Events : Event page is displayed with the
+following fields:
+* Event Name (required)
+* Event Type (required)
+* Category \[search icon\]
+* Airspace Activity Type (required for Air events only)
+* Loud Noise radio buttons (Always, Limited, N/A)
+* Do Not Deprecate \[checkbox\]
+* Deprecation Date
+* Description
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"8. Update data to the following fields:
+* Event Name = TST GROUND EVENT FIRE
+* Category [search icon] = FIRE
+* Description = GROUND FIRE","8. The system allows changes to all editable fields.
+
+",,,,,,,,,
+,,,,,,"9. Save the modified data. Click the [SAVE] button.
+
+","9. The Administration : Event : Events table grid page is displayed. Scroll
+to the right and verify the edited fields.
+Observe the row color is updated to RED.",,,,,,,,,
+,,,,,,"10. Select the Logout link.
+
+","10. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information."" [Login Again] link.
+
+",,,,,,,,,
+TC-714,Events,FA Event - DELETE existing AIR and GROUND Events.,"Ensure that edited event entries can be successfully created in the
+equipment events module.
+
+","1.  User must have the necessary permissions to edit events in the FA
+    Event module.
+2.  The system must have an active, functioning interface for delete
+    existing events.
+3.  Required fields needed for creating a new vehicle must be clearly
+    defined and available in the system.
+
+",,"1. Open the RFMSS website and login with an FA credentials.
+
+","1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,,,Not Automated,,Functional,Critical,Active
+,,,,,,"2. Navigate to Administration : Event: Events
+
+","2. The Administration : Event : Events table grid page is displayed.
+
+",,,,,,,,,
+,,,,,,"3. Under the Event Name column filter for ""TST"".
+
+","3. The results displays the Event Names that contains ""TST"".
+
+",,,,,,,,,
+,,,,,,"4. Select delete under the Action column for Event Name = TST AIR EVENT.
+
+","4. The Administration : Event : Events : Event page is displayed with the
+following system message:
+Are you sure you want to delete TST AIR EVENT? [CONTINUE] [CANCEL]",,,,,,,,,
+,,,,,,"5. Select the [CONTINUE] button.
+
+","5. The Administration : Event : Events page is displayed and TST AIR EVENT
+record is no longer visible.
+
+",,,,,,,,,
+,,,,,,"6. Select the \""show deleted\"" link.
+
+","6. The Administration : Event : Events table grid page is displayed and the
+TST AIR EVENT record is displayed.
+
+",,,,,,,,,
+,,,,,,"7. Select the Logout link.
+
+","7. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information."" [Login Again] link.",,,,,,,,,
+TC-699,,FA Event - Validate required fields in the AIR and GROUND Events.,"Verify that all required fields in the Event module for AIR and Ground are properly validated, ensuring that submissions cannot be completed without all necessary information.
+
+","1. The user is logged in as a Functional Administrator (FA).
+2. The equipment request submission form is accessible.
+3. A list of required fields for the Events form is available.
+
+",,"1. Open the RFMSS website and login with an FA credentials.
+
+","1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,,,Not Automated,,Functional,Critical,Active
+,,,,,,"2. Navigate to Administration : Event : Events
+
+","2. The Administration : Event : Events page is displayed.
+
+",,,,,,,,,
+,,,,,,"3. Select the \'new\' link under the Action column.
+
+","3. The Administration : Event : Events page is displayed.
+* Event Name (required)
+* Event Type (required)
+* Category \[search icon\] (required)
+* Airspace Activity Type (required for Air events only)
+* Do Not Deprecate [checkbox]
+* Deprecation Date
+* Description
+* Loud Noise radio buttons (Always, Limited, N/A)
+* [SAVE], [CANCEL]",,,,,,,,,
+,,,,,,"4. Attempt to [SAVE] the form without filling in any fields.
+
+","4. The submission is prevented, and error messages are displayed as
+follows:
+* Event Name is required.
+* Facility Type is required.
+* Category is required.",,,,,,,,,
+,,,,,,"5. Enter data in the required fields except one, for a GROUND event:
+* Event Name (required)
+* Event Type (required)
+* Category [search icon] (required) - DO NOT ENTER DATA","5. The submission is prevented, and error messages are displayed as
+follows:
+* Category is required.
+
+
+
+",,,,,,,,,
+,,,,,,"6. Fill in all required fields with valid data and select the [SAVE]
+button:
+* Event Name (required) = TST GROUND EVENT ALL
+* Event Type (required) = GROUND
+* Category [search icon] (required) = NON-FIRE
+
+","6. The form is successfully saved without any error messages and the TST
+GROUND EVENT ALL row is 'white'.
+
+",,,,,,,,,
+,,,,,,"7. Select the 'new' link under the Action column.
+
+","7. The Administration : Event : Events page is displayed.
+* Event Name (required)
+* Event Type (required)
+* Category \[search icon\] (required)
+* Airspace Activity Type (required for Air events only)
+* Do Not Deprecate \[checkbox\]
+* Deprecation Date
+* Description
+* Loud Noise radio buttons (Always, Limited, N/A)
+* [SAVE]
+* [CANCEL]
+",,,,,,,,,
+,,,,,,"8. Enter data in the required fields except one, for an AIR event:
+* Event Name (required) = TST AIR EVENT ALL
+* Event Type (required) = AIR
+* Category [search icon] (required) - DO NOT ENTER DATA
+* Airspace Activity Type = AIR GUNNERY","8. The Administration : Event : Events page is displayed and when the
+Facility Type value is AIR the 'Airspace Activity Type' field is
+visible.
+
+",,,,,,,,,
+,,,,,,"9. Attempt to [SAVE] the form.
+
+","9. The submission is prevented, and error messages are displayed as
+follows:
+* Category is required.
+
+",,,,,,,,,
+,,,,,,"10. Select 'FIRE' for the Category field and [SAVE] the form.
+","10. The form is successfully saved without any error messages and the TST
+AIR EVENT ALL row is 'orange'.",,,,,,,,,
+,,,,,,"11. Select the Logout link.
+
+","11. The Logout page displays with a system message: ""You have been logged out of RFMSS. Close the browser window to ensure your browser completely clears your login information."" [Login Again] link.",,,,,,,,,
+TC-700,,FA Event - Test input field data type validation for AIR and GROUND Events.,"Validate that each input field in the Event module correctly enforces its specified data type (e.g., date fields only accept valid dates).
+
+","1. The user is logged in as a Functional Administrator (FA).2. The
+equipment module is accessible.3. A list of input fields and their
+expected data types is available.
+
+",,"1. Open the RFMSS website and login with an FA credentials.
+
+","1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,,,Not Automated,,Functional,High,Active
+,,,,,,"2. Navigate to Administration : Event: Events
+
+","2. The Administration : Event : Events table grid page is displayed.
+
+",,,,,,,,,
+,,,,,,"3. Select the 'new' link under the Action column.
+
+","3. The Administration : Event : Events : Event page is displayed with the
+following fields:
+* Event Name (required)
+* Event Type (required)
+* Category [search icon] (required)
+* Airspace Activity Type (required for Air events only)
+* Do Not Deprecate [checkbox]
+* Deprecation Date
+* Description
+* Loud Noise radio buttons (Always, Limited, N/A)
+* [SAVE]
+* [CANCEL]
+",,,,,,,,,
+,,,,,,"4. For text fields that expect specific formats (e.g., date),
+enter invalid formats '28/89/8989'.
+
+","4. The system should display an error message 
+""Invalid Deprecation Date. (date)""
+
+",,,,,,,,,
+,,,,,,"5. For text fields that expect specific formats (e.g., category), enter invalid formats ""%$^&^%$^&^*^**(&Y*()*_)(_)*_)KJLK"".
+
+","5. The system should display an error message 
+""You have not entered a valid value for Category.  Please try again.""
+
+",,,,,,,,,
+,,,,,,"6. Attempt to submit the form with all fields containing valid data types.
+
+","6. The form should be successfully submitted without any data type
+validation errors.
+
+",,,,,,,,,
+,,,,,,"7. Under the Event Name column filter for ""TST"".
+
+","7. The results displays the Event Names that contains ""TST"".
+
+",,,,,,,,,
+,,,,,,"8. Select edit under the Action column for Event Name = TST AIR EVENT.
+
+","8. The Administration : Event : Events : Event page is displayed with the
+following fields:
+* Event Name (required)
+* Event Type (required)
+* Category [search icon\]
+* Airspace Activity Type (required for Air events only)
+* Loud Noise radio buttons (Always, Limited, N/A)
+* Do Not Deprecate \[checkbox\]
+* Deprecation Date
+* Description
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"9. Update data the following fields:
+* Do Not Deprecate [checkbox] = UN-CHECK
+* Deprecation Date = select the ""deprecate tomorrow"" link","9. The system allows changes to all editable fields.
+
+",,,,,,,,,
+,,,,,,"10. Save the modified data. Click the [SAVE] button.
+
+","10. The Administration : Event : Events table grid page is displayed. Scroll
+to the right and verify the edited fields.",,,,,,,,,
+,,,,,,"11. Select edit under the Action column for Event Name = TST GROUND EVENT MAINT
+Make note of the row color is YELLOW.","11. The Administration : Event : Events : Event page is displayed with the
+following fields:
+* Event Name (required)
+* Event Type (required)
+* Category \[search icon\]
+* Airspace Activity Type (required for Air events only)
+* Loud Noise radio buttons (Always, Limited, N/A)
+* Do Not Deprecate \[checkbox\]
+* Deprecation Date
+* Description
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"12. Update data to the following fields:
+* Event Name: TST GROUND EVENT
+* Category [search icon] = NON-FIRE
+* Description = GROUND 
+","12. The system allows changes to all editable fields.
+
+",,,,,,,,,
+,,,,,,"13. Save the modified data. Click the [SAVE] button.
+
+","13. The Administration : Event : Events table grid page is displayed. Scroll
+to the right and verify the edited fields.
+Observe the row color is updated to RED.",,,,,,,,,
+,,,,,,"14. Select the Logout link.
+
+","14. The Logout page displays with a system message: ""You have been logged out of RFMSS. Close the browser window to ensure your browser completely clears your login information."" [Login Again] link.",,,,,,,,,
+TC-701,,FA Event - Verify field length and format restrictions for existing AIR and GROUND Events.,"Test that input fields enforce any specified length or format restrictions, such as maximum character limits or specific formats for identification numbers.
+
+","1. The user is logged in as a Functional Administrator (FA).2. The
+equipment request form is accessible.3. A list of input fields with
+their specified length and format restrictions is available.
+
+",,"1. Open the RFMSS website and login with an FA credentials.
+
+","1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+
+",,,,,Not Automated,,Functional,High,Draft
+,,,,,,"2. Navigate to Administration : Event: Events
+
+","2. The Administration : Event : Events table grid page is displayed.
+
+",,,,,,,,,
+,,,,,,"3. Under the Event Name column filter for ""TST"".
+
+","3. The results displays the Event Names that contains ""TST"".
+
+",,,,,,,,,
+,,,,,,"4. Select edit under the Action column for Event Name = TST GROUND EVENT.
+
+","4. The Administration : Event : Events : Event page is displayed with the
+following fields:
+* Event Name (required)
+* Event Type (required)
+* Category [search icon]
+* Airspace Activity Type (required for Air events only)
+* Loud Noise radio buttons (Always, Limited, N/A)
+* Do Not Deprecate [checkbox]
+* Deprecation Date
+* Description
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"5. For fields with maximum character limits, attempt to enter text
+exceeding the limit for the following fields:
+* Event Name = %$^&^%$^&^*^**(&Y*()*_)(_)*_)KJLKJ[PIGP;LDKFG;LDK1211243546567789FGHFGHFGHFGHFGHFGHFGHFGHFGHFGHFGHFG.
+* Category = %$^&^%$^&^*^**(&Y*()*_)(_)*_)KJLKJ[
+* Deprecation Date = 28/89/8989
+
+","5. The system should display an error message:
+""You have not entered a valid value for Category.  Please try again.""
+""Invalid Deprecation Date. (date)""
+Note that the Event Name restricts the character limit to 100 characters.
+
+",,This should give an error on the 3 fields.,,,,,,,
+,,,,,,"6. Attempt to submit the form with all fields adhering to their specified
+length and format restrictions.","6. The form should be successfully submitted without any length or format
+validation errors.",,This should give an error on the 3 fields.,,,,,,,
+,,,,,,7. Select the [CANCEL] button.,"7. The Administration : Event : Events table grid page is displayed.
+
+",,,,,,,,,
+,,,,,,"8. Select edit under the Action column for Event Name = TST AIR EVENT ALL.
+
+","8. The Administration : Event : Events : Event page is displayed with the
+following fields:
+* Event Name (required)
+* Event Type (required)
+* Category [search icon]
+* Airspace Activity Type (required for Air events only)
+* Loud Noise radio buttons (Always, Limited, N/A)
+* Do Not Deprecate [checkbox]
+* Deprecation Date
+* Description
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"9. For fields with maximum character limits, attempt to enter text
+exceeding the limit for the following fields:
+* Category = %$^&^%$^&^*^**(&Y*()*_)(_)*_)KJLKJ[
+Select the [SAVE] button.
+* Deprecation Date = 28/89/8989
+Select the [SAVE] button.
+
+","9. The system should display an error message:
+""You have not entered a valid value for Category.  Please try again.""
+""Invalid Deprecation Date. (date)""
+Note that the Event Name restricts the character limit to 100 characters.
+
+",,This should give an error on the 3 fields.,,,,,,,
+,,,,,,"10. Attempt to submit the form with all fields adhering to their specified
+length and format restrictions.
+
+","10. The form should be successfully submitted without any length or format
+validation errors.
+
+",,This should give an error on the 3 fields.,,,,,,,
+,,,,,,11. Select the [CANCEL] button.,"11. The Administration : Event : Events table grid page is displayed.
+
+",,,,,,,,,
+,,,,,,"12. Select the Logout link.
+
+","12. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information."" [Login Again] link.
+
+",,,,,,,,,
+TC-702,,FA Event - Verify Functional Administrator full access rights.,"Validate that a Functional Administrator has full access rights to create, edit, delete, and view all equipment requests for both air and ground facilities, ensuring they can perform all necessary operations.
+
+","1. A Functional Administrator account is created and active in the
+system.2. The system has both weapons and vehicle equipment
+functionalities.3. There are existing equipment requests in various
+states (draft, submitted, approved, etc.) in the system.4. The
+Functional Administrator is logged into the system.
+
+",,"1. Open the RFMSS website and login with an FA credentials.
+
+","1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,,,Not Automated,,Security,Critical,Draft
+,,,,,,"2. Navigate to Administration : Event: Events
+
+","2. The Administration : Event : Events table grid page is displayed.
+
+",,,,,,,,,
+,,,,,,"3. Select the 'new' link under the Action column.
+
+","3. The Administration : Event : Events : Event page is displayed with the
+following fields:
+* Event Name (required)
+* Event Type (required)
+* Category [search icon] (required)
+* Airspace Activity Type (required for Air events only)
+* Do Not Deprecate [checkbox]
+* Deprecation Date
+* Description
+* Loud Noise radio buttons (Always, Limited, N/A)
+* [SAVE]
+*[CANCEL]",,,,,,,,,
+,,,,,,"4. Enter data for an AIR event in the following fields:
+* Event Name (required) = TST AIR EVENT2
+* Event Type (required) = AIR
+* Category [search icon] = FIRE
+* Airspace Activity Type (required for Air events only) = AIR GUNNERY
+* Loud Noise radio buttons (Always, Limited, N/A) = ALWAYS
+* Do Not Deprecate [checkbox] = CHECKED
+* Deprecation Date
+* Description = TESTING EVENT FOR AIR","4. The system allows changes to all editable fields.
+
+",,,,,,,,,
+,,,,,,"5. Save the modified data. Click the [SAVE] button.
+
+","5. The Administration : Event : Events table grid page is displayed, and
+the TST AIR EVENT row is 'orange'.
+
+",,,,,,,,,
+,,,,,,"6. Select the newly created Event ""TST AIR EVENT2"" and attempt to edit it.
+
+","6. The system allows the Functional Administrator to edit all fields of the
+selected request.
+
+",,,,,,,,,
+,,,,,,"7. Make changes and save changes:
+* Do Not Deprecate [checkbox] = UN-CHECK
+* Deprecation Date = 30/12/2027
+* Description = TESTING EVENT FOR AIR EVENT2
+","7. The system allows changes to all editable fields.
+
+",,,,,,,,,
+,,,,,,"8. Save the modified data. Click the [SAVE] button.
+
+","8. The system returns a successful message: The Equipment Vehicle was
+successfully saved.
+Validate that the fields display the updated data.",,,,,,,,,
+,,,,,,"9. View the list of all Event records.
+
+","9. The Functional Administrator can see a comprehensive list of all
+Event records.
+
+",,,,,,,,,
+,,,,,,"10. Attempt to delete an existing equipment ""TST AIR EVENT ALL"" request.
+
+","10. The Administration : Event : Events page is displayed. A system message:
+""Are you sure you want to delete TST AIR EVENT ALL?"" 
+[CONTINUE] [CANCEL].
+
+",,,,,,,,,
+,,,,,,"11. Confirm the deletion of the equipment request by selecting the [CONTINUE]
+button.
+
+",11. The system allows the Event to be deleted and is no longer displayed in the Events table grid.,,,,,,,,,
+,,,,,,"12. From the Administration : Event : Events table grid, select the 'show
+deleted' link.
+","12. The Administration : Event : Events table grid displays with the 'hide
+deleted' link at the top of the table grid. Validate that the record that
+was deleted from the previous step is displayed with a \""reactive\""
+status under the Action column.
+
+",,,,,,,,,
+,,,,,,"13. Select the Logout link.
+
+","13. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information."" [Login Again] link.
+
+",,,,,,,,,
+TC-703,,FA Event - Validate Fire Desk Operator (FDO) access limitations.,"Verify that FDOs have limited access to equipment requests, such as
+viewing and approving, but not creating or deleting, ensuring their
+access aligns with their role responsibilities.
+
+","1. An FDO account is created and active in the system.2. The system has both air and ground event records. 3. The FDO is logged into the system.
+
+",,"1. Open the RFMSS website and login with an FDO credentials.
+
+","1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+
+",,,,,Not Automated,,Security,High,Active
+,,,,,,2. Navigate to Administration : Event: Events,2. The FDO can access the Events records with view-only.,,,,,,,,,
+,,,,,,3. Navigate to Administration : Event: Standard Events,3. The FDO can access the Standard Events records with view-only.,,,,,,,,,
+,,,,,,4. Navigate to Administration : Event: Airspace Activities,4. The FDO can access the Airspace Activities records with view-only.,,,,,,,,,
+,,,,,,"5. Select the Logout link.
+
+","5. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information.""
+[Login Again] link.
+
+",,,,,,,,,
+TC-704,,FA Event - Validate Range Control Scheduler (RC-SCHED) access limitations.,"Verify that RC-SCHED has limited access to equipment requests, such as
+viewing and approving, but not creating or deleting, ensuring their
+access aligns with their role responsibilities.
+
+","1. An RC-SCHED (Range Control Scheduler) account is created and active
+in the system. 2. The system has both air and ground event records. 3. The RC-SCHED is logged into the system.
+
+",,"1. Open the RFMSS website and login with an RC-SCHED credentials.
+
+","1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,,,Not Automated,,Security,High,Active
+,,,,,,2. Navigate to Administration : Event: Events,2. The RC-SCHED  can access the Events records with view-only.,,,,,,,,,
+,,,,,,3. Navigate to Administration : Event: Standard Events,3. The RC-SCHED  can access the Standard Events records with view-only.,,,,,,,,,
+,,,,,,4. Navigate to Administration : Event: Airspace Activities,4. The RC-SCHED  can access the Airspace Activities records with view-only.,,,,,,,,,
+,,,,,,"5. Select the Logout link.
+
+","5. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information.""
+[Login Again] link.",,,,,,,,,
+TC-705,,FA Event - Validate Range Control Safety (RC-SFTY) access limitations.,"Verify that RC-SFTY has limited access to equipment requests, such as
+viewing and approving, but not creating or deleting, ensuring their
+access aligns with their role responsibilities.
+
+","1. An RC-SFTY account is created and active in the system. 2. The system has both air and ground event records. 3. The RC-SFTY is logged into the system.
+
+",,"1. Open the RFMSS website and login with an RC-SFTY credentials.
+
+","1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,,,Not Automated,,Security,High,Active
+,,,,,,2. Navigate to Administration : Event: Events,2. The RC-SCHED  can access the Events records with view-only.,,,,,,,,,
+,,,,,,3. Navigate to Administration : Event: Standard Events,3. The RC-SCHED  can access the Standard Events records with view-only.,,,,,,,,,
+,,,,,,4. Navigate to Administration : Event: Airspace Activities,4. The RC-SCHED  can access the Airspace Activities records with view-only.,,,,,,,,,
+,,,,,,"5. Select the Logout link.
+
+","5. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information.""
+[Login Again] link.",,,,,,,,,
+TC-706,,FA Event - Validate Read-Only access limitations.,"Verify that Read-Only has limited access to equipment requests, such as
+viewing and approving, but not creating or deleting, ensuring their
+access aligns with their role responsibilities.
+
+","1. An READ-ONLY account is created and active in the system.2. The system has both air and ground event records. 3. The READ-ONLY is logged into the system.
+
+",,"1. Login to RFMSS with the Read-Only credentials.
+
+","1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+",,,,,Not Automated,,Security,High,Active
+,,,,,,"2. Select the Logout link.
+
+","2. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information.""
+[Login Again] link.
+
+",,,,,,,,,
+TC-707,,FA Event - Filter and Sort Event records.,"Test the ability to filter and view equipment records for air facilities or ground facilities, ensuring the filtering mechanism works correctly.
+
+","1. The Functional Administrator (FA) is logged into the system. 2. The FA
+has the necessary permissions to view and filter ground and air event records. 
+
+",,"1. Open the RFMSS website and login with an FA credentials.
+
+","1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+
+",,,,,Not Automated,,Functional,High,Active
+,,,,,,"2. Navigate to Administration : Event: Events
+
+","2. The Administration : Event : Events table grid page is displayed.
+
+",,,,,,,,,
+,,,,,,"3. Observe that the following fields are displayed with filtering capability:
+* Event Name 
+* Event Type 
+* Category 
+* Airspace Activity Type (required for Air events only)
+* Description
+* Service Branch 
+* Do not Deprecate 
+* Deprecation Date
+* Deprecation Dependency
+* Loud Noise ","3. The filtering options for the event records for AIR and GROUND are available.
+
+",,,,,,,,,
+,,,,,,"4. Apply the filter to show only AIR Event Name records.
+
+","4. The results list displays event records that contains ""AIR"" in the Event Name column.
+",,,,,,,,,
+,,,,,,"5. Clear the filter by selecting the ""X"" next to the Event Name filter field.",5. The Events table grid displays all records.,,,,,,,,,
+,,,,,,"6. Apply the filter to show only 'GROUND' in the Event Type filter field.
+
+","6. The results list displays ""GROUND"" Event Type.
+",,,,,,,,,
+,,,,,,"7. Clear the filter by selecting the ""X"" next to the Event Name filter field.",7. The Events table grid displays all records.,,,,,,,,,
+,,,,,,"8. Apply the filter to show only 'MA' in the Category filter field.
+
+","8. The results list displays event records that contains ""MA"" in the Category column.
+",,,,,,,,,
+,,,,,,"9. Clear the filter by selecting the ""X"" next to the Event Name filter field.",9. The Events table grid displays all records.,,,,,,,,,
+,,,,,,"10. Navigate to Administration : Event: Standard Events.
+
+","10. The Administration : Event : Standard Events table grid page is displayed.
+
+",,,,,,,,,
+,,,,,,"11. Observe that the following fields are displayed with filtering capability:
+* Event 
+* Facility/Airspace
+* Event Category 
+* Event Description 
+* Activity Type","11. The filtering options for the event records for AIR and GROUND are available.
+
+",,,,,,,,,
+,,,,,,"12. Apply a filter to show only 'ARTILLERY' records under the Event column.
+
+","12. The results list displays ""ARTILLERY"" records.",,,,,,,,,
+,,,,,,"13. Navigate to Administration : Event: Airspace Activities.
+
+","13. The Administration : Event : Airspace Activities table grid page is displayed.
+
+",,,,,,,,,
+,,,,,,"14. Observe that the following field is displayed with filtering capability:
+* Airspcae Activity Type Description","14. The filtering option for the event records for AIR is available.
+
+",,,,,,,,,
+,,,,,,"15. Select the Logout link.
+
+","15. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information.""
+[Login Again] link.",,,,,,,,,
+TC-708,,"FA Event - Search, View and Export for AIR and GROUND Event records.","Test the search, view, and export functionality.
+
+","1. The Functional Administrator (FA) is logged into the system. 2. The FA
+has the necessary permissions to view and search,view and export ground and air event records. 
+
+",,"1. Open the RFMSS website and login with an FA credentials.
+
+","1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+
+",,,,,Not Automated,,Functional,High,Active
+,,,,,,"2. Navigate to Administration : Event: Events
+
+","2. The Administration : Event : Events table grid page is displayed.
+
+",,,,,,,,,
+,,,,,,"3. At the bottom of the table grid, select the ""show all pages.""
+
+","3. The pagination is no longer displayed and all Event recrods is displayed.
+
+",,,,,,,,,
+,,,,,,"4. Select the PDF icon to export the Events data.
+
+","4. The system downloads the PDF file. Verify that the exported results are
+accurate.
+
+",,,,,,,,,
+,,,,,,"5. Select the EXCEL icon to export the Events data.
+
+","5. The system downloads the XLSX file. Verify that the exported results are
+accurate.
+
+",,,,,,,,,
+,,,,,,"6. Select the WORD icon to export the Events data.
+
+","6. The system downloads the DOC file. Verify that the exported results are
+accurate.
+
+",,,,,,,,,
+,,,,,,"7. Test the search function with a combination of keywords (e.g., 'AIR, 
+FIRE, NON-FIRE').
+
+","7. The system returns results that match all or most of the entered
+keywords.
+
+",,,,,,,,,
+,,,,,,"8. Navigate to Administration : Event: Standard Events.
+
+","8. The Administration : Event : Standard Events table grid page is displayed.
+
+",,,,,,,,,
+,,,,,,"9. Test the search function with a combination of keywords (e.g., 'AIR, 
+FIRE, NON-FIRE').
+
+","9. The system returns results that match all or most of the entered
+keywords.
+
+",,,,,,,,,
+,,,,,,"10. Select the PDF icon to export the Events data.
+
+","10. The system downloads the PDF file. Verify that the exported results are
+accurate.
+
+",,,,,,,,,
+,,,,,,"11. Select the EXCEL icon to export the Events data.
+
+","11. The system downloads the XLSX file. Verify that the exported results are
+accurate.
+
+",,,,,,,,,
+,,,,,,"12. Select the WORD icon to export the Events data.
+
+","12. The system downloads the DOC file. Verify that the exported results are
+accurate.
+
+",,,,,,,,,
+,,,,,,"13. Select the Logout link.
+
+","13. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information.""
+[Login Again] link.",,,,,,,,,
+TC-709,,FA Event - Bulk deletion of multiple standard event records.,"Test the functionality to delete multiple Standard Event records simultaneously.
+
+","1. The Functional Administrator (FA) is logged into the system. 2. The FA
+has the necessary permissions to view and search,view and export ground and air event records. 3.  The system supports a bulk deletion feature for Standard Events.
+",,"1. Open the RFMSS website and login with an FA credentials.
+
+","1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,,,Not Automated,,Functional,Medium,Draft
+,,,,,,"2. Navigate to Administration : Event: Standard Events
+
+","2. The Administration : Event : Standard Events table grid page is displayed.
+
+",,,,,,,,,
+,,,,,,"3. Select multiple Event records by selecting the desired checkboxe + CTRL key.
+
+","3. Multiple requests are selected and highlighted.
+
+",,,,,,,,,
+,,,,,,4. Under the action column select 'delete selected'.,"4. A confirmation dialog appears, asking to confirm the bulk deletion and
+showing the number of requests to be deleted.
+
+",,FAIL - doesn' do multiple delete.,,,,,,,
+,,,,,,"5. Confirm the bulk deletion in the dialog.
+
+","5. The system begins processing the deletion of multiple requests
+simultaneously.",,FAIL - doesn' do multiple delete.,,,,,,,
+,,,,,,"6. Monitor the progress of the bulk deletion operation.
+
+","6. The system provides feedback on the progress, such as a progress bar or
+status messages.
+
+",,FAIL - doesn' do multiple delete.,,,,,,,
+,,,,,,"7. Once the operation is complete, verify that all selected records have
+been removed from the list.
+
+","7. The deleted requests are no longer visible in the equipment request
+list.
+
+",,FAIL - doesn' do multiple delete.,,,,,,,
+,,,,,,"8. Select the Logout link.
+
+","8. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information.""
+[Login Again] link.",,,,,,,,,
+TC-715,Events,FA Event - create NEW AIR and GROUND Standard Events.,"Ensure that new event entries can be successfully created in the events module.
+
+","1.  User must have the necessary permissions to create new standard events.
+2.  Required fields needed for creating a new standard event must be clearly
+    defined and available in the system.
+
+",,"1. Open the RFMSS website and login with an FA credentials.
+
+","1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,,,Not Automated,,Functional,Critical,Active
+,,,,,,"2. Navigate to Administration : Event: Standard Events
+
+","2. The Administration : Event : Standard Events table grid page is displayed.
+
+",,,,,,,,,
+,,,,,,"3. Select the 'new' link under the Action column.
+
+","3. The Administration : Event : Standard Events page is displayed with the
+following field:
+* Event (required)
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"4. Enter AIR in the Event field.
+",4. The system returns event that contains 'AIR'.,,,,,,,,,
+,,,,,,5. Select 'AIR OPS' as the Event.,5. The Facility/Airspace options displays.,,,,,,,,,
+,,,,,,6. Select 'FULLERTON 1' and 'HORSE HEAD 1' checkboxes.,6. The selected data is selected and highlighted.,,,,,,,,,
+,,,,,,"7. Save the modified data. Click the [SAVE] button.
+","7. The Administration : Event : Standard Events table grid page is displayed.
+",,,,,,,,,
+,,,,,,"8. Under the Event filter, search for 'AIR'.","8. The system returns results that contains 'AIR' in the Event column and validate the data entered from the previous steps displays.
+",,,,,,,,,
+,,,,,,"9. Select the 'new' link under the Action column.
+
+","9. The Administration : Event : Standard Events page is displayed with the
+following field:
+* Event (required)
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"10. Select the [SEARCH-ICON].
+",10. The system returns the Event Type pop-up window.,,,,,,,,,
+,,,,,,11. Enter 'AMMO' in the Event Name.,"11. The system returns the Event Type that contains ""AMMO"" in the Event Name.",,,,,,,,,
+,,,,,,"12. Select ""AMMO STORAGE'",12. The Facility/Airspace options displays.,,,,,,,,,
+,,,,,,"13. Select Page 2, then select 'MILL CREEK1' and 'OBSTACLE COURSE' checkboxes.",13. The selected data is selected and highlighted.,,,,,,,,,
+,,,,,,"14. Save the modified data. Click the [SAVE] button.
+","14. The Administration : Event : Standard Events table grid page is displayed.
+",,,,,,,,,
+,,,,,,"15. Under the Event filter, search for 'AMMO'.","15. The system returns results that contains 'AMMO' in the Event column and validate the data entered from the previous steps displays.
+",,,,,,,,,
+,,,,,,"16. Select the Logout link.
+
+","16. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely
+clears your login information.""
+[Login Again] link.",,,,,,,,,
+TC-716,Events,FA Event - EDIT existing AIR and GROUND Standard Events.,"Ensure that edited event entries can be successfully created in the events module.
+
+","1.  User must have the necessary permissions to edit events in the FA
+    Event module.
+2.  The system must have an active, functioning interface for editing
+    existing events.
+3.  Required fields needed for creating a new vehicle must be clearly
+    defined and available in the system.
+
+",,"1. Open the RFMSS website and login with an FA credentials.
+
+","1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,,,Not Automated,,Functional,Critical,Active
+,,,,,,"2. Navigate to Administration : Event: Standard Events
+
+","2. The Administration : Event : Standard Events table grid page is displayed.
+
+",,,,,,,,,
+,,,,,,"3. Under the Event Name column filter for ""AMMO"".
+
+","3. The results displays the Events that contains ""AMMO"".
+
+",,,,,,,,,
+,,,,,,"4. Select edit under the Action column for Facility/Airspace = MILL CREEK 1.
+
+","4. The Administration : Event : Standard Events page is displayed with the
+following fields:
+* Event (required)
+* Facility/Airspace (required)
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"5. Update data Facility/Airspace by selecting the [SEARCH-ICON]
+
+","5. The Facility/Airspace pop-up window displays.
+
+",,,,,,,,,
+,,,,,,"6. Filter for 'FLAT'.
+","6. The results displays the Facility ID that contains ""FLAT"".
+
+",,,,,,,,,
+,,,,,,7. Select 'FLATWOODS 1'.,"7. The Administration : Event : Standard Events page is displayed with the Facility/Airspace updated to 'FLATWOODS 1'.
+* [SAVE]
+* [CANCEL]",,,,,,,,,
+,,,,,,"8. Save the modified data. Click the [SAVE] button.
+
+",8. The Administration : Event : Standard Events table grid page is displayed with the Facility/Airspace updated to 'FLATWOODS 1'.,,,,,,,,,
+,,,,,,"9. Select the Logout link.
+
+","9. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information."" [Login Again] link.",,,,,,,,,
+TC-717,Events,FA Event - DELETE existing AIR and GROUND Standard Events.,"Ensure that edited event entries can be successfully created in the events module.
+
+","1.  User must have the necessary permissions to edit events in the FA
+    Event module.
+2.  The system must have an active, functioning interface for delete
+    existing events.
+3.  Required fields needed for creating a new vehicle must be clearly
+    defined and available in the system.
+
+",,"1. Open the RFMSS website and login with an FA credentials.
+
+","1. Observe the following Menu options are available:
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library",,,,,Not Automated,,Functional,Critical,Active
+,,,,,,"2. Navigate to Administration : Event: Standard Events
+
+","2. The Administration : Event : Standard Events table grid page is displayed.
+
+",,,,,,,,,
+,,,,,,"3. Under the Event Name column filter for ""AMMO"".
+
+","3. The results displays the Events that contains ""AMMO"".
+
+",,,,,,,,,
+,,,,,,"4. Select delete under the Action column for Event = AMMO STORAGE and Facility/Airspace = OBSTACLE COURSE.
+
+","4. The Administration : Event : Events : Event page is displayed with the
+following system message:
+Are you sure you want to delete AMMO STORAGE? 
+[CONTINUE] [CANCEL]
+
+",,FAIL - doesn't do  delete.,,,,,,,
+,,,,,,"5. Select the [CONTINUE] button.
+
+","5. The Administration : Event : Standard Events page is displayed and TST AIR EVENT record is no longer visible.
+
+",,FAIL - doesn't do  delete.,,,,,,,
+,,,,,,"6. Select the ""show deleted"" link.
+
+","6. The Administration : Event : Events table grid page is displayed and the Event = AMMO STORAGE for Facility/Airspace = OBSTACLE COURSE.
+Is no longer displayd.",,FAIL - doesn't do  delete.,,,,,,,
+,,,,,,"7. Select the Logout link.
+
+","7. The Logout page displays with a system message: ""You have been logged
+out of RFMSS. Close the browser window to ensure your browser completely clears your login information.""
+[Login Again] link.",,FAIL - doesn't do  delete.,,,,,,,

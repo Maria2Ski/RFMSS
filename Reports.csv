@@ -1,0 +1,64 @@
+﻿Test Case ID,Module,Title,Description/User Story,Preconditions,Test Steps,Expected Results,Test Data,Defects/Remarks,ReqID,Status,Automation,Test Type,Priority,State
+
+RFMSS-SMK-501,Reports,Verify Airspace Report Generation
+Verify that the user can generate and access the Airspace report.
+1. Log in to the RFMSS application.
+2. Navigate to Reports > Airspace.
+3. Select parameters and generate report.
+    *Expected Results:* Airspace report is generated and displayed correctly to the user.
+Valid report parameters
+RQ_030
+
+RFMSS-SMK-505,Reports,Verify Scheduling Report Generation
+Verify that the user can generate and access the Scheduling report.
+1. Log in to the RFMSS application.
+2. Navigate to Reports > Scheduling.
+3. Select parameters and generate report.
+    *Expected Results:* Scheduling report is generated and displayed correctly to the user.
+Valid report parameters
+RQ_031
+
+RFMSS-SMK-508,Reports,Verify Summary Report Generation
+Verify that the user can generate and access the Summary report.
+1. Log in to the RFMSS application.
+2. Navigate to Reports > Summary.
+3. Select parameters and generate report.
+    *Expected Results:* Summary report is generated and displayed correctly to the user.
+Valid report parameters
+RQ_032
+
+RFMSS-SMK-511,Reports,Verify Utilization Report Generation
+Verify that the user can generate and access the Utilization report.
+1. Log in to the RFMSS application.
+2. Navigate to Reports > Utilization.
+3. Select parameters and generate report.
+    *Expected Results:* Utilization report is generated and displayed correctly to the user.
+Valid report parameters
+RQ_033
+
+RFMSS-SMK-514,Reports,Verify Downrange Report Generation
+Verify that the user can generate and access the Downrange report.
+1. Log in to the RFMSS application.
+2. Navigate to Reports > Downrange.
+3. Select parameters and generate report.
+    *Expected Results:* Downrange report is generated and displayed correctly to the user.
+Valid report parameters
+RQ_034
+
+RFMSS-SMK-517,Reports,Verify Incident Report Generation
+Verify that the user can generate and access the Incident report.
+1. Log in to the RFMSS application.
+2. Navigate to Reports > Incident.
+3. Select parameters and generate report.
+    *Expected Results:* Incident report is generated and displayed correctly to the user.
+Valid report parameters
+RQ_035
+
+RFMSS-SMK-520,Reports,Verify DIRT Report Generation
+Verify that the user can generate and access the DIRT report.
+1. Log in to the RFMSS application.
+2. Navigate to Reports > DIRT.
+3. Select parameters and generate report.
+    *Expected Results:* DIRT report is generated and displayed correctly to the user.
+Valid report parameters
+RQ_036

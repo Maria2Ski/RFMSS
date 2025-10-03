@@ -1,0 +1,22 @@
+﻿Test Case ID,Module,Title,Description/User Story,Preconditions,Step#,Steps,Expected Result,Test Data,Defects/Remarks,ReqID,Status,Automation,Test Type,Priority,State
+TC001,Common-Dashboard,Login with valid credentials,,System is online,,"1. Open login page
+2. Enter valid credentials
+3. Click 'Login'",User is redirected to dashboard,Valid username/password,,,,,,,
+TC002,Common-Dashboard,Access denied for unauthorized user,,User account exists,,"1. Enter unauthorized credentials
+2. Click 'Login'",Error message: 'Access Denied',Unauthorized credentials,,,,,,,
+TC010,Common-Dashboard,Load dashboard for Range Manager role,,Login successful,,"1. Login as Range Manager
+2. View dashboard",Dashboard displays correct data,Range Manager user,,,,,,,
+TC011,Common-Dashboard,Validate summary widget data,,Dashboard loaded,,1. Hover over status widget,Correct tooltip or data popup appears,None,,,,,,,
+TC020,Common-Dashboard,Filter ranges by date,,Dashboard loaded,,"1. Select date range
+2. Click 'Search'",Only ranges in selected dates are shown,Date range: 2025-05-21 to 2025-05-30,,,,,,,
+TC021,Common-Dashboard,Search by range name,,Dashboard loaded,,"1. Enter 'Alpha' in search bar
+2. Click 'Search'",Only matching range entries are shown,Search keyword: Alpha,,,,,,,
+TC030,Common-Dashboard,Create a new booking,,User has create permission,,"1. Click 'Add Booking'
+2. Fill booking form
+3. Click 'Save'",Booking appears on dashboard,"Facility ID, Date, Time",,,,,,,
+TC031,Common-Dashboard,Overlapping booking warning,,Existing booking present,,1. Attempt to book an already booked slot,Warning: 'Time slot already booked',Conflicting booking time,,,,,,,
+TC040,Common-Dashboard,Export usage report,,Data exists for period,,"1. Click 'Export'
+2. Select 'Monthly Usage'
+3. Click 'Generate'",Report file is downloaded,Month: May 2025,,,,,,,
+TC050,Common-Dashboard,View alert banner,,Alert is active,,"1. Trigger maintenance alert
+2. Load dashboard",Alert banner is displayed,Maintenance alert,,,,,,,

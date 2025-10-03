@@ -1,0 +1,858 @@
+﻿Test Case ID,Module,Title,Description/User Story,Preconditions, #,Steps,Expected Result,Test Data,Defect/Remarks,ReqID,Status,Automaiton,Automation,Test Type,Type of Test Case,Priority,State
+TC-462,,Standardized Button and Icon Usage,"Verify that buttons, icons, and other interactive elements maintain
+consistent design and functionality across different screens and user
+roles.
+
+","1.  RFMSS system is accessible and functioning correctly.
+2.  Test accounts for all user roles (Admin, Scheduler, Unit Requester, Approver, Read-Only, Limited Read-Only) are available.
+3.  The system's button and icon designs are defined and implemented across various screens.
+
+",1,"Log in to the RFMSS system as an Admin user.
+
+","Admin user interface is displayed.
+
+",,,,,,Not Automated,,Other,High,Active
+,,,,,2,"Navigate through different screens in the Admin interface, documenting
+the design and functionality of buttons and icons.","Button and icon designs and functionalities are documented for the Admin
+interface.
+
+",,,,,,,,,,
+,,,,,3,"Log out and repeat steps 1-2 for each user role: Scheduler, Unit
+Requester, Approver, Read-Only, and Limited Read-Only.
+
+","Button and icon designs and functionalities are documented for each user
+role interface.
+
+",,,,,,,,,,
+,,,,,4,"Compare the documented button and icon designs across all user
+interfaces and screens.
+
+","Buttons and icons maintain consistent design across different screens
+and user roles.
+
+",,,,,,,,,,
+,,,,,5,"Test the functionality of common buttons and icons (e.g., save, delete,
+edit) across different screens and user roles.
+
+","Common buttons and icons perform consistently across different screens
+and user roles.
+
+",,,,,,,,,,
+,,,,,6,"Verify that any role-specific buttons or icons follow the same design
+principles as the common elements.
+
+","Role-specific buttons and icons maintain consistency with the overall
+design principles.
+
+",,,,,,,,,,
+TC-452,,Admin Full Navigation Access,"Verify that admin users have access to all navigation menus and can
+navigate to every screen in the RFMSS system, including administrative
+and configuration screens.
+
+","1.  RFMSS system is up and running.
+2.  An admin user account is created and active.
+3.  All RFMSS screens and functionalities are implemented.
+4.  The admin user is logged into the RFMSS system.
+
+",1,"Navigate to the main dashboard or home screen of RFMSS.
+
+","The admin user can access the main dashboard successfully.
+
+",,,,,,Not Automated,,Functional,High,Active
+,,,,,2,"Attempt to access each administrative and configuration screen.
+
+","The admin user can successfully navigate to all administrative and
+configuration screens without any access restrictions.
+
+",,,,,,,,,,
+,,,,,3,"Navigate to scheduling-related screens.
+
+","The admin user can access all scheduling-related screens without any
+issues.
+
+",,,,,,,,,,
+,,,,,4,"Access resource management interfaces.
+
+","The admin user can view and interact with all resource management
+interfaces.
+
+",,,,,,,,,,
+,,,,,5,"Navigate to reporting tools and generate reports.
+
+","The admin user can access all reporting tools and generate any available
+reports.
+
+",,,,,,,,,,
+,,,,,6,"Attempt to access user management screens.
+
+","The admin user can successfully navigate to and interact with user
+management screens.
+
+",,,,,,,,,,
+,,,,,7,"Navigate to system configuration settings.
+
+","The admin user can access and modify system configuration settings.
+
+",,,,,,,,,,
+,,,,,8,"Attempt to access any restricted or specialized screens.
+
+","The admin user can navigate to all restricted or specialized screens
+without any limitations.
+
+",,,,,,,,,,
+TC-453,,Scheduler Navigation Permissions,"Ensure schedulers can access all scheduling-related screens, resource
+management interfaces, and relevant reporting tools, but are restricted
+from administrative functions.
+
+","1.  RFMSS system is up and running.
+2.  A scheduler user account is created and active.
+3.  All scheduling-related screens, resource management interfaces, and
+    reporting tools are implemented.
+4.  The scheduler user is logged into the RFMSS system.
+
+",1,"Navigate to the main dashboard or home screen of RFMSS.
+
+","The scheduler can access the main dashboard successfully.
+
+",,,,,,Not Automated,,Functional,High,Active
+,,,,,2,"Attempt to access all scheduling-related screens.
+
+","The scheduler can successfully navigate to all scheduling-related
+screens without any access restrictions.
+
+",,,,,,,,,,
+,,,,,3,"Access resource management interfaces.
+
+","The scheduler can view and interact with all resource management
+interfaces.
+
+",,,,,,,,,,
+,,,,,4,"Navigate to reporting tools related to scheduling and resource
+management.
+
+","The scheduler can access relevant reporting tools and generate reports
+related to scheduling and resource management.
+
+",,,,,,,,,,
+,,,,,5,"Attempt to access administrative functions or screens.
+
+","The scheduler is unable to access any administrative functions or
+screens, receiving an appropriate access denied message or having these
+options hidden.
+
+",,,,,,,,,,
+,,,,,6,"Try to navigate to user management screens.
+
+","The scheduler is restricted from accessing user management screens.
+
+",,,,,,,,,,
+,,,,,7,"Attempt to access system configuration settings.
+
+","The scheduler cannot access or modify system configuration settings.
+
+",,,,,,,,,,
+TC-454,,Unit Requester Limited Navigation,"Test that unit requesters can only navigate to screens related to
+submitting and managing their own resource requests, with no access to
+approval or administrative screens.
+
+","1.  RFMSS system is up and running.
+2.  A unit requester user account is created and active.
+3.  Screens related to submitting and managing resource requests are
+    implemented.
+4.  The unit requester is logged into the RFMSS system.
+
+",1,"Navigate to the main dashboard or home screen of RFMSS.
+
+","The unit requester can access the main dashboard successfully.
+
+",,,,,,Not Automated,,Functional,High,Active
+,,,,,2,"Attempt to access the screen for submitting new resource requests.
+
+","The unit requester can successfully navigate to and interact with the
+screen for submitting new resource requests.
+
+",,,,,,,,,,
+,,,,,3,"Navigate to the screen for viewing and managing existing resource
+requests.
+
+","The unit requester can access and interact with the screen showing their
+own resource requests.
+
+",,,,,,,,,,
+,,,,,4,"Try to access a screen displaying the status of submitted requests.
+
+","The unit requester can view the status of their submitted requests.
+
+",,,,,,,,,,
+,,,,,5,"Attempt to navigate to approval screens.
+
+","The unit requester is unable to access any approval screens, receiving
+an appropriate access denied message or having these options hidden.
+
+",,,,,,,,,,
+,,,,,6,"Try to access administrative screens.
+
+","The unit requester cannot access any administrative screens.
+
+",,,,,,,,,,
+,,,,,7,"Attempt to navigate to scheduling screens not related to their own
+requests.
+
+","The unit requester is restricted from accessing scheduling screens not
+directly related to their own requests.
+
+",,,,,,,,,,
+TC-456,,Read-Only User Restricted Navigation,"Verify that read-only users can navigate to view-only versions of
+resource calendars, reports, and allocation details, without access to
+any modification or administrative screens.
+
+","1.  RFMSS system is up and running.
+2.  A read-only user account is created and active.
+3.  View-only versions of resource calendars, reports, and allocation
+    details are implemented.
+4.  The read-only user is logged into the RFMSS system.
+
+",1,"Navigate to the main dashboard or home screen of RFMSS.
+
+","The read-only user can access the main dashboard successfully.
+
+",,,,,,Not Automated,,Functional,High,Active
+,,,,,2,"Access the view-only version of resource calendars.
+
+","The read-only user can successfully navigate to and view resource
+calendars without any edit options.
+
+",,,,,,,,,,
+,,,,,3,"Navigate to the reports section.
+
+","The read-only user can access and view available reports but cannot
+generate new or modify existing reports.
+
+",,,,,,,,,,
+,,,,,4,"Attempt to view allocation details.
+
+","The read-only user can access and view allocation details without any
+modification options.
+
+",,,,,,,,,,
+,,,,,5,"Try to make changes to any viewed information (e.g., resource calendar,
+allocation details).
+
+","The read-only user is unable to make any changes, with edit options
+either disabled or not visible.
+
+",,,,,,,,,,
+,,,,,6,"Attempt to access any modification screens (e.g., request submission,
+approval screens).
+
+","The read-only user is restricted from accessing any modification
+screens, receiving an appropriate access denied message or having these
+options hidden.
+
+",,,,,,,,,,
+,,,,,7,"Try to navigate to administrative screens.
+
+","The read-only user cannot access any administrative screens or
+functions.
+
+",,,,,,,,,,
+TC-457,,Limited Read-Only Scope Navigation,"Ensure limited read-only users can only navigate to a restricted set of
+screens showing information within their assigned scope or department.
+
+","1.  RFMSS system is up and running
+2.  A user account with Limited Read-Only permissions is available
+3.  The Limited Read-Only user is assigned to a specific scope or
+    department
+4.  All RFMSS screens are accessible in the system
+
+",1,"Log in to the RFMSS system using Limited Read-Only user credentials
+
+","User is successfully logged in and directed to the home screen
+
+",,,,,,Not Automated,,Functional,High,Active
+,,,,,2,"Observe the available navigation options in the menu
+
+","Only a restricted set of navigation options related to the user's
+assigned scope or department are visible
+
+",,,,,,,,,,
+,,,,,3,"Click on each available navigation option
+
+","User is able to access only the screens showing information within their
+assigned scope or department
+
+",,,,,,,,,,
+,,,,,4,"Attempt to access a screen outside the user's assigned scope (e.g., by
+directly entering the URL)
+
+","Access is denied, and an appropriate error message is displayed
+
+",,,,,,,,,,
+,,,,,5,"Log out and log back in as an admin user
+
+","Admin user is successfully logged in
+
+",,,,,,,,,,
+,,,,,6,"Compare the navigation options available to the admin user with those of
+the Limited Read-Only user
+
+","Admin user has access to significantly more navigation options than the
+Limited Read-Only user
+
+",,,,,,,,,,
+TC-459,,Role Switching Navigation Update,"Verify that when a user's role is changed, their navigation options are
+immediately updated to reflect the new permissions without requiring a
+system restart.
+
+","1.  RFMSS system is up and running
+2.  A user account with changeable roles is available
+3.  An admin account with permissions to change user roles is available
+4.  All RFMSS screens are accessible in the system
+
+",1,"Log in to the RFMSS system using the test user credentials (initially
+with Limited Read-Only role)
+
+","User is successfully logged in and directed to the home screen
+
+",,,,,,Not Automated,,Functional,Medium,Active
+,,,,,2,"Observe and document the current navigation options available to the
+user
+
+","Limited navigation options are visible, corresponding to the Limited
+Read-Only role
+
+",,,,,,,,,,
+,,,,,3,"Log out and log in as an admin user
+
+","Admin user is successfully logged in
+
+",,,,,,,,,,
+,,,,,4,"Change the role of the test user from Limited Read-Only to Scheduler
+
+","User role is successfully updated in the system
+
+",,,,,,,,,,
+,,,,,5,"Log out as admin and log back in as the test user (now with Scheduler
+role)
+
+","User is successfully logged in with the new role
+
+",,,,,,,,,,
+,,,,,6,"Observe the navigation menu for the user
+
+","Navigation options are immediately updated to reflect the new Scheduler
+role permissions, with scheduling-related options now visible and
+accessible
+
+",,,,,,,,,,
+,,,,,7,"Click on newly available navigation options
+
+","User can access scheduling-related screens that were previously
+unavailable
+
+",,,,,,,,,,
+,,,,,8,"Repeat steps 3-7, changing the user's role to other available roles
+(e.g., Unit Requester, Approver, Read-Only)
+
+","For each role change, the navigation options are immediately updated to
+reflect the new role's permissions without requiring a system restart
+
+",,,,,,,,,,
+TC-470,,Logout and Session Expiration Handling,"Verify that upon logout or session expiration, users are immediately
+restricted from accessing any secure screens and are redirected to the
+login page.
+
+","1.  RFMSS system is up and running.
+2.  User accounts with different roles are created.
+3.  System session timeout duration is configured.
+4.  A list of secure screens for each role is available.
+
+",1,"Log in to the RFMSS system as an Admin user.
+
+","Admin user successfully logs in and can access Admin-specific screens.
+
+",,,,,,Not Automated,,Security,High,Active
+,,,,,2,"Navigate to a secure Admin screen.
+
+","Admin can view and interact with the secure screen.
+
+",,,,,,,,,,
+,,,,,3,"Click on the logout button.
+
+","User is logged out and redirected to the login page.
+
+",,,,,,,,,,
+,,,,,4,"Attempt to access the previously opened secure Admin screen using
+browser back button or direct URL.
+
+","Access is denied, and user is redirected to the login page.
+
+",,,,,,,,,,
+,,,,,5,"Log in as a Scheduler user and navigate to a Scheduler-specific screen.
+
+","Scheduler successfully logs in and accesses the screen.
+
+",,,,,,,,,,
+,,,,,6,"Leave the session idle until it expires (duration depends on system
+configuration).
+
+","Session expires after the configured timeout period.
+
+",,,,,,,,,,
+,,,,,7,"Attempt to perform an action on the expired session.
+
+","User is redirected to the login page and cannot perform the action.
+
+",,,,,,,,,,
+,,,,,8,"Log in again and immediately close the browser without logging out.
+
+","Session is terminated on the server-side.
+
+",,,,,,,,,,
+,,,,,9,"Reopen the browser and attempt to access a secure screen without logging
+in.
+
+","Access is denied, and user is redirected to the login page.
+
+",,,,,,,,,,
+TC-463,,Consistent Form Layout and Validation,"Test that input forms, field layouts, and validation messages follow a
+consistent pattern across various screens and functionalities for all
+user roles.
+
+","1.  RFMSS system is accessible and functioning correctly.
+2.  Test accounts for all user roles (Admin, Scheduler, Unit Requester,
+    Approver, Read-Only, Limited Read-Only) are available.
+3.  The system contains various input forms and validation mechanisms
+    across different functionalities.
+
+",1,"Log in to the RFMSS system as an Admin user.
+
+","Admin user interface is displayed.
+
+",,,,,,Not Automated,,Other,High,Active
+,,,,,2,"Navigate to a screen with an input form (e.g., create new user, schedule
+request).
+
+","Input form is displayed.
+
+",,,,,,,,,,
+,,,,,3,"Document the layout of the form, including field arrangements, labels,
+and required field indicators.
+
+","Form layout is documented.
+
+",,,,,,,,,,
+,,,,,4,"Submit the form with invalid data to trigger validation messages.
+
+","Validation messages are displayed consistently with the system's design
+principles.
+
+",,,,,,,,,,
+,,,,,5,"Repeat steps 2-4 for different forms available in the Admin interface.
+
+","Multiple form layouts and validation messages are documented for the
+Admin interface.
+
+",,,,,,,,,,
+,,,,,6,"Log out and repeat steps 1-5 for each user role that has access to input
+forms: Scheduler, Unit Requester, and Approver.
+
+","Form layouts and validation messages are documented for each applicable
+user role.
+
+",,,,,,,,,,
+,,,,,7,"Compare the documented form layouts and validation messages across all
+user interfaces and functionalities.
+
+","Input forms, field layouts, and validation messages follow a consistent
+pattern across various screens and functionalities for all user roles.
+
+",,,,,,,,,,
+TC-464,,Uniform Navigation Structure,"Confirm that the navigation menu structure and naming conventions remain
+consistent across different user roles, with role-specific items clearly
+distinguished.
+
+","1.  RFMSS system is accessible and functioning correctly.
+2.  Test accounts for all user roles (Admin, Scheduler, Unit Requester,
+    Approver, Read-Only, Limited Read-Only) are available.
+3.  The system has a defined navigation menu structure for each user
+    role.
+
+",1,"Log in to the RFMSS system as an Admin user.
+
+","Admin user interface is displayed with the navigation menu visible.
+
+",,,,,,Not Automated,,Other,High,Active
+,,,,,2,"Document the structure of the navigation menu, including main categories
+and subcategories.
+
+","Admin navigation menu structure is documented.
+
+",,,,,,,,,,
+,,,,,3,"Note any Admin-specific menu items.
+
+","Admin-specific menu items are identified and documented.
+
+",,,,,,,,,,
+,,,,,4,"Log out and repeat steps 1-3 for each user role: Scheduler, Unit
+Requester, Approver, Read-Only, and Limited Read-Only.
+
+","Navigation menu structure is documented for each user role.
+
+",,,,,,,,,,
+,,,,,5,"Compare the documented navigation menu structures across all user roles.
+
+","The basic navigation menu structure and naming conventions remain
+consistent across different user roles.
+
+",,,,,,,,,,
+,,,,,6,"Verify that role-specific menu items are clearly distinguished and
+consistently placed within the menu structure.
+
+","Role-specific menu items are clearly distinguished and consistently
+placed across all applicable user roles.
+
+",,,,,,,,,,
+,,,,,7,"Check that menu items common to all roles maintain the same position and
+naming across different user interfaces.
+
+","Common menu items have consistent positioning and naming across all user
+role interfaces.
+
+",,,,,,,,,,
+TC-465,,Consistent Error and Notification Handling,"Verify that error messages, success notifications, and system alerts are
+displayed consistently in terms of style, position, and behavior across
+all user interfaces.
+
+","1.  RFMSS system is up and running.
+2.  Test accounts for all user roles (Admin, Scheduler, Unit Requester,
+    Approver, Read-Only, Limited Read-Only) are available.
+3.  All RFMSS screens and functionalities are accessible.
+
+",1,"Log in to the RFMSS system as an Admin user.
+
+","Admin user is successfully logged in and the dashboard is displayed.
+
+",,,,,,Not Automated,,Other,Medium,Active
+,,,,,2,"Navigate through all available screens and intentionally trigger error
+scenarios (e.g., submit incomplete forms, access restricted areas).
+
+","Error messages are displayed consistently in terms of style, position,
+and behavior across all screens accessed by the Admin user.
+
+",,,,,,,,,,
+,,,,,3,"Perform successful actions that generate notifications (e.g., save
+changes, approve requests).
+
+","Success notifications are displayed consistently in terms of style,
+position, and behavior across all screens accessed by the Admin user.
+
+",,,,,,,,,,
+,,,,,4,"Log out and repeat steps 1-3 for each user role: Scheduler, Unit
+Requester, Approver, Read-Only, and Limited Read-Only.
+
+","Error messages, success notifications, and system alerts are displayed
+consistently across all user interfaces, regardless of the user role.
+
+",,,,,,,,,,
+,,,,,5,"Compare the style, position, and behavior of error messages, success
+notifications, and system alerts across all user roles and screens.
+
+","All error messages, success notifications, and system alerts maintain a
+consistent style, position, and behavior across different user roles and
+RFMSS screens.
+
+",,,,,,,,,,
+,,,,,6,"Document any inconsistencies found in the display of error messages,
+success notifications, or system alerts.
+
+","A comprehensive report of any inconsistencies is created, or it is
+confirmed that all messages and notifications are consistently displayed
+across the system.
+
+",,,,,,,,,,
+TC-460,,Consistent Layout Across Roles,"Verify that the overall layout, including header, footer, and main
+content areas, remains consistent across different user role interfaces
+(Admin, Scheduler, Unit Requester, Approver, Read-Only, Limited
+Read-Only).
+
+","1\. RFMSS system is accessible and functioning correctly. 2. Test
+accounts for all user roles (Admin, Scheduler, Unit Requester, Approver,
+Read-Only, Limited Read-Only) are available. 3. All user interfaces for
+different roles are implemented in the system.
+
+",1,"Log in to the RFMSS system as a Functional Administration (FA) user.
+
+","The FA user is successfully logged in.
+
+",,,,,,Not Automated,,Functional,High,Active
+,,,,,2,"Observe and document the layout of the FA interface, including:
+
+* header, footer, and main menu content areas
+* Home screen displays the RFMSS verion with site Name
+* Login Session and IP Addrss
+* Top righ links: Accessibility/Section 508, Logout, Change Password,
+  Manage Account, and Help
+* Main Menu bar displays the associted sub-menu.
+
+","The layout is consistent with the standard RFMSS design.
+
+",,,,,,,,,,
+,,,,,3,"Log out and log in as a Unit Scheduler user.
+
+","The Unit Scheduler is successfully logged in. Compare the layout
+observations and validate it is consistent for all user roles.
+
+",,,,,,,,,,
+,,,,,4,"Log out and log in as a Range Control Scheduler user.
+
+","The Range Control Scheduler is successfully logged in. Compare the
+layout observations and validate it is consistent for all user roles.
+
+",,,,,,,,,,
+,,,,,5,"Log out and log in as a Range Control Safety user.
+
+","The Range Control Safety is successfully logged in. Compare the layout
+observations and validate it is consistent for all user roles.
+
+",,,,,,,,,,
+,,,,,6,"Log out and log in as a Range Control Logistics user.
+
+","The Range Control Logistics is successfully logged in. Compare the
+layout observations and validate it is consistent for all user roles.
+
+",,,,,,,,,,
+,,,,,7,"Log out and log in as a Range Control Environment user.
+
+","The Range Control Environment is successfully logged in. Compare the
+layout observations and validate it is consistent for all user roles.
+
+",,,,,,,,,,
+,,,,,8,"Compare the layout observations for all user roles.
+
+","The overall layout, including header, footer, and main content areas,
+remains consistent across all user role interfaces.
+
+",,,,,,,,,,
+,,,,,9,"Verify that any role-specific elements are consistently placed and do
+not disrupt the overall layout.
+
+","Role-specific elements are consistently placed and do not affect the
+overall layout consistency.
+
+",,,,,,,,,,
+TC-469,,Session-Based Access Validation,"Confirm that screen access permissions are continuously validated
+throughout the user\'s session, preventing access to restricted areas
+even if the user\'s role changes mid-session.
+
+","1\. RFMSS system is up and running. 2. User accounts with different roles
+(Admin, Scheduler, Unit Requester, Approver, Read-Only, Limited
+Read-Only) are created. 3. The system has the capability to change user
+roles during an active session. 4. A mechanism to force immediate role
+changes is available to administrators.
+
+",1,"Log in to the RFMSS system as a Unit Scheduler user.
+
+","Unit Scheduler successfully logs in and can access the following menus:
+
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+
+",,,,,,Not Automated,,Security,High,Active
+,,,,,2,"Navigate to the Scheduling menu and validate that the following
+sub-menus display:
+
+* Future Date Tool
+* Two Week Calendar
+* RCNI Lookup
+* Request
+* Same Day Request
+* Same Day Request (Using Template)
+* Range Bulletin
+* Request Templates
+* Communication Log Sheet
+* Co-Use Agreement List
+
+","Unit Scheduler can successfully access the following sub-menus:
+
+* Future Date Tool
+* Two Week Calendar
+* RCNI Lookup
+* Request
+* Same Day Request
+* Same Day Request (Using Template)
+* Range Bulletin
+* Request Templates
+* Communication Log Sheet
+* Co-Use Agreement List
+
+",,,,,,,,,,
+,,,,,3,"As an Admin (in a separate session), change the logged-in Unit
+Scheduler\'s role to Range Control Scheduler.
+
+","Admin successfully changes the user\'s role.
+
+",,,,,,,,,,
+,,,,,4,"Without logging out, have the Scheduler user attempt to access
+Scheduler-specific screens and functionalities.
+
+","The user is logged out with the following system message:
+
+User session was terminated by the RFMSS Functional Administrator. A
+change was made to your RFMSS Account by the RFMSS Functional
+Administrator. Please log back in.
+
+",,,,,,,,,,
+,,,,,5,"Log back in as the Range Control Scheduler.
+
+","User can now access Unit Requester screens and functionalities.
+
+",,,,,,,,,,
+,,,,,6,"Repeat the process by changing the user\'s role to Read-Only.
+
+","User\'s access is immediately restricted to Read-Only permissions,
+losing access to Unit Requester functionalities.
+
+",,,,,,,,,,
+,,,,,7,"Attempt to perform actions that were previously allowed under Unit
+Requester role.
+
+","System prevents the user from performing these actions, displaying
+appropriate error messages.
+
+",,,,,,,,,,
+,,,,,8,"Log out and log back in with the same user credentials.
+
+","Successfully logs in and can access the following menus:
+
+* Home
+* Scheduling
+* Operations
+* Administration
+* Reports
+* Library
+
+
+
+",,,,,,,,,,
+TC-467,,Role-Based Access Control Enforcement,"Verify that users can only access screens and functionalities explicitly
+permitted for their assigned role, with attempts to access unauthorized
+screens resulting in appropriate error messages or redirects.
+
+","1\. RFMSS system is up and running. 2. Different user accounts with
+various roles (Admin, Scheduler, Unit Requester, Approver, Read-Only,
+Limited Read-Only) are created in the system. 3. Each role has a
+predefined set of permitted screens and functionalities. 4. A list of
+all RFMSS screens is available for reference.
+
+",1,"Log in to the RFMSS system as an ALL user.
+
+","Admin user successfully logs in and can access all screens and
+functionalities.
+
+",,,,,,Not Automated,,Functional,High,Active
+,,,,,2,"Access the screens from the Administration menu visible with the Admin
+role:
+
+* Airspace
+* Amunition
+* Announcements
+* Conflict
+* Equipment
+* Event
+* Facility
+* Fire Desk
+* Installation
+* Unavailable Days
+* Unit
+* User
+* Background Jobs
+
+","The user can access all permitted screens and functionalities without
+any errors.
+
+",,,,,,,,,,
+,,,,,3,"Select the Manage Account link.
+
+","Validate that the roles for the Admin account is designated for Range
+Control personnel:
+
+* RC-SFTY (Range Control Safety)
+* RC-LOG (Range Control Logistics)
+* RC-ENV (Range Control Environment)
+* RC-SCHED (Range Control Schedulers)
+* FDO (Range Control Fire Desk Operator)
+* FA (Range Control Functional Administrator)
+
+",,,,,,,,,,
+,,,,,4,"Validate the subsections in the Manage Account page are correct:
+
+* Account user information
+* Fire Desk Select for RDO or RC-SCHED roles
+* Email Notification
+
+","All subsections are populated without any issues/errors.
+
+",,,,,,,,,,
+,,,,,5,"Update the Challenge Question and select the SAVE button.
+
+","A system message displays at the bottom of the screen: \""Please be aware
+of the following. To proceed, select all checkboxes to acknowledge and
+try again.
+
+\[checkbox\] Due to the change in user roles, any grid columns that were
+rearranged on all grids will be reset to the default layout.\""
+
+",,,,,,,,,,
+,,,,,6,"Select the \[checkbox\] on the system message and select the SAVE
+button.
+
+","The Home page is displayed.
+
+",,,,,,,,,,
+,,,,,7,"Log out and log in as a Unit Scheduler user.
+
+","Scheduler user successfully logs in.
+
+",,,,,,,,,,
+,,,,,8,"Access Administration/Users and attempt to edit user.
+
+","Validate that the edit capability is not visible to the Unit Scheduler
+user.
+
+",,,,,,,,,,
+,,,,,9,"Attempt to access the Administration screens for the following:
+
+* Airspace
+* Amunition
+* Announcements
+* Conflict
+* Equipment
+* Event
+* Facility
+* Fire Desk
+* Installation
+* Unavailable Days
+* Unit
+* Background Jobs
+
+","Validate that the edit capability is not visible to the Unit Scheduler
+user for any of the Administration screens.
+
+",,,,,,,,,,
+,,,,,10,"Log out and log in as a Read-Only user.
+
+
+
+","Validate that the following menus are displayed:
+
+* Home
+* Scheduling
+* Operations
+* Library
+
+",,,,,,,,,,
